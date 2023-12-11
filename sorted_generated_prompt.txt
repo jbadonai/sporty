@@ -1,0 +1,4509 @@
+
+Team Name: FC Fakel Voronezh 
+League:  Russia Premier League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Fakel Voronezh,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FK Dinamo Moscow 
+League: Russia Premier League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FK Dinamo Moscow,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between FC Fakel Voronezh(home) and FK Dinamo Moscow(Away), in   Russia Premier League  league:
+
+    * get the last 3 games played by FC Fakel Voronezh  and 
+    * get the last 3 games played by FK Dinamo Moscow, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['FC Fakel Voronezh'],'team_away': ['FK Dinamo Moscow'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: FC Vorskla Poltava 
+League:  Ukraine Premier League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Vorskla Poltava,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Rukh Lviv 
+League: Ukraine Premier League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Rukh Lviv,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between FC Vorskla Poltava(home) and FC Rukh Lviv(Away), in   Ukraine Premier League  league:
+
+    * get the last 3 games played by FC Vorskla Poltava  and 
+    * get the last 3 games played by FC Rukh Lviv, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['FC Vorskla Poltava'],'team_away': ['FC Rukh Lviv'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Trau FC 
+League:  India I-League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Trau FC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Inter Kashi FC 
+League: India I-League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Inter Kashi FC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Trau FC(home) and Inter Kashi FC(Away), in   India I-League  league:
+
+    * get the last 3 games played by Trau FC  and 
+    * get the last 3 games played by Inter Kashi FC, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Trau FC'],'team_away': ['Inter Kashi FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Go Ahead Eagles 
+League:  Netherlands Eredivisie  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Go Ahead Eagles,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Utrecht 
+League: Netherlands Eredivisie 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Utrecht,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Go Ahead Eagles(home) and FC Utrecht(Away), in   Netherlands Eredivisie  league:
+
+    * get the last 3 games played by Go Ahead Eagles  and 
+    * get the last 3 games played by FC Utrecht, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Go Ahead Eagles'],'team_away': ['FC Utrecht'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Frosinone 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Frosinone,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Torino 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Torino,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Frosinone(home) and FC Torino(Away), in   Italy Serie A  league:
+
+    * get the last 3 games played by Frosinone  and 
+    * get the last 3 games played by FC Torino, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Frosinone'],'team_away': ['FC Torino'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Nice 
+League:  France Ligue 1  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Nice,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Reims 
+League: France Ligue 1 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Reims,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Nice(home) and Reims(Away), in   France Ligue 1  league:
+
+    * get the last 3 games played by Nice  and 
+    * get the last 3 games played by Reims, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Nice'],'team_away': ['Reims'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Kilmarnock FC 
+League:  Scotland Premiership  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Kilmarnock FC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Celtic 
+League: Scotland Premiership 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Celtic,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Kilmarnock FC(home) and Celtic(Away), in   Scotland Premiership  league:
+
+    * get the last 3 games played by Kilmarnock FC  and 
+    * get the last 3 games played by Celtic, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Kilmarnock FC'],'team_away': ['Celtic'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: AFC Hermannstadt 
+League:  Romania Superliga  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AFC Hermannstadt,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: CS Universitatea Craiova 1948 
+League: Romania Superliga 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by CS Universitatea Craiova 1948,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between AFC Hermannstadt(home) and CS Universitatea Craiova 1948(Away), in   Romania Superliga  league:
+
+    * get the last 3 games played by AFC Hermannstadt  and 
+    * get the last 3 games played by CS Universitatea Craiova 1948, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['AFC Hermannstadt'],'team_away': ['CS Universitatea Craiova 1948'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Fortuna D 
+League:  Germany 2nd Bundesliga  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Fortuna D,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Holstein Kiel 
+League: Germany 2nd Bundesliga 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Holstein Kiel,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Fortuna D(home) and Holstein Kiel(Away), in   Germany 2nd Bundesliga  league:
+
+    * get the last 3 games played by Fortuna D  and 
+    * get the last 3 games played by Holstein Kiel, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Fortuna D'],'team_away': ['Holstein Kiel'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Hansa Rostock 
+League:  Germany 2nd Bundesliga  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Hansa Rostock,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Schalke 
+League: Germany 2nd Bundesliga 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Schalke,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Hansa Rostock(home) and Schalke(Away), in   Germany 2nd Bundesliga  league:
+
+    * get the last 3 games played by Hansa Rostock  and 
+    * get the last 3 games played by Schalke, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Hansa Rostock'],'team_away': ['Schalke'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: SV 07 Elversberg 
+League:  Germany 2nd Bundesliga  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by SV 07 Elversberg,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Nuremberg 
+League: Germany 2nd Bundesliga 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Nuremberg,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between SV 07 Elversberg(home) and Nuremberg(Away), in   Germany 2nd Bundesliga  league:
+
+    * get the last 3 games played by SV 07 Elversberg  and 
+    * get the last 3 games played by Nuremberg, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['SV 07 Elversberg'],'team_away': ['Nuremberg'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Yellow-Red KV Mechelen 
+League:  Belgium Pro League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Yellow-Red KV Mechelen,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Brugge 
+League: Belgium Pro League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Brugge,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Yellow-Red KV Mechelen(home) and Brugge(Away), in   Belgium Pro League  league:
+
+    * get the last 3 games played by Yellow-Red KV Mechelen  and 
+    * get the last 3 games played by Brugge, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Yellow-Red KV Mechelen'],'team_away': ['Brugge'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: K Beerschot VA 
+League:  Belgium Challenger Pro League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by K Beerschot VA,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: KMSK Deinze 
+League: Belgium Challenger Pro League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by KMSK Deinze,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between K Beerschot VA(home) and KMSK Deinze(Away), in   Belgium Challenger Pro League  league:
+
+    * get the last 3 games played by K Beerschot VA  and 
+    * get the last 3 games played by KMSK Deinze, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['K Beerschot VA'],'team_away': ['KMSK Deinze'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: AS Villers Houlgate 
+League:  France Coupe de France  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AS Villers Houlgate,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Racing Club de France 92 
+League: France Coupe de France 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Racing Club de France 92,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between AS Villers Houlgate(home) and Racing Club de France 92(Away), in   France Coupe de France  league:
+
+    * get the last 3 games played by AS Villers Houlgate  and 
+    * get the last 3 games played by Racing Club de France 92, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['AS Villers Houlgate'],'team_away': ['Racing Club de France 92'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: FC Hauts Lyonnais 
+League:  France Coupe de France  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Hauts Lyonnais,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: US Feurs 
+League: France Coupe de France 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Feurs,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between FC Hauts Lyonnais(home) and US Feurs(Away), in   France Coupe de France  league:
+
+    * get the last 3 games played by FC Hauts Lyonnais  and 
+    * get the last 3 games played by US Feurs, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['FC Hauts Lyonnais'],'team_away': ['US Feurs'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Atletico Madrid 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Atletico Madrid,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: UD Almeria 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by UD Almeria,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Atletico Madrid(home) and UD Almeria(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games played by Atletico Madrid  and 
+    * get the last 3 games played by UD Almeria, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Atletico Madrid'],'team_away': ['UD Almeria'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Mamelodi Sundowns 
+League:  International Clubs CAF Champions League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Mamelodi Sundowns,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Pyramids FC 
+League: International Clubs CAF Champions League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Pyramids FC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Mamelodi Sundowns(home) and Pyramids FC(Away), in   International Clubs CAF Champions League  league:
+
+    * get the last 3 games played by Mamelodi Sundowns  and 
+    * get the last 3 games played by Pyramids FC, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Mamelodi Sundowns'],'team_away': ['Pyramids FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Abu Salim SC 
+League:  International Clubs CAF Confederations Cup  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Abu Salim SC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Soar Guinea 
+League: International Clubs CAF Confederations Cup 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Soar Guinea,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Abu Salim SC(home) and Soar Guinea(Away), in   International Clubs CAF Confederations Cup  league:
+
+    * get the last 3 games played by Abu Salim SC  and 
+    * get the last 3 games played by Soar Guinea, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Abu Salim SC'],'team_away': ['Soar Guinea'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Elche CF 
+League:  Spain LaLiga 2  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Elche CF,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Cartagena 
+League: Spain LaLiga 2 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Cartagena,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Elche CF(home) and FC Cartagena(Away), in   Spain LaLiga 2  league:
+
+    * get the last 3 games played by Elche CF  and 
+    * get the last 3 games played by FC Cartagena, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Elche CF'],'team_away': ['FC Cartagena'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Istanbul BB 
+League:  Turkiye Super Lig  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Istanbul BB,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Hatayspor Antakya 
+League: Turkiye Super Lig 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Hatayspor Antakya,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Istanbul BB(home) and Hatayspor Antakya(Away), in   Turkiye Super Lig  league:
+
+    * get the last 3 games played by Istanbul BB  and 
+    * get the last 3 games played by Hatayspor Antakya, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Istanbul BB'],'team_away': ['Hatayspor Antakya'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Kayserispor 
+League:  Turkiye Super Lig  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Kayserispor,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Pendikspor 
+League: Turkiye Super Lig 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Pendikspor,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Kayserispor(home) and Pendikspor(Away), in   Turkiye Super Lig  league:
+
+    * get the last 3 games played by Kayserispor  and 
+    * get the last 3 games played by Pendikspor, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Kayserispor'],'team_away': ['Pendikspor'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: FC Chernomorets Odessa 
+League:  Ukraine Premier League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Chernomorets Odessa,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Kolos Kovalivka 
+League: Ukraine Premier League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Kolos Kovalivka,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between FC Chernomorets Odessa(home) and Kolos Kovalivka(Away), in   Ukraine Premier League  league:
+
+    * get the last 3 games played by FC Chernomorets Odessa  and 
+    * get the last 3 games played by Kolos Kovalivka, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['FC Chernomorets Odessa'],'team_away': ['Kolos Kovalivka'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Atletico Uri 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Atletico Uri,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: ASD Gladiator 1924 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ASD Gladiator 1924,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Atletico Uri(home) and ASD Gladiator 1924(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by Atletico Uri  and 
+    * get the last 3 games played by ASD Gladiator 1924, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Atletico Uri'],'team_away': ['ASD Gladiator 1924'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: San Marzano Calcio 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by San Marzano Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Sarrabus Ogliastra 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Sarrabus Ogliastra,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between San Marzano Calcio(home) and Sarrabus Ogliastra(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by San Marzano Calcio  and 
+    * get the last 3 games played by Sarrabus Ogliastra, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['San Marzano Calcio'],'team_away': ['Sarrabus Ogliastra'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: FC Lugano 
+League:  Switzerland Super League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Lugano,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Winterthur 
+League: Switzerland Super League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Winterthur,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between FC Lugano(home) and FC Winterthur(Away), in   Switzerland Super League  league:
+
+    * get the last 3 games played by FC Lugano  and 
+    * get the last 3 games played by FC Winterthur, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['FC Lugano'],'team_away': ['FC Winterthur'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: AC Bellinzona 
+League:  Switzerland Challenge League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Bellinzona,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Neuchatel Xamax 
+League: Switzerland Challenge League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Neuchatel Xamax,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between AC Bellinzona(home) and Neuchatel Xamax(Away), in   Switzerland Challenge League  league:
+
+    * get the last 3 games played by AC Bellinzona  and 
+    * get the last 3 games played by Neuchatel Xamax, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['AC Bellinzona'],'team_away': ['Neuchatel Xamax'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: FC Aarau 
+League:  Switzerland Challenge League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Aarau,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Wil 1900 
+League: Switzerland Challenge League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Wil 1900,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between FC Aarau(home) and FC Wil 1900(Away), in   Switzerland Challenge League  league:
+
+    * get the last 3 games played by FC Aarau  and 
+    * get the last 3 games played by FC Wil 1900, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['FC Aarau'],'team_away': ['FC Wil 1900'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Fortuna Sittard 
+League:  Netherlands Eredivisie  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Fortuna Sittard,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: RKC Waalwijk 
+League: Netherlands Eredivisie 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by RKC Waalwijk,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Fortuna Sittard(home) and RKC Waalwijk(Away), in   Netherlands Eredivisie  league:
+
+    * get the last 3 games played by Fortuna Sittard  and 
+    * get the last 3 games played by RKC Waalwijk, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Fortuna Sittard'],'team_away': ['RKC Waalwijk'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: FK Sochi 
+League:  Russia Premier League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FK Sochi,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Orenburg 
+League: Russia Premier League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Orenburg,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between FK Sochi(home) and FC Orenburg(Away), in   Russia Premier League  league:
+
+    * get the last 3 games played by FK Sochi  and 
+    * get the last 3 games played by FC Orenburg, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['FK Sochi'],'team_away': ['FC Orenburg'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asd Alba Calcio 
+League:  Italy Serie D, Girone A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Alba Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Pont Donnaz Hone Arnad Evancon 
+League: Italy Serie D, Girone A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Pont Donnaz Hone Arnad Evancon,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asd Alba Calcio(home) and Pont Donnaz Hone Arnad Evancon(Away), in   Italy Serie D, Girone A  league:
+
+    * get the last 3 games played by Asd Alba Calcio  and 
+    * get the last 3 games played by Pont Donnaz Hone Arnad Evancon, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asd Alba Calcio'],'team_away': ['Pont Donnaz Hone Arnad Evancon'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asti Calcio 
+League:  Italy Serie D, Girone A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asti Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Usd Lavagnese 1919 
+League: Italy Serie D, Girone A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Usd Lavagnese 1919,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asti Calcio(home) and Usd Lavagnese 1919(Away), in   Italy Serie D, Girone A  league:
+
+    * get the last 3 games played by Asti Calcio  and 
+    * get the last 3 games played by Usd Lavagnese 1919, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asti Calcio'],'team_away': ['Usd Lavagnese 1919'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Borgosesia Calcio 
+League:  Italy Serie D, Girone A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Borgosesia Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Asd Alcione Milano 
+League: Italy Serie D, Girone A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Alcione Milano,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Borgosesia Calcio(home) and Asd Alcione Milano(Away), in   Italy Serie D, Girone A  league:
+
+    * get the last 3 games played by Borgosesia Calcio  and 
+    * get the last 3 games played by Asd Alcione Milano, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Borgosesia Calcio'],'team_away': ['Asd Alcione Milano'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Citta Di Varese 
+League:  Italy Serie D, Girone A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Citta Di Varese,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Chisola Calcio 
+League: Italy Serie D, Girone A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Chisola Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Citta Di Varese(home) and Chisola Calcio(Away), in   Italy Serie D, Girone A  league:
+
+    * get the last 3 games played by Citta Di Varese  and 
+    * get the last 3 games played by Chisola Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Citta Di Varese'],'team_away': ['Chisola Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Rg Ticino 
+League:  Italy Serie D, Girone A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Rg Ticino,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: AC Gozzano 
+League: Italy Serie D, Girone A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Gozzano,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Rg Ticino(home) and AC Gozzano(Away), in   Italy Serie D, Girone A  league:
+
+    * get the last 3 games played by Rg Ticino  and 
+    * get the last 3 games played by AC Gozzano, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Rg Ticino'],'team_away': ['AC Gozzano'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Scd Ligorna 1922 
+League:  Italy Serie D, Girone A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Scd Ligorna 1922,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Pinerolo 
+League: Italy Serie D, Girone A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Pinerolo,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Scd Ligorna 1922(home) and Pinerolo(Away), in   Italy Serie D, Girone A  league:
+
+    * get the last 3 games played by Scd Ligorna 1922  and 
+    * get the last 3 games played by Pinerolo, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Scd Ligorna 1922'],'team_away': ['Pinerolo'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: SSD Sanremese Calcio 
+League:  Italy Serie D, Girone A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by SSD Sanremese Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Calcio Chieri 1955 
+League: Italy Serie D, Girone A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Calcio Chieri 1955,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between SSD Sanremese Calcio(home) and Calcio Chieri 1955(Away), in   Italy Serie D, Girone A  league:
+
+    * get the last 3 games played by SSD Sanremese Calcio  and 
+    * get the last 3 games played by Calcio Chieri 1955, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['SSD Sanremese Calcio'],'team_away': ['Calcio Chieri 1955'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: US Albenga 
+League:  Italy Serie D, Girone A  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Albenga,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Avc Vogherese 1919 
+League: Italy Serie D, Girone A 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Avc Vogherese 1919,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between US Albenga(home) and Avc Vogherese 1919(Away), in   Italy Serie D, Girone A  league:
+
+    * get the last 3 games played by US Albenga  and 
+    * get the last 3 games played by Avc Vogherese 1919, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['US Albenga'],'team_away': ['Avc Vogherese 1919'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: AC Crema 1908 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Crema 1908,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: S.S.D. Virtus Ciseranobergamo 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by S.S.D. Virtus Ciseranobergamo,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between AC Crema 1908(home) and S.S.D. Virtus Ciseranobergamo(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by AC Crema 1908  and 
+    * get the last 3 games played by S.S.D. Virtus Ciseranobergamo, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['AC Crema 1908'],'team_away': ['S.S.D. Virtus Ciseranobergamo'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: AC Legnano 1913 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Legnano 1913,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Villa Dalme Valle Brembana 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Villa Dalme Valle Brembana,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between AC Legnano 1913(home) and Villa Dalme Valle Brembana(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by AC Legnano 1913  and 
+    * get the last 3 games played by Villa Dalme Valle Brembana, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['AC Legnano 1913'],'team_away': ['Villa Dalme Valle Brembana'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: AC Ponte San Pietro-Isola 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Ponte San Pietro-Isola,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: ASD Varesina Calcio 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ASD Varesina Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between AC Ponte San Pietro-Isola(home) and ASD Varesina Calcio(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by AC Ponte San Pietro-Isola  and 
+    * get the last 3 games played by ASD Varesina Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['AC Ponte San Pietro-Isola'],'team_away': ['ASD Varesina Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asd Calcio Brusaporto 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Calcio Brusaporto,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Clivense 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Clivense,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asd Calcio Brusaporto(home) and FC Clivense(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by Asd Calcio Brusaporto  and 
+    * get the last 3 games played by FC Clivense, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asd Calcio Brusaporto'],'team_away': ['FC Clivense'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Club Milano Ssd 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Club Milano Ssd,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Usd Casatese 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Usd Casatese,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Club Milano Ssd(home) and Usd Casatese(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by Club Milano Ssd  and 
+    * get the last 3 games played by Usd Casatese, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Club Milano Ssd'],'team_away': ['Usd Casatese'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Desenzano Calvina 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Desenzano Calvina,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Tritium Calcio 1908 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Tritium Calcio 1908,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Desenzano Calvina(home) and Tritium Calcio 1908(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by Desenzano Calvina  and 
+    * get the last 3 games played by Tritium Calcio 1908, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Desenzano Calvina'],'team_away': ['Tritium Calcio 1908'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: GS Arconatese 1926 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by GS Arconatese 1926,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: USD Caravaggio 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by USD Caravaggio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between GS Arconatese 1926(home) and USD Caravaggio(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by GS Arconatese 1926  and 
+    * get the last 3 games played by USD Caravaggio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['GS Arconatese 1926'],'team_away': ['USD Caravaggio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Piacenza Calcio 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Piacenza Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Usd Castellanzese 1921 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Usd Castellanzese 1921,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Piacenza Calcio(home) and Usd Castellanzese 1921(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by Piacenza Calcio  and 
+    * get the last 3 games played by Usd Castellanzese 1921, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Piacenza Calcio'],'team_away': ['Usd Castellanzese 1921'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Pro Palazzolo 
+League:  Italy Serie D, Girone B  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Pro Palazzolo,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: US Folgore Caratese 
+League: Italy Serie D, Girone B 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Folgore Caratese,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Pro Palazzolo(home) and US Folgore Caratese(Away), in   Italy Serie D, Girone B  league:
+
+    * get the last 3 games played by Pro Palazzolo  and 
+    * get the last 3 games played by US Folgore Caratese, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Pro Palazzolo'],'team_away': ['US Folgore Caratese'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: ACD Campodarsego Calcio 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ACD Campodarsego Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Portogruaro Calcio 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Portogruaro Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between ACD Campodarsego Calcio(home) and Portogruaro Calcio(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by ACD Campodarsego Calcio  and 
+    * get the last 3 games played by Portogruaro Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['ACD Campodarsego Calcio'],'team_away': ['Portogruaro Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Bassano Virtus 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Bassano Virtus,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Asd Cjarlins Muzane 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Cjarlins Muzane,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Bassano Virtus(home) and Asd Cjarlins Muzane(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by Bassano Virtus  and 
+    * get the last 3 games played by Asd Cjarlins Muzane, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Bassano Virtus'],'team_away': ['Asd Cjarlins Muzane'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Calcio Montebelluna 1919 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Calcio Montebelluna 1919,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Usd Breno 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Usd Breno,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Calcio Montebelluna 1919(home) and Usd Breno(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by Calcio Montebelluna 1919  and 
+    * get the last 3 games played by Usd Breno, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Calcio Montebelluna 1919'],'team_away': ['Usd Breno'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Chions 1972 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Chions 1972,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Treviso FBC 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Treviso FBC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Chions 1972(home) and Treviso FBC(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by Chions 1972  and 
+    * get the last 3 games played by Treviso FBC, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Chions 1972'],'team_away': ['Treviso FBC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Dolomiti Bellunesi 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Dolomiti Bellunesi,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: AC Este 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Este,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Dolomiti Bellunesi(home) and AC Este(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by Dolomiti Bellunesi  and 
+    * get the last 3 games played by AC Este, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Dolomiti Bellunesi'],'team_away': ['AC Este'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Luparense FC 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Luparense FC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Union Clodiense Chioggia SSD 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Union Clodiense Chioggia SSD,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Luparense FC(home) and Union Clodiense Chioggia SSD(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by Luparense FC  and 
+    * get the last 3 games played by Union Clodiense Chioggia SSD, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Luparense FC'],'team_away': ['Union Clodiense Chioggia SSD'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Mori S.Stefano 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Mori S.Stefano,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: A.C. Mestre 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by A.C. Mestre,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Mori S.Stefano(home) and A.C. Mestre(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by Mori S.Stefano  and 
+    * get the last 3 games played by A.C. Mestre, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Mori S.Stefano'],'team_away': ['A.C. Mestre'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: UC Montecchio Maggiore 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by UC Montecchio Maggiore,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Asd Atletico Castegnato 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Atletico Castegnato,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between UC Montecchio Maggiore(home) and Asd Atletico Castegnato(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by UC Montecchio Maggiore  and 
+    * get the last 3 games played by Asd Atletico Castegnato, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['UC Montecchio Maggiore'],'team_away': ['Asd Atletico Castegnato'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Usd Adriese 1906 
+League:  Italy Serie D, Girone C  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Usd Adriese 1906,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: AC Virtus Bolzano 
+League: Italy Serie D, Girone C 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Virtus Bolzano,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Usd Adriese 1906(home) and AC Virtus Bolzano(Away), in   Italy Serie D, Girone C  league:
+
+    * get the last 3 games played by Usd Adriese 1906  and 
+    * get the last 3 games played by AC Virtus Bolzano, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Usd Adriese 1906'],'team_away': ['AC Virtus Bolzano'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asd Calcio Certaldo 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Calcio Certaldo,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Ravenna FC 1913 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Ravenna FC 1913,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asd Calcio Certaldo(home) and Ravenna FC 1913(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by Asd Calcio Certaldo  and 
+    * get the last 3 games played by Ravenna FC 1913, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asd Calcio Certaldo'],'team_away': ['Ravenna FC 1913'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asd Fanfulla 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Fanfulla,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Sangiuliano City Nova 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Sangiuliano City Nova,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asd Fanfulla(home) and Sangiuliano City Nova(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by Asd Fanfulla  and 
+    * get the last 3 games played by Sangiuliano City Nova, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asd Fanfulla'],'team_away': ['Sangiuliano City Nova'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Borgo San Donnino 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Borgo San Donnino,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: US Corticella 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Corticella,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Borgo San Donnino(home) and US Corticella(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by Borgo San Donnino  and 
+    * get the last 3 games played by US Corticella, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Borgo San Donnino'],'team_away': ['US Corticella'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Forli FC 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Forli FC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Athletic Carpi 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Athletic Carpi,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Forli FC(home) and Athletic Carpi(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by Forli FC  and 
+    * get the last 3 games played by Athletic Carpi, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Forli FC'],'team_away': ['Athletic Carpi'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Imolese Calcio 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Imolese Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Victor San Marino 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Victor San Marino,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Imolese Calcio(home) and Victor San Marino(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by Imolese Calcio  and 
+    * get the last 3 games played by Victor San Marino, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Imolese Calcio'],'team_away': ['Victor San Marino'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Prato 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Prato,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Lentigione Calcio 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Lentigione Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Prato(home) and Lentigione Calcio(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by Prato  and 
+    * get the last 3 games played by Lentigione Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Prato'],'team_away': ['Lentigione Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Sammaurese Calcio 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Sammaurese Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Mezzolara Calcio 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Mezzolara Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Sammaurese Calcio(home) and Mezzolara Calcio(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by Sammaurese Calcio  and 
+    * get the last 3 games played by Mezzolara Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Sammaurese Calcio'],'team_away': ['Mezzolara Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: SCD Progresso 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by SCD Progresso,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Aglianese Calcio 1923 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Aglianese Calcio 1923,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between SCD Progresso(home) and Aglianese Calcio 1923(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by SCD Progresso  and 
+    * get the last 3 games played by Aglianese Calcio 1923, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['SCD Progresso'],'team_away': ['Aglianese Calcio 1923'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: US Pistoiese 
+League:  Italy Serie D, Girone D  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Pistoiese,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Asd Sant Angelo 
+League: Italy Serie D, Girone D 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Sant Angelo,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between US Pistoiese(home) and Asd Sant Angelo(Away), in   Italy Serie D, Girone D  league:
+
+    * get the last 3 games played by US Pistoiese  and 
+    * get the last 3 games played by Asd Sant Angelo, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['US Pistoiese'],'team_away': ['Asd Sant Angelo'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: AS Figline 
+League:  Italy Serie D, Girone E  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AS Figline,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Sporting Trestina 
+League: Italy Serie D, Girone E 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Sporting Trestina,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between AS Figline(home) and Sporting Trestina(Away), in   Italy Serie D, Girone E  league:
+
+    * get the last 3 games played by AS Figline  and 
+    * get the last 3 games played by Sporting Trestina, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['AS Figline'],'team_away': ['Sporting Trestina'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asd Sangiovannese 1927 
+League:  Italy Serie D, Girone E  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Sangiovannese 1927,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: AS Livorno 
+League: Italy Serie D, Girone E 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AS Livorno,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asd Sangiovannese 1927(home) and AS Livorno(Away), in   Italy Serie D, Girone E  league:
+
+    * get the last 3 games played by Asd Sangiovannese 1927  and 
+    * get the last 3 games played by AS Livorno, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asd Sangiovannese 1927'],'team_away': ['AS Livorno'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: ASD Seravezza Pozzi Calcio 
+League:  Italy Serie D, Girone E  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ASD Seravezza Pozzi Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Gsd Ghivizzano Borgoamozzano 
+League: Italy Serie D, Girone E 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Gsd Ghivizzano Borgoamozzano,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between ASD Seravezza Pozzi Calcio(home) and Gsd Ghivizzano Borgoamozzano(Away), in   Italy Serie D, Girone E  league:
+
+    * get the last 3 games played by ASD Seravezza Pozzi Calcio  and 
+    * get the last 3 games played by Gsd Ghivizzano Borgoamozzano, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['ASD Seravezza Pozzi Calcio'],'team_away': ['Gsd Ghivizzano Borgoamozzano'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Orvietana Calcio 
+League:  Italy Serie D, Girone E  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Orvietana Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Aquila Montevarchi 
+League: Italy Serie D, Girone E 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Aquila Montevarchi,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Orvietana Calcio(home) and Aquila Montevarchi(Away), in   Italy Serie D, Girone E  league:
+
+    * get the last 3 games played by Orvietana Calcio  and 
+    * get the last 3 games played by Aquila Montevarchi, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Orvietana Calcio'],'team_away': ['Aquila Montevarchi'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: SC Cenaia 1969 
+League:  Italy Serie D, Girone E  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by SC Cenaia 1969,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: US Poggibonsi 
+League: Italy Serie D, Girone E 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Poggibonsi,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between SC Cenaia 1969(home) and US Poggibonsi(Away), in   Italy Serie D, Girone E  league:
+
+    * get the last 3 games played by SC Cenaia 1969  and 
+    * get the last 3 games played by US Poggibonsi, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['SC Cenaia 1969'],'team_away': ['US Poggibonsi'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Tau Calcio Altopascio 
+League:  Italy Serie D, Girone E  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Tau Calcio Altopascio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Real Forte Querceta 
+League: Italy Serie D, Girone E 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Real Forte Querceta,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Tau Calcio Altopascio(home) and Real Forte Querceta(Away), in   Italy Serie D, Girone E  league:
+
+    * get the last 3 games played by Tau Calcio Altopascio  and 
+    * get the last 3 games played by Real Forte Querceta, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Tau Calcio Altopascio'],'team_away': ['Real Forte Querceta'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: US Follonica Gavorrano 
+League:  Italy Serie D, Girone E  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Follonica Gavorrano,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Mobilieri Ponsacco 
+League: Italy Serie D, Girone E 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Mobilieri Ponsacco,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between US Follonica Gavorrano(home) and Mobilieri Ponsacco(Away), in   Italy Serie D, Girone E  league:
+
+    * get the last 3 games played by US Follonica Gavorrano  and 
+    * get the last 3 games played by Mobilieri Ponsacco, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['US Follonica Gavorrano'],'team_away': ['Mobilieri Ponsacco'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: US Grosseto 
+League:  Italy Serie D, Girone E  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Grosseto,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: ASD San Donato Tavarnelle 
+League: Italy Serie D, Girone E 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ASD San Donato Tavarnelle,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between US Grosseto(home) and ASD San Donato Tavarnelle(Away), in   Italy Serie D, Girone E  league:
+
+    * get the last 3 games played by US Grosseto  and 
+    * get the last 3 games played by ASD San Donato Tavarnelle, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['US Grosseto'],'team_away': ['ASD San Donato Tavarnelle'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: AJ Fano 1906 
+League:  Italy Serie D, Girone F  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AJ Fano 1906,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Asd Sora Calcio 1907 
+League: Italy Serie D, Girone F 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Sora Calcio 1907,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between AJ Fano 1906(home) and Asd Sora Calcio 1907(Away), in   Italy Serie D, Girone F  league:
+
+    * get the last 3 games played by AJ Fano 1906  and 
+    * get the last 3 games played by Asd Sora Calcio 1907, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['AJ Fano 1906'],'team_away': ['Asd Sora Calcio 1907'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Avezzano Calcio 
+League:  Italy Serie D, Girone F  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Avezzano Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Tivoli Calcio 1919 
+League: Italy Serie D, Girone F 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Tivoli Calcio 1919,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Avezzano Calcio(home) and Tivoli Calcio 1919(Away), in   Italy Serie D, Girone F  league:
+
+    * get the last 3 games played by Avezzano Calcio  and 
+    * get the last 3 games played by Tivoli Calcio 1919, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Avezzano Calcio'],'team_away': ['Tivoli Calcio 1919'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Calcio Chieti 
+League:  Italy Serie D, Girone F  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Calcio Chieti,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Real Monterotondo Scalo 
+League: Italy Serie D, Girone F 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Real Monterotondo Scalo,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Calcio Chieti(home) and Real Monterotondo Scalo(Away), in   Italy Serie D, Girone F  league:
+
+    * get the last 3 games played by Calcio Chieti  and 
+    * get the last 3 games played by Real Monterotondo Scalo, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Calcio Chieti'],'team_away': ['Real Monterotondo Scalo'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Forsempronese 1949 SD Arl 
+League:  Italy Serie D, Girone F  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Forsempronese 1949 SD Arl,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Roma City FC 
+League: Italy Serie D, Girone F 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Roma City FC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Forsempronese 1949 SD Arl(home) and Roma City FC(Away), in   Italy Serie D, Girone F  league:
+
+    * get the last 3 games played by Forsempronese 1949 SD Arl  and 
+    * get the last 3 games played by Roma City FC, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Forsempronese 1949 SD Arl'],'team_away': ['Roma City FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Sambenedettese 
+League:  Italy Serie D, Girone F  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Sambenedettese,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Atletico Ascoli 
+League: Italy Serie D, Girone F 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Atletico Ascoli,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Sambenedettese(home) and Atletico Ascoli(Away), in   Italy Serie D, Girone F  league:
+
+    * get the last 3 games played by Sambenedettese  and 
+    * get the last 3 games played by Atletico Ascoli, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Sambenedettese'],'team_away': ['Atletico Ascoli'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: San Nicolo Notaresco 
+League:  Italy Serie D, Girone F  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by San Nicolo Notaresco,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: SSD Citta Di Campobasso 
+League: Italy Serie D, Girone F 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by SSD Citta Di Campobasso,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between San Nicolo Notaresco(home) and SSD Citta Di Campobasso(Away), in   Italy Serie D, Girone F  league:
+
+    * get the last 3 games played by San Nicolo Notaresco  and 
+    * get the last 3 games played by SSD Citta Di Campobasso, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['San Nicolo Notaresco'],'team_away': ['SSD Citta Di Campobasso'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Termoli 
+League:  Italy Serie D, Girone F  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Termoli,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Matese 
+League: Italy Serie D, Girone F 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Matese,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Termoli(home) and Matese(Away), in   Italy Serie D, Girone F  league:
+
+    * get the last 3 games played by Termoli  and 
+    * get the last 3 games played by Matese, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Termoli'],'team_away': ['Matese'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Vastogirardi 
+League:  Italy Serie D, Girone F  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Vastogirardi,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FC Vigor Senigallia 
+League: Italy Serie D, Girone F 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FC Vigor Senigallia,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Vastogirardi(home) and FC Vigor Senigallia(Away), in   Italy Serie D, Girone F  league:
+
+    * get the last 3 games played by Vastogirardi  and 
+    * get the last 3 games played by FC Vigor Senigallia, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Vastogirardi'],'team_away': ['FC Vigor Senigallia'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asd Anzio Calcio 1924 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Anzio Calcio 1924,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Nf Ardea 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Nf Ardea,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asd Anzio Calcio 1924(home) and Nf Ardea(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by Asd Anzio Calcio 1924  and 
+    * get the last 3 games played by Nf Ardea, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asd Anzio Calcio 1924'],'team_away': ['Nf Ardea'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asd Cassino Calcio 1924 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Cassino Calcio 1924,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: ASD Flaminia Civita Castellana 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ASD Flaminia Civita Castellana,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asd Cassino Calcio 1924(home) and ASD Flaminia Civita Castellana(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by Asd Cassino Calcio 1924  and 
+    * get the last 3 games played by ASD Flaminia Civita Castellana, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asd Cassino Calcio 1924'],'team_away': ['ASD Flaminia Civita Castellana'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: ASD Romana Football Club 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ASD Romana Football Club,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: AS Ostia Mare Lido Calcio 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AS Ostia Mare Lido Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between ASD Romana Football Club(home) and AS Ostia Mare Lido Calcio(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by ASD Romana Football Club  and 
+    * get the last 3 games played by AS Ostia Mare Lido Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['ASD Romana Football Club'],'team_away': ['AS Ostia Mare Lido Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Boreale Don Orione Calcio 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Boreale Don Orione Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Budoni Calcio 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Budoni Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Boreale Don Orione Calcio(home) and Budoni Calcio(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by Boreale Don Orione Calcio  and 
+    * get the last 3 games played by Budoni Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Boreale Don Orione Calcio'],'team_away': ['Budoni Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Cynthia 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Cynthia,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Cavese 1919 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Cavese 1919,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Cynthia(home) and Cavese 1919(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by Cynthia  and 
+    * get the last 3 games played by Cavese 1919, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Cynthia'],'team_away': ['Cavese 1919'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Ischia Isolaverde 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Ischia Isolaverde,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: ASD Trastevere Calcio 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ASD Trastevere Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Ischia Isolaverde(home) and ASD Trastevere Calcio(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by Ischia Isolaverde  and 
+    * get the last 3 games played by ASD Trastevere Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Ischia Isolaverde'],'team_away': ['ASD Trastevere Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Sassari Calcio Latte Dolce 
+League:  Italy Serie D, Girone G  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Sassari Calcio Latte Dolce,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Nocerina 
+League: Italy Serie D, Girone G 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Nocerina,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Sassari Calcio Latte Dolce(home) and Nocerina(Away), in   Italy Serie D, Girone G  league:
+
+    * get the last 3 games played by Sassari Calcio Latte Dolce  and 
+    * get the last 3 games played by Nocerina, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Sassari Calcio Latte Dolce'],'team_away': ['Nocerina'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Barletta Calcio 
+League:  Italy Serie D, Girone H  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Barletta Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: AC Martina 
+League: Italy Serie D, Girone H 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Martina,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Barletta Calcio(home) and AC Martina(Away), in   Italy Serie D, Girone H  league:
+
+    * get the last 3 games played by Barletta Calcio  and 
+    * get the last 3 games played by AC Martina, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Barletta Calcio'],'team_away': ['AC Martina'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Matera Calcio 
+League:  Italy Serie D, Girone H  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Matera Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: S.S.D. Casarano Calcio 
+League: Italy Serie D, Girone H 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by S.S.D. Casarano Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Matera Calcio(home) and S.S.D. Casarano Calcio(Away), in   Italy Serie D, Girone H  league:
+
+    * get the last 3 games played by Matera Calcio  and 
+    * get the last 3 games played by S.S.D. Casarano Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Matera Calcio'],'team_away': ['S.S.D. Casarano Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Paganese Calcio 
+League:  Italy Serie D, Girone H  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Paganese Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: US Angri 1927 
+League: Italy Serie D, Girone H 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Angri 1927,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Paganese Calcio(home) and US Angri 1927(Away), in   Italy Serie D, Girone H  league:
+
+    * get the last 3 games played by Paganese Calcio  and 
+    * get the last 3 games played by US Angri 1927, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Paganese Calcio'],'team_away': ['US Angri 1927'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: US Bitonto Calcio 
+League:  Italy Serie D, Girone H  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Bitonto Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: FBC Gravina 
+League: Italy Serie D, Girone H 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by FBC Gravina,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between US Bitonto Calcio(home) and FBC Gravina(Away), in   Italy Serie D, Girone H  league:
+
+    * get the last 3 games played by US Bitonto Calcio  and 
+    * get the last 3 games played by FBC Gravina, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['US Bitonto Calcio'],'team_away': ['FBC Gravina'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: ASD Citta di Acireale 1946 
+League:  Italy Serie D, Girone I  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by ASD Citta di Acireale 1946,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Asd Canicatti 
+League: Italy Serie D, Girone I 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Canicatti,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between ASD Citta di Acireale 1946(home) and Asd Canicatti(Away), in   Italy Serie D, Girone I  league:
+
+    * get the last 3 games played by ASD Citta di Acireale 1946  and 
+    * get the last 3 games played by Asd Canicatti, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['ASD Citta di Acireale 1946'],'team_away': ['Asd Canicatti'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Asd Portici 1906 
+League:  Italy Serie D, Girone I  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Asd Portici 1906,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: US Castrovillari Calcio 
+League: Italy Serie D, Girone I 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by US Castrovillari Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Asd Portici 1906(home) and US Castrovillari Calcio(Away), in   Italy Serie D, Girone I  league:
+
+    * get the last 3 games played by Asd Portici 1906  and 
+    * get the last 3 games played by US Castrovillari Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Asd Portici 1906'],'team_away': ['US Castrovillari Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Fenice Amaranto 
+League:  Italy Serie D, Girone I  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Fenice Amaranto,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: AC Locri 1909 
+League: Italy Serie D, Girone I 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by AC Locri 1909,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Fenice Amaranto(home) and AC Locri 1909(Away), in   Italy Serie D, Girone I  league:
+
+    * get the last 3 games played by Fenice Amaranto  and 
+    * get the last 3 games played by AC Locri 1909, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Fenice Amaranto'],'team_away': ['AC Locri 1909'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Licata 1931 
+League:  Italy Serie D, Girone I  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Licata 1931,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Trapani Calcio 
+League: Italy Serie D, Girone I 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Trapani Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Licata 1931(home) and Trapani Calcio(Away), in   Italy Serie D, Girone I  league:
+
+    * get the last 3 games played by Licata 1931  and 
+    * get the last 3 games played by Trapani Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Licata 1931'],'team_away': ['Trapani Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: San Luca Calcio 
+League:  Italy Serie D, Girone I  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by San Luca Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Akragas 
+League: Italy Serie D, Girone I 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Akragas,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between San Luca Calcio(home) and Akragas(Away), in   Italy Serie D, Girone I  league:
+
+    * get the last 3 games played by San Luca Calcio  and 
+    * get the last 3 games played by Akragas, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['San Luca Calcio'],'team_away': ['Akragas'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: SIRACUSA 
+League:  Italy Serie D, Girone I  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by SIRACUSA,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Vibonese Calcio 
+League: Italy Serie D, Girone I 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Vibonese Calcio,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between SIRACUSA(home) and Vibonese Calcio(Away), in   Italy Serie D, Girone I  league:
+
+    * get the last 3 games played by SIRACUSA  and 
+    * get the last 3 games played by Vibonese Calcio, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['SIRACUSA'],'team_away': ['Vibonese Calcio'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Churchill Brothers SC 
+League:  India I-League  
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Churchill Brothers SC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+ Team name: Neroca FC 
+League: India I-League 
+
+
+
+            in a tabular form, provide the last 10 games statistics  played  by Neroca FC,
+            using the following header
+            team name (Tainan City FC)
+            opponent name
+            goal scored by team
+            goal scored by opponent
+            possession percentage by team
+            possession percentage by opponent
+            shots on target by team
+            shots on target by opponent
+            
+--------------------------------------------------------------------------------
+in an upcoming match between Churchill Brothers SC(home) and Neroca FC(Away), in   India I-League  league:
+
+    * get the last 3 games played by Churchill Brothers SC  and 
+    * get the last 3 games played by Neroca FC, 
+    * provide average possession and shots on target data for both team using the format below
+
+            'team_home': ['Churchill Brothers SC'],'team_away': ['Neroca FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+

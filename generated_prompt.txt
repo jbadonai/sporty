@@ -1,0 +1,515 @@
+
+Team Name: Atletico Madrid 
+League:  Spain LaLiga  -- Team name: UD Almeria 
+League: Spain LaLiga 
+
+
+Team Name: Frosinone 
+League:  Italy Serie A  -- Team name: FC Torino 
+League: Italy Serie A 
+
+
+Team Name: Nice 
+League:  France Ligue 1  -- Team name: Reims 
+League: France Ligue 1 
+
+
+Team Name: Go Ahead Eagles 
+League:  Netherlands Eredivisie  -- Team name: FC Utrecht 
+League: Netherlands Eredivisie 
+
+
+Team Name: Fortuna Sittard 
+League:  Netherlands Eredivisie  -- Team name: RKC Waalwijk 
+League: Netherlands Eredivisie 
+
+
+Team Name: Fortuna D 
+League:  Germany 2nd Bundesliga  -- Team name: Holstein Kiel 
+League: Germany 2nd Bundesliga 
+
+
+Team Name: Hansa Rostock 
+League:  Germany 2nd Bundesliga  -- Team name: Schalke 
+League: Germany 2nd Bundesliga 
+
+
+Team Name: SV 07 Elversberg 
+League:  Germany 2nd Bundesliga  -- Team name: Nuremberg 
+League: Germany 2nd Bundesliga 
+
+
+Team Name: Mamelodi Sundowns 
+League:  International Clubs CAF Champions League  -- Team name: Pyramids FC 
+League: International Clubs CAF Champions League 
+
+
+Team Name: Abu Salim SC 
+League:  International Clubs CAF Confederations Cup  -- Team name: Soar Guinea 
+League: International Clubs CAF Confederations Cup 
+
+
+Team Name: Elche CF 
+League:  Spain LaLiga 2  -- Team name: FC Cartagena 
+League: Spain LaLiga 2 
+
+
+Team Name: Istanbul BB 
+League:  Turkiye Super Lig  -- Team name: Hatayspor Antakya 
+League: Turkiye Super Lig 
+
+
+Team Name: Kayserispor 
+League:  Turkiye Super Lig  -- Team name: Pendikspor 
+League: Turkiye Super Lig 
+
+
+Team Name: FC Fakel Voronezh 
+League:  Russia Premier League  -- Team name: FK Dinamo Moscow 
+League: Russia Premier League 
+
+
+Team Name: FK Sochi 
+League:  Russia Premier League  -- Team name: FC Orenburg 
+League: Russia Premier League 
+
+
+Team Name: FC Vorskla Poltava 
+League:  Ukraine Premier League  -- Team name: FC Rukh Lviv 
+League: Ukraine Premier League 
+
+
+Team Name: FC Chernomorets Odessa 
+League:  Ukraine Premier League  -- Team name: Kolos Kovalivka 
+League: Ukraine Premier League 
+
+
+Team Name: Kilmarnock FC 
+League:  Scotland Premiership  -- Team name: Celtic 
+League: Scotland Premiership 
+
+
+Team Name: Yellow-Red KV Mechelen 
+League:  Belgium Pro League  -- Team name: Brugge 
+League: Belgium Pro League 
+
+
+Team Name: FC Lugano 
+League:  Switzerland Super League  -- Team name: FC Winterthur 
+League: Switzerland Super League 
+
+
+Team Name: AC Bellinzona 
+League:  Switzerland Challenge League  -- Team name: Neuchatel Xamax 
+League: Switzerland Challenge League 
+
+
+Team Name: FC Aarau 
+League:  Switzerland Challenge League  -- Team name: FC Wil 1900 
+League: Switzerland Challenge League 
+
+
+Team Name: K Beerschot VA 
+League:  Belgium Challenger Pro League  -- Team name: KMSK Deinze 
+League: Belgium Challenger Pro League 
+
+
+Team Name: AS Villers Houlgate 
+League:  France Coupe de France  -- Team name: Racing Club de France 92 
+League: France Coupe de France 
+
+
+Team Name: FC Hauts Lyonnais 
+League:  France Coupe de France  -- Team name: US Feurs 
+League: France Coupe de France 
+
+
+Team Name: Asd Alba Calcio 
+League:  Italy Serie D, Girone A  -- Team name: Pont Donnaz Hone Arnad Evancon 
+League: Italy Serie D, Girone A 
+
+
+Team Name: Asti Calcio 
+League:  Italy Serie D, Girone A  -- Team name: Usd Lavagnese 1919 
+League: Italy Serie D, Girone A 
+
+
+Team Name: Borgosesia Calcio 
+League:  Italy Serie D, Girone A  -- Team name: Asd Alcione Milano 
+League: Italy Serie D, Girone A 
+
+
+Team Name: Citta Di Varese 
+League:  Italy Serie D, Girone A  -- Team name: Chisola Calcio 
+League: Italy Serie D, Girone A 
+
+
+Team Name: Rg Ticino 
+League:  Italy Serie D, Girone A  -- Team name: AC Gozzano 
+League: Italy Serie D, Girone A 
+
+
+Team Name: Scd Ligorna 1922 
+League:  Italy Serie D, Girone A  -- Team name: Pinerolo 
+League: Italy Serie D, Girone A 
+
+
+Team Name: SSD Sanremese Calcio 
+League:  Italy Serie D, Girone A  -- Team name: Calcio Chieri 1955 
+League: Italy Serie D, Girone A 
+
+
+Team Name: US Albenga 
+League:  Italy Serie D, Girone A  -- Team name: Avc Vogherese 1919 
+League: Italy Serie D, Girone A 
+
+
+Team Name: AC Crema 1908 
+League:  Italy Serie D, Girone B  -- Team name: S.S.D. Virtus Ciseranobergamo 
+League: Italy Serie D, Girone B 
+
+
+Team Name: AC Legnano 1913 
+League:  Italy Serie D, Girone B  -- Team name: Villa Dalme Valle Brembana 
+League: Italy Serie D, Girone B 
+
+
+Team Name: AC Ponte San Pietro-Isola 
+League:  Italy Serie D, Girone B  -- Team name: ASD Varesina Calcio 
+League: Italy Serie D, Girone B 
+
+
+Team Name: Asd Calcio Brusaporto 
+League:  Italy Serie D, Girone B  -- Team name: FC Clivense 
+League: Italy Serie D, Girone B 
+
+
+Team Name: Club Milano Ssd 
+League:  Italy Serie D, Girone B  -- Team name: Usd Casatese 
+League: Italy Serie D, Girone B 
+
+
+Team Name: Desenzano Calvina 
+League:  Italy Serie D, Girone B  -- Team name: Tritium Calcio 1908 
+League: Italy Serie D, Girone B 
+
+
+Team Name: GS Arconatese 1926 
+League:  Italy Serie D, Girone B  -- Team name: USD Caravaggio 
+League: Italy Serie D, Girone B 
+
+
+Team Name: Piacenza Calcio 
+League:  Italy Serie D, Girone B  -- Team name: Usd Castellanzese 1921 
+League: Italy Serie D, Girone B 
+
+
+Team Name: Pro Palazzolo 
+League:  Italy Serie D, Girone B  -- Team name: US Folgore Caratese 
+League: Italy Serie D, Girone B 
+
+
+Team Name: ACD Campodarsego Calcio 
+League:  Italy Serie D, Girone C  -- Team name: Portogruaro Calcio 
+League: Italy Serie D, Girone C 
+
+
+Team Name: Bassano Virtus 
+League:  Italy Serie D, Girone C  -- Team name: Asd Cjarlins Muzane 
+League: Italy Serie D, Girone C 
+
+
+Team Name: Calcio Montebelluna 1919 
+League:  Italy Serie D, Girone C  -- Team name: Usd Breno 
+League: Italy Serie D, Girone C 
+
+
+Team Name: Chions 1972 
+League:  Italy Serie D, Girone C  -- Team name: Treviso FBC 
+League: Italy Serie D, Girone C 
+
+
+Team Name: Dolomiti Bellunesi 
+League:  Italy Serie D, Girone C  -- Team name: AC Este 
+League: Italy Serie D, Girone C 
+
+
+Team Name: Luparense FC 
+League:  Italy Serie D, Girone C  -- Team name: Union Clodiense Chioggia SSD 
+League: Italy Serie D, Girone C 
+
+
+Team Name: Mori S.Stefano 
+League:  Italy Serie D, Girone C  -- Team name: A.C. Mestre 
+League: Italy Serie D, Girone C 
+
+
+Team Name: UC Montecchio Maggiore 
+League:  Italy Serie D, Girone C  -- Team name: Asd Atletico Castegnato 
+League: Italy Serie D, Girone C 
+
+
+Team Name: Usd Adriese 1906 
+League:  Italy Serie D, Girone C  -- Team name: AC Virtus Bolzano 
+League: Italy Serie D, Girone C 
+
+
+Team Name: Asd Calcio Certaldo 
+League:  Italy Serie D, Girone D  -- Team name: Ravenna FC 1913 
+League: Italy Serie D, Girone D 
+
+
+Team Name: Asd Fanfulla 
+League:  Italy Serie D, Girone D  -- Team name: Sangiuliano City Nova 
+League: Italy Serie D, Girone D 
+
+
+Team Name: Borgo San Donnino 
+League:  Italy Serie D, Girone D  -- Team name: US Corticella 
+League: Italy Serie D, Girone D 
+
+
+Team Name: Forli FC 
+League:  Italy Serie D, Girone D  -- Team name: Athletic Carpi 
+League: Italy Serie D, Girone D 
+
+
+Team Name: Imolese Calcio 
+League:  Italy Serie D, Girone D  -- Team name: Victor San Marino 
+League: Italy Serie D, Girone D 
+
+
+Team Name: Prato 
+League:  Italy Serie D, Girone D  -- Team name: Lentigione Calcio 
+League: Italy Serie D, Girone D 
+
+
+Team Name: Sammaurese Calcio 
+League:  Italy Serie D, Girone D  -- Team name: Mezzolara Calcio 
+League: Italy Serie D, Girone D 
+
+
+Team Name: SCD Progresso 
+League:  Italy Serie D, Girone D  -- Team name: Aglianese Calcio 1923 
+League: Italy Serie D, Girone D 
+
+
+Team Name: US Pistoiese 
+League:  Italy Serie D, Girone D  -- Team name: Asd Sant Angelo 
+League: Italy Serie D, Girone D 
+
+
+Team Name: AS Figline 
+League:  Italy Serie D, Girone E  -- Team name: Sporting Trestina 
+League: Italy Serie D, Girone E 
+
+
+Team Name: Asd Sangiovannese 1927 
+League:  Italy Serie D, Girone E  -- Team name: AS Livorno 
+League: Italy Serie D, Girone E 
+
+
+Team Name: ASD Seravezza Pozzi Calcio 
+League:  Italy Serie D, Girone E  -- Team name: Gsd Ghivizzano Borgoamozzano 
+League: Italy Serie D, Girone E 
+
+
+Team Name: Orvietana Calcio 
+League:  Italy Serie D, Girone E  -- Team name: Aquila Montevarchi 
+League: Italy Serie D, Girone E 
+
+
+Team Name: SC Cenaia 1969 
+League:  Italy Serie D, Girone E  -- Team name: US Poggibonsi 
+League: Italy Serie D, Girone E 
+
+
+Team Name: Tau Calcio Altopascio 
+League:  Italy Serie D, Girone E  -- Team name: Real Forte Querceta 
+League: Italy Serie D, Girone E 
+
+
+Team Name: US Follonica Gavorrano 
+League:  Italy Serie D, Girone E  -- Team name: Mobilieri Ponsacco 
+League: Italy Serie D, Girone E 
+
+
+Team Name: US Grosseto 
+League:  Italy Serie D, Girone E  -- Team name: ASD San Donato Tavarnelle 
+League: Italy Serie D, Girone E 
+
+
+Team Name: AJ Fano 1906 
+League:  Italy Serie D, Girone F  -- Team name: Asd Sora Calcio 1907 
+League: Italy Serie D, Girone F 
+
+
+Team Name: Avezzano Calcio 
+League:  Italy Serie D, Girone F  -- Team name: Tivoli Calcio 1919 
+League: Italy Serie D, Girone F 
+
+
+Team Name: Calcio Chieti 
+League:  Italy Serie D, Girone F  -- Team name: Real Monterotondo Scalo 
+League: Italy Serie D, Girone F 
+
+
+Team Name: Forsempronese 1949 SD Arl 
+League:  Italy Serie D, Girone F  -- Team name: Roma City FC 
+League: Italy Serie D, Girone F 
+
+
+Team Name: Sambenedettese 
+League:  Italy Serie D, Girone F  -- Team name: Atletico Ascoli 
+League: Italy Serie D, Girone F 
+
+
+Team Name: San Nicolo Notaresco 
+League:  Italy Serie D, Girone F  -- Team name: SSD Citta Di Campobasso 
+League: Italy Serie D, Girone F 
+
+
+Team Name: Termoli 
+League:  Italy Serie D, Girone F  -- Team name: Matese 
+League: Italy Serie D, Girone F 
+
+
+Team Name: Vastogirardi 
+League:  Italy Serie D, Girone F  -- Team name: FC Vigor Senigallia 
+League: Italy Serie D, Girone F 
+
+
+Team Name: Atletico Uri 
+League:  Italy Serie D, Girone G  -- Team name: ASD Gladiator 1924 
+League: Italy Serie D, Girone G 
+
+
+Team Name: San Marzano Calcio 
+League:  Italy Serie D, Girone G  -- Team name: Sarrabus Ogliastra 
+League: Italy Serie D, Girone G 
+
+
+Team Name: Asd Anzio Calcio 1924 
+League:  Italy Serie D, Girone G  -- Team name: Nf Ardea 
+League: Italy Serie D, Girone G 
+
+
+Team Name: Asd Cassino Calcio 1924 
+League:  Italy Serie D, Girone G  -- Team name: ASD Flaminia Civita Castellana 
+League: Italy Serie D, Girone G 
+
+
+Team Name: ASD Romana Football Club 
+League:  Italy Serie D, Girone G  -- Team name: AS Ostia Mare Lido Calcio 
+League: Italy Serie D, Girone G 
+
+
+Team Name: Boreale Don Orione Calcio 
+League:  Italy Serie D, Girone G  -- Team name: Budoni Calcio 
+League: Italy Serie D, Girone G 
+
+
+Team Name: Cynthia 
+League:  Italy Serie D, Girone G  -- Team name: Cavese 1919 
+League: Italy Serie D, Girone G 
+
+
+Team Name: Ischia Isolaverde 
+League:  Italy Serie D, Girone G  -- Team name: ASD Trastevere Calcio 
+League: Italy Serie D, Girone G 
+
+
+Team Name: Sassari Calcio Latte Dolce 
+League:  Italy Serie D, Girone G  -- Team name: Nocerina 
+League: Italy Serie D, Girone G 
+
+
+Team Name: Barletta Calcio 
+League:  Italy Serie D, Girone H  -- Team name: AC Martina 
+League: Italy Serie D, Girone H 
+
+
+Team Name: Matera Calcio 
+League:  Italy Serie D, Girone H  -- Team name: S.S.D. Casarano Calcio 
+League: Italy Serie D, Girone H 
+
+
+Team Name: Paganese Calcio 
+League:  Italy Serie D, Girone H  -- Team name: US Angri 1927 
+League: Italy Serie D, Girone H 
+
+
+Team Name: US Bitonto Calcio 
+League:  Italy Serie D, Girone H  -- Team name: FBC Gravina 
+League: Italy Serie D, Girone H 
+
+
+Team Name: ASD Citta di Acireale 1946 
+League:  Italy Serie D, Girone I  -- Team name: Asd Canicatti 
+League: Italy Serie D, Girone I 
+
+
+Team Name: Asd Portici 1906 
+League:  Italy Serie D, Girone I  -- Team name: US Castrovillari Calcio 
+League: Italy Serie D, Girone I 
+
+
+Team Name: Fenice Amaranto 
+League:  Italy Serie D, Girone I  -- Team name: AC Locri 1909 
+League: Italy Serie D, Girone I 
+
+
+Team Name: Licata 1931 
+League:  Italy Serie D, Girone I  -- Team name: Trapani Calcio 
+League: Italy Serie D, Girone I 
+
+
+Team Name: San Luca Calcio 
+League:  Italy Serie D, Girone I  -- Team name: Akragas 
+League: Italy Serie D, Girone I 
+
+
+Team Name: SIRACUSA 
+League:  Italy Serie D, Girone I  -- Team name: Vibonese Calcio 
+League: Italy Serie D, Girone I 
+
+
+Team Name: AFC Hermannstadt 
+League:  Romania Superliga  -- Team name: CS Universitatea Craiova 1948 
+League: Romania Superliga 
+
+
+Team Name: VfB Stuttgart Srl 
+League:  Simulated Reality League Bundesliga SRL  -- Team name: Leverkusen SRL 
+League: Simulated Reality League Bundesliga SRL 
+
+
+Team Name: Trau FC 
+League:  India I-League  -- Team name: Inter Kashi FC 
+League: India I-League 
+
+
+Team Name: Churchill Brothers SC 
+League:  India I-League  -- Team name: Neroca FC 
+League: India I-League 
+
+
+Team Name: Clermont Foot 63 Srl 
+League:  Simulated Reality League Ligue 1 SRL  -- Team name: Lille SRL 
+League: Simulated Reality League Ligue 1 SRL 
+
+
+
+
+in a tabular form, provide the last 10 games statistics  played  the team above,
+using the following header:
+team name (Tainan City FC)
+opponent name
+goal scored by team
+goal scored by opponent
+possession percentage by team
+possession percentage by opponent
+shots on target by team
+shots on target by opponent
+
+--------------------------------------------------------------------------------
