@@ -708,7 +708,7 @@ class JbaPredictWindow(QWidget):
                 dataList = data.split("\n")
                 dateData = False
                 a = data.count("\n")
-                if a < 3 or data.split("\n")[0] != 'team_home':
+                if a < 3 or (data.split("\n")[0] != 'team_home' and data.split("\n")[0] != 'Team Name'):
                     QMessageBox.information(self, "Wrong info!", "Wrong Training Data detected!")
                     self.prompt_code_input.clear()
                     raise Exception
@@ -738,12 +738,13 @@ class JbaPredictWindow(QWidget):
             # print(df)
             # input("::")
 
-            if dateData is True:
-                header = ["team_home", "team_away", "goals_home", "goals_away", "possession_home", "possession_away",
-                          "shots_on_target_home", "shots_on_target_away"]
+            header = ["team_home", "team_away", "goals_home", "goals_away", "possession_home", "possession_away",
+                      "shots_on_target_home", "shots_on_target_away"]
 
-                # print(df.columns)
-                df.columns = header
+            # print(df.columns)
+            df.columns = header
+
+            if dateData is True:
                 df['team_home'] = title
 
             # Display the resulting DataFrame

@@ -3,10 +3,13 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/promptGenerator.py" line="215" mnemonic="3" />
     <bookmark url="file://$PROJECT_DIR$/promptGenerator.py" line="394" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/predictOutcome.py" line="785" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/predictOutcome.py" line="786" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8dc107d-5acb-41a3-84fb-c6b72357da2f" name="Default Changelist" comment="" />
+    <list default="true" id="f8dc107d-5acb-41a3-84fb-c6b72357da2f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictOutcome.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictOutcome.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,23 +21,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/promptGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-286">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="92">
+              <caret line="138" column="163" selection-start-line="138" selection-start-column="160" selection-end-line="138" selection-end-column="163" />
               <folding>
                 <element signature="e#7#24#0" expanded="true" />
                 <element signature="e#2059#2197#0" />
-                <element signature="e#5355#5389#0" />
+                <element signature="e#2525#2983#0" />
                 <element signature="e#5770#5804#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/predictOutcome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="914" column="17" selection-start-line="914" selection-start-column="17" selection-end-line="914" selection-end-column="17" />
+            <state relative-caret-position="198">
+              <caret line="714" selection-start-line="714" selection-end-line="714" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#9967#14058#0" />
@@ -51,7 +54,7 @@
                 <element signature="e#26900#27489#0" />
                 <element signature="e#27546#28043#0" />
                 <element signature="e#28202#29488#0" />
-                <element signature="e#29532#31169#0" />
+                <element signature="e#31200#36036#0" />
                 <element signature="e#31217#31247#0" />
                 <element signature="e#36100#36401#0" />
                 <element signature="e#36448#36735#0" />
@@ -60,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -102,6 +105,9 @@
       <find>or</find>
       <find>list the last</find>
       <find>get the last</find>
+      <find>re.</find>
+      <find>re</find>
+      <find>pre_process_no_quote</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,12 +125,12 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/footballScorePrediction.py" />
         <option value="$PROJECT_DIR$/promptGenerator.py" />
-        <option value="$PROJECT_DIR$/predictOutcome.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/predictOutcome.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="75" />
     <option name="width" value="1944" />
@@ -303,9 +309,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -316,7 +321,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3676732" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3676732" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -434,14 +439,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/promptGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="92">
+          <caret line="138" column="163" selection-start-line="138" selection-start-column="160" selection-end-line="138" selection-end-column="163" />
           <folding>
             <element signature="e#7#24#0" expanded="true" />
             <element signature="e#2059#2197#0" />
-            <element signature="e#5355#5389#0" />
+            <element signature="e#2525#2983#0" />
             <element signature="e#5770#5804#0" />
           </folding>
         </state>
@@ -449,8 +461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/predictOutcome.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="914" column="17" selection-start-line="914" selection-start-column="17" selection-end-line="914" selection-end-column="17" />
+        <state relative-caret-position="198">
+          <caret line="714" selection-start-line="714" selection-end-line="714" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#9967#14058#0" />
@@ -467,18 +479,11 @@
             <element signature="e#26900#27489#0" />
             <element signature="e#27546#28043#0" />
             <element signature="e#28202#29488#0" />
-            <element signature="e#29532#31169#0" />
+            <element signature="e#31200#36036#0" />
             <element signature="e#31217#31247#0" />
             <element signature="e#36100#36401#0" />
             <element signature="e#36448#36735#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
