@@ -59,11 +59,13 @@ class JbaPredictWindow(QWidget):
 
         self.home_team_input_teams = QLineEdit()
         self.away_team_input_teams = QLineEdit()
+        self.league_input = QLineEdit()
         self.sport_input = QLineEdit()
         self.game_period_input = QLineEdit()
 
         self.home_team_input_teams.setPlaceholderText("Home Team")
         self.away_team_input_teams.setPlaceholderText("Away Team")
+        self.league_input.setPlaceholderText("League")
         self.sport_input.setPlaceholderText("Sport")
         self.game_period_input.setPlaceholderText("Game Period")
 
@@ -76,6 +78,7 @@ class JbaPredictWindow(QWidget):
         teams_layout.addWidget(self.auto_checkbox)
         teams_layout.addWidget(self.home_team_input_teams)
         teams_layout.addWidget(self.away_team_input_teams)
+        teams_layout.addWidget(self.league_input)
         teams_layout.addWidget(self.sport_input)
         teams_layout.addWidget(self.game_period_input)
         teams_layout.addWidget(get_prompts_button)
@@ -138,11 +141,13 @@ class JbaPredictWindow(QWidget):
             # Auto mode is checked, disable other components
             self.home_team_input_teams.setEnabled(False)
             self.away_team_input_teams.setEnabled(False)
+            self.league_input.setEnabled(False)
             # Add more components if needed
         else:
             # Auto mode is unchecked, enable other components
             self.home_team_input_teams.setEnabled(True)
             self.away_team_input_teams.setEnabled(True)
+            self.league_input.setEnabled(True)
             # Add more components if needed
 
     def get_prompts(self):
@@ -156,6 +161,7 @@ class JbaPredictWindow(QWidget):
         else:
             home_team = self.home_team_input_teams.text()
             away_team = self.away_team_input_teams.text()
+            league = self.league_input.text()
         # Add your logic here to use home_team and away_team to generate prompts
         # Update the UI or perform other actions as needed
 
@@ -201,6 +207,8 @@ class JbaPredictWindow(QWidget):
                 'Opponent Strength': [opponent_strength],
                 'Opponent Head-to-Head': [opponent_head_to_head],
             })
+
+
 
             input_data[['Team_Wins_recent', 'Team_Losses_recent', 'Team_Draws_recent']] = input_data['Recent 5 Performance'].astype(
                 str).str.split(':', expand=True).astype(int)
@@ -708,7 +716,7 @@ class JbaPredictWindow(QWidget):
                 dataList = data.split("\n")
                 dateData = False
                 a = data.count("\n")
-                if a < 3 or (data.split("\n")[0] != 'team_home' and data.split("\n")[0] != 'Team Name'):
+                if a < 3 or (data.split("\n")[0] != 'team_home' and data.split("\n")[0].lower() != 'team name'and data.split("\n")[0].lower().__contains__('team name') is False):
                     QMessageBox.information(self, "Wrong info!", "Wrong Training Data detected!")
                     self.prompt_code_input.clear()
                     raise Exception
@@ -716,9 +724,10 @@ class JbaPredictWindow(QWidget):
             for d in dataList:
                 if d=="":
                     continue
+
                 counter += 1
                 line_data += d + ","
-                if d.strip() == "-":
+                if d.strip() == "-" or d.strip() == "?" or d.strip() == "TBD":
                     impurity = True
 
                 if counter == 8:
@@ -729,6 +738,9 @@ class JbaPredictWindow(QWidget):
                     else:
                         impurity = False
                     line_data = ""
+
+            # print(final_data)
+            # input('::')
 
             # Read the data from QTextEdit
             data = StringIO(final_data)
@@ -767,7 +779,7 @@ class JbaPredictWindow(QWidget):
             #     self.predict_button.setVisible(False)
             #     raise Exception
 
-
+            print("Training model....")
             predict_prompt = self.prompt_code_input.toPlainText()
             if predict_prompt == "":
                 QMessageBox.information(self, "No Team Info", "Team info to predict is required! Please "
@@ -780,7 +792,7 @@ class JbaPredictWindow(QWidget):
                 self.prompt_code_input.clear()
                 raise Exception
 
-            print(self.training_data_filename)
+            # print(self.training_data_filename)
             data = pd.read_excel(self.training_data_filename)
 
             # Preprocess the data and get label encoder
@@ -799,6 +811,7 @@ class JbaPredictWindow(QWidget):
             updated = ""
             for c in new_game_data:
                 if c == '%':
+                    # QMessageBox.information(self, 'found', 'found')
                     continue
                 if ord(c) == 8220 or ord(c) == 8221:
                     c = '"'
@@ -806,12 +819,15 @@ class JbaPredictWindow(QWidget):
                     c = '"'
                 updated += c
 
+
             if updated.__contains__("{") is False:
                 new_game_data = "{" + updated + "}"
 
-            new_game_data = eval(new_game_data)
-            print(new_game_data)
-            print(type(new_game_data))
+            # print(updated)
+
+            new_game_data = eval(updated)
+            # print(new_game_data)
+            # print(type(new_game_data))
 
             if new_game_data['possession_home'][0] > 1:
                 new_game_data['possession_home'] = [new_game_data['possession_home'][0] / 100]
@@ -828,7 +844,7 @@ class JbaPredictWindow(QWidget):
             print("Predicting...")
             predicted_goals_home, predicted_goals_away = self.predict_scores(loaded_model_home, loaded_model_away,
                                                                         label_encoder, new_game)
-            print("Done predicting, ")
+            print("Done predicting ")
             # Display the predictions
 
             home_team_name = new_game['team_home'][0]
@@ -839,11 +855,15 @@ class JbaPredictWindow(QWidget):
 
             diff = round(abs(float(predicted_goals_home)), 1) - round(abs(float(predicted_goals_away)), 1)
 
+            decided = self.decide(predicted_goals_home, predicted_goals_away)
+
             result = f"""
             [{clock}] - League: {league} --> [{round(abs(diff),1)}]       
             Predicted Goals for Home Team [{new_game['team_home'][0]}]:  {round(predicted_goals_home, 3) } - [{round(predicted_goals_home, 1)}]
             Predicted Goals for Away Team [{new_game['team_away'][0]}]:  {round(predicted_goals_away, 3) } - [{round(predicted_goals_away, 1)}]
+            [PLAY]: {decided}
             """
+
 
             print(f"Predicted Goals for Home Team [{new_game['team_home'][0]}]:", round(predicted_goals_home, 3))
             print(f"Predicted Goals for Away Team [{new_game['team_away'][0]}]:", round(predicted_goals_away, 3))
@@ -861,6 +881,28 @@ class JbaPredictWindow(QWidget):
                 f"Or Check that the team name is not abrreviated or shortened in the training data. \n"
                 f"This error can also occurr if for example you have 'Abu Salim SC' in training data but you are tryinig to predict score for 'Abu Salim' without the 'SC'. ")
             print(f"An Error occurred in start: {e}")
+
+    def decide(self, home_score, away_score):
+        diff = abs(home_score - away_score)
+        highest = None
+        if abs(home_score) > abs(away_score):
+            highest = "Home"
+        else:
+            highest = 'Away'
+
+        if 0 < diff <=1:
+            if highest == "Home":
+                return f"{highest} or Draw"
+            else:
+                return f"Draw or {highest}"
+
+        elif 1 < diff <=2:
+            return "Home or Away"
+
+        elif diff > 2:
+            return highest
+        else:
+            return "Can't Decide"
 
     def write_prediction(self, filename, prediction):
         try:

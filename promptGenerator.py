@@ -311,6 +311,9 @@ shots on target by opponent
         # Print a message to indicate the task is done
         print("The excel file with the league names has been saved.")
 
+    def start_single(self, home, away, league):
+        pass
+
     def start(self):
         sport = self.sport
         start_time = self.start_time
