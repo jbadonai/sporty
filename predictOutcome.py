@@ -781,8 +781,14 @@ class JbaPredictWindow(QWidget):
 
     # CODE FROM 'FOOTBALSCOREPREDICTION' BEGINS HERE
     # ======================================================
+    def update_training_data_filename(self, sport):
+        if sport == "football":
+            self.training_data_filename ="football_team_training_data.xlsx"
+        elif sport == "basketball":
+            self.training_data_filename = "basketball_training_data.xlsx"
+        pass
 
-    def save_dataframe(self, df):
+    def save_dataframe(self, df, sport='football'):
         try:
             # Try to read the existing data from the Excel file
             existing_df = pd.read_excel(self.training_data_filename, sheet_name='Sheet1')
@@ -805,9 +811,18 @@ class JbaPredictWindow(QWidget):
 
     def load_training_data(self):
         error_status = ""
+        counter_limit = 0
+        sport = "football"
         try:
 
             data = self.prompt_code_input.toPlainText().strip()
+            if data.lower().__contains__("field goal"):
+                counter_limit = 12
+                sport = "basketball"
+            else:
+                counter_limit = 8
+                sport = "football"
+
             if data == "":
                 QMessageBox.information(self, "No Data!", "Please provide Training Data.")
                 raise Exception
@@ -853,7 +868,7 @@ class JbaPredictWindow(QWidget):
                         d.strip() == "N/A" or d.strip().__contains__(":") or d.strip() == "CANC":
                     impurity = True
 
-                if counter == 8:
+                if counter == counter_limit:
                     counter = 0
                     line_data = line_data[:-1]
                     if impurity is False:
@@ -873,8 +888,11 @@ class JbaPredictWindow(QWidget):
             # print(df)
             # input("::")
 
-            header = ["team_home", "team_away", "goals_home", "goals_away", "possession_home", "possession_away",
-                      "shots_on_target_home", "shots_on_target_away"]
+            if sport == "football":
+                header = ["team_home", "team_away", "goals_home", "goals_away", "possession_home", "possession_away",
+                          "shots_on_target_home", "shots_on_target_away"]
+            elif sport == "basketball":
+                header =  ['Team name','Team FG%','Team FT%','Team 3P%','Team quarterly scores','Team total points','Opponent name','Opponent FG%','Opponent FT%','Opponent 3P%','Opponent quarterly scores','Opponent total points']
 
             # print(df.columns)
             df.columns = header
@@ -882,7 +900,10 @@ class JbaPredictWindow(QWidget):
             if dateData is True:
                 df['team_home'] = title
 
-            # Display the resulting DataFrame
+            # update the training data filename base on the sport
+            self.update_training_data_filename(sport)
+
+            # save the training data to file
             self.save_dataframe(df)
             self.prompt_code_input.clear()
 

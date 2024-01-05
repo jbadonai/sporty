@@ -1,57 +1,252 @@
 
-Team Name: Beijing Royal Fighters 
-League:  China CBA  -- Team name: Tianjin Pioneers 
-League: China CBA 
+Team Name: Alba Berlin 
+League:  International Euroleague  -- Team name: Virtus Bologna 
+League: International Euroleague 
 
 
-Team Name: Guangzhou Loong Lions 
-League:  China CBA  -- Team name: Guangdong Southern Tigers 
-League: China CBA 
+Team Name: FC Barcelona 
+League:  International Euroleague  -- Team name: Baskonia Vitoria-Gasteiz 
+League: International Euroleague 
 
 
-Team Name: Liaoning Flying Leopards 
-League:  China CBA  -- Team name: Zhejiang Golden Bulls 
-League: China CBA 
+Team Name: Olimpia Milano 
+League:  International Euroleague  -- Team name: Bayern Munich 
+League: International Euroleague 
 
 
-Team Name: Shanxi Loongs 
-League:  China CBA  -- Team name: Jilin Northeast Tigers 
-League: China CBA 
+Team Name: Valencia Basket 
+League:  International Euroleague  -- Team name: Panathinaikos BC 
+League: International Euroleague 
 
 
-Team Name: Zhejiang Guangsha Lions 
-League:  China CBA  -- Team name: Sichuan Blue Whales 
-League: China CBA 
+Team Name: Real Madrid 
+League:  International Euroleague  -- Team name: Anadolu Efes SK 
+League: International Euroleague 
 
 
-Team Name: Xinjiang Flying Tigers 
-League:  China CBA  -- Team name: Nanjing Tongxi Monkey Kings 
-League: China CBA 
+Team Name: MLP Academics Heidelberg 
+League:  Germany BBL  -- Team name: Rasta Vechta 
+League: Germany BBL 
 
 
-Team Name: Melbourne Boomers 
-League:  Australia WNBL  -- Team name: Southside Flyers 
-League: Australia WNBL 
+Team Name: KK FMP Belgrade 
+League:  International Liga ABA  -- Team name: KK Cibona 
+League: International Liga ABA 
 
 
-Team Name: Townsville Fire 
-League:  Australia WNBL  -- Team name: Perth Lynx 
-League: Australia WNBL 
+Team Name: Fairmont State Fighting Falcons 
+League:  USA NCAA, Regular Season  -- Team name: Concord Mountain Lions 
+League: USA NCAA, Regular Season 
 
 
-Team Name: KCC Egis 
-League:  Republic of Korea KBL  -- Team name: Seoul SK Knights 
-League: Republic of Korea KBL 
+Team Name: KK Sloga Kraljevo 
+League:  Serbia KLS  -- Team name: KK Joker Sombor 
+League: Serbia KLS 
 
 
-Team Name: Able Hon Friends 
-League:  Hong Kong, China Division 1  -- Team name: Chun Yu 
-League: Hong Kong, China Division 1 
+Team Name: Spartak Subotica 
+League:  Serbia KLS  -- Team name: KK Vojvodina 
+League: Serbia KLS 
 
 
-Team Name: Bolts 
-League:  International East Asia Super League  -- Team name: New Taipei Kings 
-League: International East Asia Super League 
+Team Name: EC Uniao Corinthians 
+League:  Brazil NBB  -- Team name: Flamengo RJ 
+League: Brazil NBB 
+
+
+Team Name: Unifacisa 
+League:  Brazil NBB  -- Team name: Sesi/Franca BC SP 
+League: Brazil NBB 
+
+
+Team Name: SC Corinthians Paulista 
+League:  Brazil NBB  -- Team name: Sao Jose dos Campos 
+League: Brazil NBB 
+
+
+Team Name: KK Sencur 
+League:  Slovenia 1. A SKL  -- Team name: Kk Rogaska 
+League: Slovenia 1. A SKL 
+
+
+Team Name: AB Castello 
+League:  Spain LEB Oro  -- Team name: CB Coruna 
+League: Spain LEB Oro 
+
+
+Team Name: Panionios BC Athens 
+League:  Greece Greece Cup  -- Team name: AE Doxa Lefkadas 
+League: Greece Greece Cup 
+
+
+Team Name: BK Lokomotiva Plzen 
+League:  Czech Republic 1. Liga  -- Team name: BK Wolves Radotin 
+League: Czech Republic 1. Liga 
+
+
+Team Name: BK Pardubice II 
+League:  Czech Republic 1. Liga  -- Team name: BK Opava B 
+League: Czech Republic 1. Liga 
+
+
+Team Name: BA Lynx Liberec 
+League:  Czech Republic 1. Liga  -- Team name: BK Jindrichuv Hradec 
+League: Czech Republic 1. Liga 
+
+
+Team Name: Sokol Prazsky 
+League:  Czech Republic 1. Liga  -- Team name: Baketball Polabi 
+League: Czech Republic 1. Liga 
+
+
+Team Name: Basket Brno U23 
+League:  Czech Republic 1. Liga  -- Team name: Basketbal Olomouc 
+League: Czech Republic 1. Liga 
+
+
+Team Name: Turi Svitavy 
+League:  Czech Republic 1. Liga  -- Team name: BC Novy Jicin 
+League: Czech Republic 1. Liga 
+
+
+Team Name: USK Prague B 
+League:  Czech Republic 1. Liga  -- Team name: Sokol Prazsky 
+League: Czech Republic 1. Liga 
+
+
+Team Name: Liege Basket 
+League:  Belgium BNXT Belgian League  -- Team name: Okapi Aalst 
+League: Belgium BNXT Belgian League 
+
+
+Team Name: Limburg United 
+League:  Belgium BNXT Belgian League  -- Team name: Belfius Mons-Hainaut 
+League: Belgium BNXT Belgian League 
+
+
+Team Name: AEK Larnaca 
+League:  Cyprus Division A  -- Team name: Apoel Nicosia 
+League: Cyprus Division A 
+
+
+Team Name: Anorthosis Famagusta 
+League:  Cyprus Division A  -- Team name: Achilleas Kaimakliou 
+League: Cyprus Division A 
+
+
+Team Name: BC Apollon Limassol 
+League:  Cyprus Division A  -- Team name: Enosis Neon Paralimni 
+League: Cyprus Division A 
+
+
+Team Name: Intercollege Etha Engomis 
+League:  Cyprus Division A  -- Team name: AEL Limassol BC 
+League: Cyprus Division A 
+
+
+Team Name: FC Porto 
+League:  Portugal LPB  -- Team name: CD Povoa 
+League: Portugal LPB 
+
+
+Team Name: Stal Ostrow Wielkopolski 
+League:  Poland PLK  -- Team name: Dziki Warshawa 
+League: Poland PLK 
+
+
+Team Name: Trefl Sopot 
+League:  Poland PLK  -- Team name: Anwil Wroclawek 
+League: Poland PLK 
+
+
+Team Name: Nassjo Basket 
+League:  Sweden SBL  -- Team name: BC Lulea 
+League: Sweden SBL 
+
+
+Team Name: Stjarnan 
+League:  Iceland Urvalsdeild  -- Team name: UMFN Njardvik 
+League: Iceland Urvalsdeild 
+
+
+Team Name: UMF Tindastoll 
+League:  Iceland Urvalsdeild  -- Team name: Alftanes 
+League: Iceland Urvalsdeild 
+
+
+Team Name: BK Loko Trutnov 
+League:  Czech Republic ZBL  -- Team name: BLK Slavia Prague 
+League: Czech Republic ZBL 
+
+
+Team Name: Leicester Riders 
+League:  England BBL Trophy  -- Team name: Bristol Flyers 
+League: England BBL Trophy 
+
+
+Team Name: Newcastle Eagles 
+League:  England BBL Trophy  -- Team name: Manchester Giants 
+League: England BBL Trophy 
+
+
+Team Name: Glasgow Rocks 
+League:  England BBL Trophy  -- Team name: Cheshire Phoenix 
+League: England BBL Trophy 
+
+
+Team Name: Ammerud Basket 
+League:  Norway BLNO  -- Team name: Nidaros Jets 
+League: Norway BLNO 
+
+
+Team Name: CAB Madeira 
+League:  Portugal Campeonato Nacional Liga Feminina  -- Team name: ACD Ferragudo Cidade Lagoa 
+League: Portugal Campeonato Nacional Liga Feminina 
+
+
+Team Name: Cde Francisco Franco 
+League:  Portugal Campeonato Nacional Liga Feminina  -- Team name: SL Benfica 
+League: Portugal Campeonato Nacional Liga Feminina 
+
+
+Team Name: Hrunamenn/Laugdælir 
+League:  Iceland Iceland First Division  -- Team name: IR Reykjavík 
+League: Iceland Iceland First Division 
+
+
+Team Name: Sindri 
+League:  Iceland Iceland First Division  -- Team name: Snaefell 
+League: Iceland Iceland First Division 
+
+
+Team Name: Skallagrímur 
+League:  Iceland Iceland First Division  -- Team name: Thor Akureyri 
+League: Iceland Iceland First Division 
+
+
+Team Name: Þróttur Vogum 
+League:  Iceland Iceland First Division  -- Team name: Fjölnir 
+League: Iceland Iceland First Division 
+
+
+Team Name: K.R. Basket Reykjavík 
+League:  Iceland Iceland First Division  -- Team name: Armann 
+League: Iceland Iceland First Division 
+
+
+Team Name: North Carolina A&T Aggies 
+League:  USA NCAA Women, Regular Season  -- Team name: Charleston Cougars 
+League: USA NCAA Women, Regular Season 
+
+
+Team Name: Rutgers Scarlet Knights 
+League:  USA NCAA Women, Regular Season  -- Team name: Iowa Hawkeyes 
+League: USA NCAA Women, Regular Season 
+
+
+Team Name: Lulea BBK 
+League:  Sweden SBL, Women  -- Team name: Norrkoping Dolphins 
+League: Sweden SBL, Women 
 
 
 

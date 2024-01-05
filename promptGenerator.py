@@ -98,9 +98,11 @@ class GeneratePrompt():
         elif str(sport).lower() == 'basketball':
             json = f"'team_home': ['{home}'],'team_away': ['{away}']," \
                 f"'field_goal_percentage_home': [0]," \
+                f"'free_throw_percentage_home': [0]," \
+                f"'three_point_percentage_home': [0]," \
                 f"'field_goal_percentage_away': [0]," \
-                f"'free_throw_percentage_home': [0],'free_throw_percentage_away': [0]," \
-                f"'three_point_percentage_home': [0],'three_point_percentage_away': [0]"
+                f"'free_throw_percentage_away': [0]," \
+                f"'three_point_percentage_away': [0]"
 
         return json
         pass

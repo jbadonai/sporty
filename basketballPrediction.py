@@ -29,15 +29,32 @@ class PredictOutcome:
         for col in percentage_columns:
             data[col] = data[col].apply(convert_possession)
 
-        # Split the 'Team quarterly scores' and 'Opponent quarterly scores' into separate columns
-        quarterly_columns = ['Q1', 'Q2', 'Q3', 'Q4', 'Opponent Q1', 'Opponent Q2', 'Opponent Q3', 'Opponent Q4']
-        for col in quarterly_columns:
-            data[col] = data['Team quarterly scores' if col.startswith('Q') else 'Opponent quarterly scores'].apply(
-                lambda x: sum(map(int, x.split('-'))) if isinstance(x, str) else x
-            )
+        # # Split the 'Team quarterly scores' and 'Opponent quarterly scores' into separate columns
+        # quarterly_columns = ['Q1', 'Q2', 'Q3', 'Q4', 'Opponent Q1', 'Opponent Q2', 'Opponent Q3', 'Opponent Q4']
+        #
+        # for col in quarterly_columns:
+        #     data[col] = data['Team quarterly scores' if col.startswith('Q') else 'Opponent quarterly scores'].apply(
+        #         lambda x: sum(map(int, x.split('-'))) if isinstance(x, str) else x
+        #     )
+        #     print(data[col])
+        #     input(":>>>>>")
+
+        # Split 'Team quaterly column' into 'Q1', 'Q2', 'Q3', 'Q4'
+        data[['Q1', 'Q2', 'Q3', 'Q4']] = data['Team quarterly scores'].str.split('-', expand=True)
+
+        # Split 'Opponent quaterly column' into 'Opponent Q1', 'Opponent Q2', 'Opponent Q3', 'Opponent Q4'
+        data[['Opponent Q1', 'Opponent Q2', 'Opponent Q3', 'Opponent Q4']] = data['Opponent quarterly scores'].str.split(
+            '-', expand=True)
+
+        # Convert the columns to numeric if needed
+        data[['Q1', 'Q2', 'Q3', 'Q4', 'Opponent Q1', 'Opponent Q2', 'Opponent Q3', 'Opponent Q4']] = data[
+            ['Q1', 'Q2', 'Q3', 'Q4', 'Opponent Q1', 'Opponent Q2', 'Opponent Q3', 'Opponent Q4']].apply(pd.to_numeric)
 
         # Drop the original quarterly scores columns
         data = data.drop(['Team quarterly scores', 'Opponent quarterly scores'], axis=1)
+
+        # print(data['Q1'])
+        # input(":>>>>>")
 
         return data
 
@@ -105,6 +122,7 @@ class PredictOutcome:
 
     def train_model(self, data):
         # Separate features and targets
+
         X = data.drop(
             ['Team total points', 'Opponent total points', 'Q1', 'Q2', 'Q3', 'Q4', 'Opponent Q1', 'Opponent Q2',
              'Opponent Q3', 'Opponent Q4'], axis=1)
@@ -120,7 +138,10 @@ class PredictOutcome:
         models = {}
 
         for target_name, target_columns in targets.items():
+
             y = data[target_columns] if isinstance(target_columns, list) else data[target_columns]
+            # print(y)
+            # input("::")
 
             # Split the data into training and testing sets
             X_train, X_test, y_train, y_test = train_test_split(
