@@ -182,6 +182,8 @@ class PredictOutcome:
 
         predictions = {}
 
+        result_dict = {}
+
         for target_name, model_filename in self.models.items():
             # Load the trained model from disk
             model = joblib.load(model_filename)
@@ -204,73 +206,74 @@ class PredictOutcome:
             else:
                 result_string = str(predictions[target_name][0])
 
-            print(target_name, end=":")
-            print(result_string)
+            # print(target_name, end=":")
+            # print(result_string)
+            result_dict[target_name] = result_string
 
             input_data[target_name] = result_string
 
-        return input_data
+        return result_dict, input_data
 
 
 
-
-# Example usage:
-# Initialize the PredictOutcome class
-predictor = PredictOutcome()
-
-# Load and preprocess the data
-data = predictor.load_data("basketball_training_data.xlsx")
-processed_data = predictor.preprocess_data(data)
-
-# Train the model and save it to disk
-print("Training models....")
-trained_model = predictor.train_model(processed_data)
-predictor.save_model(trained_model, "trained_model.joblib")
-
-# Load the trained model from disk
-print("Loading trained model...")
-predictor.load_model("trained_model.joblib")
-
-# Prepare input data for prediction
-input_data = {
-    'team_home': ['Kinlung Pegasus'],
-    'team_away': ['South China'],
-    'field_goal_percentage_home': [34.1],
-    'free_throw_percentage_home': [70.0],
-    'three_point_percentage_home': [26.8],
-    'field_goal_percentage_away': [48.4],
-    'free_throw_percentage_away': [78.5],
-    'three_point_percentage_away': [35.1]
-}
-
-# Mapping dictionary for reordering keys
-feature_mapping = {
-    'field_goal_percentage_home': 'Team FG%',
-    'free_throw_percentage_home': 'Team FT%',
-    'three_point_percentage_home': 'Team 3P%',
-    'field_goal_percentage_away': 'Opponent FG%',
-    'free_throw_percentage_away': 'Opponent FT%',
-    'three_point_percentage_away': 'Opponent 3P%',
-}
-
-# Reorder and rename keys in input_data
-reordered_input_data = {
-    feature_mapping[key]: value for key, value in input_data.items() if key in feature_mapping
-}
-
-
-# Add team and opponent names
-reordered_input_data['Team'] = input_data['team_home']
-reordered_input_data['Opponent'] = input_data['team_away']
-
-# Create a DataFrame from reordered input data
-input_df = pd.DataFrame(reordered_input_data)
-
-# print(input_df)
-# input("wait...")
-
-# Make predictions
-predictions = predictor.predict(input_df)
+#
+# # Example usage:
+# # Initialize the PredictOutcome class
+# predictor = PredictOutcome()
+#
+# # Load and preprocess the data
+# data = predictor.load_data("basketball_training_data.xlsx")
+# processed_data = predictor.preprocess_data(data)
+#
+# # Train the model and save it to disk
+# print("Training models....")
+# trained_model = predictor.train_model(processed_data)
+# predictor.save_model(trained_model, "trained_model.joblib")
+#
+# # Load the trained model from disk
+# print("Loading trained model...")
+# predictor.load_model("trained_model.joblib")
+#
+# # Prepare input data for prediction
+# input_data = {
+#     'team_home': ['Kinlung Pegasus'],
+#     'team_away': ['South China'],
+#     'field_goal_percentage_home': [34.1],
+#     'free_throw_percentage_home': [70.0],
+#     'three_point_percentage_home': [26.8],
+#     'field_goal_percentage_away': [48.4],
+#     'free_throw_percentage_away': [78.5],
+#     'three_point_percentage_away': [35.1]
+# }
+#
+# # Mapping dictionary for reordering keys
+# feature_mapping = {
+#     'field_goal_percentage_home': 'Team FG%',
+#     'free_throw_percentage_home': 'Team FT%',
+#     'three_point_percentage_home': 'Team 3P%',
+#     'field_goal_percentage_away': 'Opponent FG%',
+#     'free_throw_percentage_away': 'Opponent FT%',
+#     'three_point_percentage_away': 'Opponent 3P%',
+# }
+#
+# # Reorder and rename keys in input_data
+# reordered_input_data = {
+#     feature_mapping[key]: value for key, value in input_data.items() if key in feature_mapping
+# }
+#
+#
+# # Add team and opponent names
+# reordered_input_data['Team'] = input_data['team_home']
+# reordered_input_data['Opponent'] = input_data['team_away']
+#
+# # Create a DataFrame from reordered input data
+# input_df = pd.DataFrame(reordered_input_data)
+#
+# # print(input_df)
+# # input("wait...")
+#
+# # Make predictions
+# predictions = predictor.predict(input_df)
 
 # Display the predictions
 # print(predictions.columns)

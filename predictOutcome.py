@@ -23,7 +23,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import LabelEncoder
 import joblib
-import predictOutcome2, predictOutcome4
+import predictOutcome2, predictOutcome4, basketballPrediction
 from prettytable import PrettyTable
 
 
@@ -926,10 +926,14 @@ class JbaPredictWindow(QWidget):
 
     def re_train(self):
         try:
-            # print(self.training_data_filename)
+            print(self.training_data_filename)
             if os.path.exists(self.training_data_filename) is False:
+                print("file not found!")
                 raise FileNotFoundError
+            print(1)
             data = pd.read_excel(self.training_data_filename)
+            print(2)
+            print(data)
 
             # Preprocess the data and get label encoder
             processed_data, label_encoder = self.preprocess_data(data)
@@ -995,15 +999,8 @@ class JbaPredictWindow(QWidget):
         print(f"winner is {winner} at position {position}")
         return winner
 
-
     def start(self):
         try:
-
-            print("Training model....")
-            label_encoder = self.re_train()
-
-            if type(label_encoder) is str:
-                raise FileNotFoundError
 
             # Get prompt input from the text box
             predict_prompt = self.prompt_code_input.toPlainText()
@@ -1016,13 +1013,28 @@ class JbaPredictWindow(QWidget):
 
             # validating the input prompt by counting the number of ','
             a = predict_prompt.count(",")
-            if a != 5 :
+            if a != 5 and a != 7:
                 QMessageBox.information(self, "Wrong info!", "Wrong Predict prompt detected!")
                 self.prompt_code_input.clear()
                 raise Exception
 
+            print(f"a={a}")
+
+            sport = None
+            if a == 5:
+                sport = "football"
+
+                print("Training model....")
+                label_encoder = self.re_train()
+
+                if type(label_encoder) is str:
+                    raise FileNotFoundError
+            elif a == 7:
+                sport = "basketball"
+
             # put the prompt in a new container for data cleaning
             new_game_data = predict_prompt
+
             # scan through every character in the prompt to remove unlikely characters and replace them with right ones
             updated = ""
             for c in new_game_data:
@@ -1042,180 +1054,131 @@ class JbaPredictWindow(QWidget):
             # convert the string into dictionary
             new_game_data = eval(updated)
 
-            # checking if possession (percentage) is already in decimal form if not change it to deciaml
-            if new_game_data['possession_home'][0] > 1:
-                new_game_data['possession_home'] = [new_game_data['possession_home'][0] / 100]
-                new_game_data['possession_away'] = [new_game_data['possession_away'][0] / 100]
+            if sport == "basketball":
+                basketball_prediction_output, bb_home_team_name, bb_away_team_name =  self.start_basketball_prediction(new_game_data)
+                prediction_dict = basketball_prediction_output[0]
+                bb_home_score = prediction_dict['team_points']
+                bb_away_score = prediction_dict['opponent_points']
+                bb_home_quaters = prediction_dict['team_quarters']
+                bb_away_quaters = prediction_dict['opponent_quarters']
 
+                bb_data = basketball_prediction_output[1]
+                # print(bb_data.columns)
 
-           # convert the input dictionary into data frame
-            # new_game = pd.DataFrame(new_game_data)
-            new_game = pd.DataFrame.from_dict(new_game_data, orient='index').T
+                homeQ = bb_home_quaters.split(" - ")
+                awayQ = bb_away_quaters.split(" - ")
 
-            # ---------------------------
-            # V2
-            # ---------------------------
-            # predicting scores using another method/algorithm
-            # Version 2 ignores team name in predicting game outcome
+                bb_home_team_name = bb_home_team_name[0]
+                bb_away_team_name = bb_away_team_name[0]
 
-            home, home_score, away, away_score = predictOutcome2.start(new_game_data)
+                league, clock = self.find_league(bb_home_team_name, bb_away_team_name)
+                league = league.split(' ')[1:]
+                league = " ".join(league)
 
-            # ---------------------------------------
-            # end V2
-            # ---------------------------------------
-
-            # ---------------------------
-            # V4
-            # ---------------------------
-            # predicting scores using another method/algorithm
-            # Version 2 ignores team name in predicting game outcome
-            predictor = predictOutcome4.PredictOutcome()
-            if os.path.exists(predictor.model_file) is False:
-                predictor.training()
-                print("Training completed successfully!")
-
-            formatted_dict = {key: [value] for key, value in new_game_data.items()}
-
-            features_input = pd.DataFrame(formatted_dict)
-            # features_input = features_input.drop(['team_home', 'team_away'], axis=1)
-            def convert_possession(value):
-                if isinstance(value, str) and '%' in value:
-                    return float(value.rstrip('%')) / 100.0
-                else:
-                    return float(value) / 100
-
-            features_input['possession_home'] = features_input['possession_home'].apply(convert_possession)
-            features_input['possession_away'] = features_input['possession_away'].apply(convert_possession)
-            predictor.load_saved_model()  # Load the saved model
-            result = predictor.predicting(features_input)
-            home_score_v4 = result.split(":")[0].strip().split(" ")[-1].strip()
-            away_score_v4 = result.split(":")[1].strip().split(" ")[-1].strip()
-
-            # ---------------------------------------
-            # end V4
-            # ---------------------------------------
-
-
-            print("loading Model...")
-
-            # load model
-            loaded_model_home = self.load_model('model_home.joblib')
-            loaded_model_away = self.load_model('model_away.joblib')
-
-            print("Model Loaded...")
-            print("Predicting...")
-            # predict using the loaded model
-            predict_error = False
-            # print(new_game)
-            try:
-                predicted_goals_home, predicted_goals_away = self.predict_scores(loaded_model_home, loaded_model_away,
-                                                                            label_encoder, new_game)
-                print("Done predicting ")
-            except Exception as e:
-                predict_error = True
-                pass
-            # Display the predictions
-
-            print(predict_error)
-
-            if predict_error is False:
-                home_team_name = new_game['team_home'][0]
-                away_team_name = new_game['team_away'][0]
-                league, clock = self.find_league(home_team_name, away_team_name)
-                odds = self.find_odds(home_team_name, away_team_name)
-                diff = round(abs(float(predicted_goals_home)), 1) - round(abs(float(predicted_goals_away)), 1)
-                # decided = self.decide(predicted_goals_home, predicted_goals_away)
-
-                data = [[f"{new_game['team_home'][0]}(Home)", f"{round(predicted_goals_home, 3) }", f"{round(predicted_goals_home, 1)}", f"{home_score}", f"{home_score_v4}"],
-                        [f"{new_game['team_away'][0]}(Away)", f"{round(predicted_goals_away, 3) }", f"{round(predicted_goals_away, 1)}", f"{away_score}", f"{away_score_v4}"]]
-
-                table = PrettyTable()
-                table.add_rows(data)
-                print(table)
-
-                odds = self.find_odds(home, away)
-
-                h = float(odds[0])
-                d = float(odds[1])
-                a = float(odds[2])
-
-                # detect expected winner base on the odd value (home, away or draw)
-                winnerByOdd = self.winner_by_odd(h, d, a)
-                winnerByV2 = self.winner_by_prediction(home_score, away_score)
-                winnerByV4 = self.winner_by_prediction(home_score_v4, away_score_v4)
-
-                final_result = self.decide_new(winnerByV2, winnerByV4, winnerByOdd)
-
-                # result = f"""
-                # [{clock}] - League: {league} --> [{round(abs(diff),1)}]
-                #
-                # {table}
-                #
-                # [PLAY]: {decided}
-                # """
-
-                #
-                result = f"""
-                [{clock}] - League: {league} --> [{round(abs(diff),1)}]
-                {new_game['team_home'][0]}(Home) : [{round(predicted_goals_home, 3) } ~ [{round(predicted_goals_home, 1)}]::[{home_score}]::[{home_score_v4}]
-                {new_game['team_away'][0]}(Away) : [{round(predicted_goals_away, 3) } ~ [{round(predicted_goals_away, 1)}]::[{away_score}]::[{away_score_v4}]
-                [PLAY]: {final_result}
+                bb_result = f"""
+                [{clock}]- {league}
+                {bb_home_team_name}(Home) : {round(float(bb_home_score))} 
+                \t[Q1:{round(float(homeQ[0]))}] - [Q2:{round(float(homeQ[1]))}] - [Q3:{round(float(homeQ[2]))}] - [Q4:{round(float(homeQ[3]))}]
+                {bb_away_team_name}(Away) : {round(float(bb_away_score))}
+                \t[Q1:{round(float(awayQ[0]))}] - [Q2:{round(float(awayQ[1]))}] - [Q3:{round(float(awayQ[2]))}] - [Q4:{round(float(awayQ[3]))}]
+                
+                Total Scores: {round(float(bb_home_score)  + float(bb_away_score))}
                 """
-                #
-                #
-            else:
-                home_team_name = new_game['team_home'][0]
-                away_team_name = new_game['team_away'][0]
-                try:
-                    returned_data = self.find_league(home_team_name, away_team_name)
 
-                    if type(returned_data) != str:
-                        league, clock, actual_home, actual_away = returned_data
+
+                self.prompt_code_input.clear()
+                self.prediction_result_display.setText(bb_result)
+                self.write_prediction('predictions_bb.txt', bb_result)
+
+            elif sport == "football":
+                # checking if possession (percentage) is already in decimal form if not change it to deciaml
+                if new_game_data['possession_home'][0] > 1:
+                    new_game_data['possession_home'] = [new_game_data['possession_home'][0] / 100]
+                    new_game_data['possession_away'] = [new_game_data['possession_away'][0] / 100]
+
+
+               # convert the input dictionary into data frame
+                # new_game = pd.DataFrame(new_game_data)
+                new_game = pd.DataFrame.from_dict(new_game_data, orient='index').T
+
+                # ---------------------------
+                # V2
+                # ---------------------------
+                # predicting scores using another method/algorithm
+                # Version 2 ignores team name in predicting game outcome
+
+                home, home_score, away, away_score = predictOutcome2.start(new_game_data)
+
+                # ---------------------------------------
+                # end V2
+                # ---------------------------------------
+
+                # ---------------------------
+                # V4
+                # ---------------------------
+                # predicting scores using another method/algorithm
+                # Version 2 ignores team name in predicting game outcome
+                predictor = predictOutcome4.PredictOutcome()
+                if os.path.exists(predictor.model_file) is False:
+                    predictor.training()
+                    print("Training completed successfully!")
+
+                formatted_dict = {key: [value] for key, value in new_game_data.items()}
+
+                features_input = pd.DataFrame(formatted_dict)
+                # features_input = features_input.drop(['team_home', 'team_away'], axis=1)
+                def convert_possession(value):
+                    if isinstance(value, str) and '%' in value:
+                        return float(value.rstrip('%')) / 100.0
                     else:
-                        league = "N/A"
-                        clock = "N/A"
-                        actual_home = home_team_name
-                        actual_away = away_team_name
+                        return float(value) / 100
 
-                    data = [[home, home_score, home_score_v4],
-                            [away, away_score, away_score_v4]]
+                features_input['possession_home'] = features_input['possession_home'].apply(convert_possession)
+                features_input['possession_away'] = features_input['possession_away'].apply(convert_possession)
+                predictor.load_saved_model()  # Load the saved model
+                result = predictor.predicting(features_input)
+                home_score_v4 = result.split(":")[0].strip().split(" ")[-1].strip()
+                away_score_v4 = result.split(":")[1].strip().split(" ")[-1].strip()
 
-                    table = PrettyTable(["Team's Name", "Prediction (V1)", "Prediction (V2)"])
-                    table.add_rows(data)
-                    print(table)
+                # ---------------------------------------
+                # end V4
+                # ---------------------------------------
 
-#                     result = f"""
-# [{clock}] - League: {league}
-# {table}
-#
-#                     """
-                    odds = self.find_odds(home, away)
 
-                    h = float(odds[0])
-                    d = float(odds[1])
-                    a = float(odds[2])
+                print("loading Model...")
 
-                    # detect expected winner base on the odd value (home, away or draw)
-                    winnerByOdd = self.winner_by_odd(h,d,a)
-                    winnerByV2 = self.winner_by_prediction(home_score, away_score)
-                    winnerByV4 = self.winner_by_prediction(home_score_v4, away_score_v4)
+                # load model
+                loaded_model_home = self.load_model('model_home.joblib')
+                loaded_model_away = self.load_model('model_away.joblib')
 
-                    final_result = self.decide_new(winnerByV2, winnerByV4, winnerByOdd)
-
-                    result = f"""
-                    [{clock}] - League: {league}
-                    {home}(Home) -- [{home_score}]::[{home_score_v4}]
-                    {away}(Away) -- [{away_score}]::[{away_score_v4}]
-
-                    [PLAY]  {final_result}
-                    """
+                print("Model Loaded...")
+                print("Predicting...")
+                # predict using the loaded model
+                predict_error = False
+                # print(new_game)
+                try:
+                    predicted_goals_home, predicted_goals_away = self.predict_scores(loaded_model_home, loaded_model_away,
+                                                                                label_encoder, new_game)
+                    print("Done predicting ")
                 except Exception as e:
-                    league_result, clock = self.find_league(home_team_name, away_team_name)
+                    predict_error = True
+                    pass
+                # Display the predictions
 
-                    data = [[home, home_score, home_score_v4],
-                            [away, away_score, away_score_v4]]
+                print(predict_error)
 
-                    table = PrettyTable(["Team's Name", "Prediction (V1)", "Prediction (V2)"])
+                if predict_error is False:
+                    home_team_name = new_game['team_home'][0]
+                    away_team_name = new_game['team_away'][0]
+                    league, clock = self.find_league(home_team_name, away_team_name)
+                    odds = self.find_odds(home_team_name, away_team_name)
+                    diff = round(abs(float(predicted_goals_home)), 1) - round(abs(float(predicted_goals_away)), 1)
+                    # decided = self.decide(predicted_goals_home, predicted_goals_away)
+
+                    data = [[f"{new_game['team_home'][0]}(Home)", f"{round(predicted_goals_home, 3) }", f"{round(predicted_goals_home, 1)}", f"{home_score}", f"{home_score_v4}"],
+                            [f"{new_game['team_away'][0]}(Away)", f"{round(predicted_goals_away, 3) }", f"{round(predicted_goals_away, 1)}", f"{away_score}", f"{away_score_v4}"]]
+
+                    table = PrettyTable()
                     table.add_rows(data)
                     print(table)
 
@@ -1232,29 +1195,115 @@ class JbaPredictWindow(QWidget):
 
                     final_result = self.decide_new(winnerByV2, winnerByV4, winnerByOdd)
 
+                    # result = f"""
+                    # [{clock}] - League: {league} --> [{round(abs(diff),1)}]
+                    #
+                    # {table}
+                    #
+                    # [PLAY]: {decided}
+                    # """
+
+                    #
                     result = f"""
-                            [{clock}] - League: {league_result}
-                            {home}(Home) -- [{home_score}]:v4:[{home_score_v4}]
-                            {away}(Away) -- [{away_score}]:v4:[{away_score_v4}]
+                    [{clock}] - League: {league} --> [{round(abs(diff),1)}]
+                    {new_game['team_home'][0]}(Home) : [{round(predicted_goals_home, 3) } ~ [{round(predicted_goals_home, 1)}]::[{home_score}]::[{home_score_v4}]
+                    {new_game['team_away'][0]}(Away) : [{round(predicted_goals_away, 3) } ~ [{round(predicted_goals_away, 1)}]::[{away_score}]::[{away_score_v4}]
+                    [PLAY]: {final_result}
+                    """
+                    #
+                    #
+                else:
+                    home_team_name = new_game['team_home'][0]
+                    away_team_name = new_game['team_away'][0]
+                    try:
+                        returned_data = self.find_league(home_team_name, away_team_name)
 
-                            [PLAY]  {final_result}
-                            """
+                        if type(returned_data) != str:
+                            league, clock, actual_home, actual_away = returned_data
+                        else:
+                            league = "N/A"
+                            clock = "N/A"
+                            actual_home = home_team_name
+                            actual_away = away_team_name
+
+                        data = [[home, home_score, home_score_v4],
+                                [away, away_score, away_score_v4]]
+
+                        table = PrettyTable(["Team's Name", "Prediction (V1)", "Prediction (V2)"])
+                        table.add_rows(data)
+                        print(table)
+
+    #                     result = f"""
+    # [{clock}] - League: {league}
+    # {table}
+    #
+    #                     """
+                        odds = self.find_odds(home, away)
+
+                        h = float(odds[0])
+                        d = float(odds[1])
+                        a = float(odds[2])
+
+                        # detect expected winner base on the odd value (home, away or draw)
+                        winnerByOdd = self.winner_by_odd(h,d,a)
+                        winnerByV2 = self.winner_by_prediction(home_score, away_score)
+                        winnerByV4 = self.winner_by_prediction(home_score_v4, away_score_v4)
+
+                        final_result = self.decide_new(winnerByV2, winnerByV4, winnerByOdd)
+
+                        result = f"""
+                        [{clock}] - League: {league}
+                        {home}(Home) -- [{home_score}]::[{home_score_v4}]
+                        {away}(Away) -- [{away_score}]::[{away_score_v4}]
+    
+                        [PLAY]  {final_result}
+                        """
+                    except Exception as e:
+                        league_result, clock = self.find_league(home_team_name, away_team_name)
+
+                        data = [[home, home_score, home_score_v4],
+                                [away, away_score, away_score_v4]]
+
+                        table = PrettyTable(["Team's Name", "Prediction (V1)", "Prediction (V2)"])
+                        table.add_rows(data)
+                        print(table)
+
+                        odds = self.find_odds(home, away)
+
+                        h = float(odds[0])
+                        d = float(odds[1])
+                        a = float(odds[2])
+
+                        # detect expected winner base on the odd value (home, away or draw)
+                        winnerByOdd = self.winner_by_odd(h, d, a)
+                        winnerByV2 = self.winner_by_prediction(home_score, away_score)
+                        winnerByV4 = self.winner_by_prediction(home_score_v4, away_score_v4)
+
+                        final_result = self.decide_new(winnerByV2, winnerByV4, winnerByOdd)
+
+                        result = f"""
+                                [{clock}] - League: {league_result}
+                                {home}(Home) -- [{home_score}]:v4:[{home_score_v4}]
+                                {away}(Away) -- [{away_score}]:v4:[{away_score_v4}]
+    
+                                [PLAY]  {final_result}
+                                """
 
 
-#                     result = f"""
-# [{clock}] - League: {league_result}
-# {table}
-#
-#                             """
+    #                     result = f"""
+    # [{clock}] - League: {league_result}
+    # {table}
+    #
+    #                             """
 
 
-            #
-            # print(f"Predicted Goals for Home Team [{new_game['team_home'][0]}]:", round(predicted_goals_home, 3))
-            # print(f"Predicted Goals for Away Team [{new_game['team_away'][0]}]:", round(predicted_goals_away, 3))
+                #
+                # print(f"Predicted Goals for Home Team [{new_game['team_home'][0]}]:", round(predicted_goals_home, 3))
+                # print(f"Predicted Goals for Away Team [{new_game['team_away'][0]}]:", round(predicted_goals_away, 3))
 
-            self.prompt_code_input.clear()
-            self.prediction_result_display.setText(result)
-            self.write_prediction('predictions.txt', result)
+                self.prompt_code_input.clear()
+                self.prediction_result_display.setText(result)
+                self.write_prediction('predictions.txt', result)
 
             pass
         except FileNotFoundError as e:
@@ -1269,6 +1318,76 @@ class JbaPredictWindow(QWidget):
                 f"Or Check that the team name is not abrreviated or shortened in the training data. \n"
                 f"This error can also occurr if for example you have 'Abu Salim SC' in training data but you are tryinig to predict score for 'Abu Salim' without the 'SC'. ")
             print(f"An Error occurred in start: {e}")
+
+    def train_basketball(self):
+        # Initialize the PredictOutcome class
+        predictor = basketballPrediction.PredictOutcome()
+
+        # Load and preprocess the data
+        data = predictor.load_data("basketball_training_data.xlsx")
+        processed_data = predictor.preprocess_data(data)
+
+        # Train the model and save it to disk
+        print("Training models....")
+        trained_model = predictor.train_model(processed_data)
+        predictor.save_model(trained_model, "trained_model.joblib")
+
+        return  predictor
+        pass
+
+    def start_basketball_prediction(self, rawData):
+
+        predictor = self.train_basketball()
+
+        # Load the trained model from disk
+        print("Loading trained model...")
+        predictor.load_model("trained_model.joblib")
+
+        # Prepare input data for prediction
+        # input_data = {
+        #     'team_home': ['Kinlung Pegasus'],
+        #     'team_away': ['South China'],
+        #     'field_goal_percentage_home': [34.1],
+        #     'free_throw_percentage_home': [70.0],
+        #     'three_point_percentage_home': [26.8],
+        #     'field_goal_percentage_away': [48.4],
+        #     'free_throw_percentage_away': [78.5],
+        #     'three_point_percentage_away': [35.1]
+        # }
+        input_data = rawData
+        # Mapping dictionary for reordering keys
+        feature_mapping = {
+            'field_goal_percentage_home': 'Team FG%',
+            'free_throw_percentage_home': 'Team FT%',
+            'three_point_percentage_home': 'Team 3P%',
+            'field_goal_percentage_away': 'Opponent FG%',
+            'free_throw_percentage_away': 'Opponent FT%',
+            'three_point_percentage_away': 'Opponent 3P%',
+        }
+
+        # Reorder and rename keys in input_data
+        reordered_input_data = {
+            feature_mapping[key]: value for key, value in input_data.items() if key in feature_mapping
+        }
+
+        # Add team and opponent names
+        home_team_name = input_data['team_home']
+        away_team_name = input_data['team_away']
+
+        reordered_input_data['Team'] = input_data['team_home']
+        reordered_input_data['Opponent'] = input_data['team_away']
+
+        # Create a DataFrame from reordered input data
+        input_df = pd.DataFrame(reordered_input_data)
+
+        # print(input_df)
+        # input("wait...")
+
+        # Make predictions
+        predictions = predictor.predict(input_df)
+        return predictions, home_team_name, away_team_name
+
+        pass
 
     def decide(self, home_score, away_score):
         diff = abs(abs(home_score) - abs(away_score))
@@ -1321,7 +1440,6 @@ class JbaPredictWindow(QWidget):
         print(f"Final value = {final_value}")
         return final_value
 
-
     def write_prediction(self, filename, prediction):
         try:
             with open(filename, 'a', encoding='utf-8', errors='replace') as f:
@@ -1369,28 +1487,32 @@ class JbaPredictWindow(QWidget):
         return data, label_encoder
 
     def preprocess_data(self, data, label_encoder=None):
-        # Convert percentage values to numeric
-        def convert_possession(value):
-            if isinstance(value, str) and '%' in value:
-                return float(value.rstrip('%')) / 100.0
-            else:
-                return float(value) / 100
+        try:
+            # Convert percentage values to numeric
+            def convert_possession(value):
+                if isinstance(value, str) and '%' in value:
+                    return float(value.rstrip('%')) / 100.0
+                else:
+                    return float(value) / 100
 
-        data['possession_home'] = data['possession_home'].apply(convert_possession)
-        data['possession_away'] = data['possession_away'].apply(convert_possession)
+            data['possession_home'] = data['possession_home'].apply(convert_possession)
+            data['possession_away'] = data['possession_away'].apply(convert_possession)
 
-        # Encode team names using LabelEncoder
-        if label_encoder is None:
-            label_encoder = LabelEncoder()
+            # Encode team names using LabelEncoder
+            if label_encoder is None:
+                label_encoder = LabelEncoder()
 
-        # Fit the encoder with the union of training and prediction data
-        all_teams = pd.concat([data['team_home'], data['team_away']]).unique()
-        label_encoder.fit(all_teams)
+            # Fit the encoder with the union of training and prediction data
+            all_teams = pd.concat([data['team_home'], data['team_away']]).unique()
+            label_encoder.fit(all_teams)
 
-        data['team_home_encoded'] = label_encoder.transform(data['team_home'])
-        data['team_away_encoded'] = label_encoder.transform(data['team_away'])
+            data['team_home_encoded'] = label_encoder.transform(data['team_home'])
+            data['team_away_encoded'] = label_encoder.transform(data['team_away'])
 
-        return data, label_encoder
+            return data, label_encoder
+        except Exception as e:
+            print(f"An error occurred in Preprocess data: {e}")
+            QMessageBox.information(self, "Error in Data File!", f"There is a data error in '{self.training_data_filename}'. Data Error could not be automatically resolved. Please inspect the file for inconsistent data and fix the error manually! Detail below could assist you. \n\nError Details:\n{e}")
 
     def train_model(self, data):
         # Split the data into features (X) and target variables (y)
