@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QMessageBox, QApplication, QWidget, QVBoxLayout, QGroupBox, QLabel, QLineEdit, QPushButton, \
-    QTextEdit, QHBoxLayout, QVBoxLayout, QCheckBox
+    QTextEdit, QHBoxLayout, QVBoxLayout, QCheckBox, QComboBox
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFont
 import pandas as pd
@@ -23,6 +23,9 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import LabelEncoder
 import joblib
+import predictOutcome2, predictOutcome4
+from prettytable import PrettyTable
+
 
 
 class JbaPredictWindow(QWidget):
@@ -47,13 +50,13 @@ class JbaPredictWindow(QWidget):
         main_layout = QVBoxLayout()
 
         # Top Section - Teams and Prompt Generation
-        top_layout = QHBoxLayout()
+        top_layout = QVBoxLayout()
 
         # GroupBox for Teams
         teams_groupbox = QGroupBox("Generate Prompts: (Required to get Training and Predict data from AI like Bing...")
         teams_layout = QHBoxLayout()
 
-        # Checkbox for Auto
+        # contents for teams groupbox and layout
         self.auto_checkbox = QCheckBox("Auto")
         self.auto_checkbox.stateChanged.connect(self.toggle_auto_mode)
 
@@ -62,6 +65,21 @@ class JbaPredictWindow(QWidget):
         self.league_input = QLineEdit()
         self.sport_input = QLineEdit()
         self.game_period_input = QLineEdit()
+
+        # Create combo box
+        self.comboBox = QComboBox(self)
+        self.comboBox.addItems(['1h', '3h', '6h', '24h', 'All'])
+        # layout.addWidget(self.comboBox)
+
+        self.home_team_input_teams.setObjectName("homeTeamInput")
+        self.away_team_input_teams.setObjectName("awayTeamInput")
+        self.league_input.setObjectName('leagueInput')
+
+        # Connect the textChanged signal to the update_input_objects function
+        self.home_team_input_teams.textChanged.connect(self.update_input_objects)
+        self.away_team_input_teams.textChanged.connect(self.update_input_objects)
+        self.league_input.textChanged.connect(self.update_input_objects)
+
 
         self.home_team_input_teams.setPlaceholderText("Home Team")
         self.away_team_input_teams.setPlaceholderText("Away Team")
@@ -73,19 +91,44 @@ class JbaPredictWindow(QWidget):
         self.game_period_input.setText("6")
 
         get_prompts_button = QPushButton("Get Prompts")
+        get_prompts_button.setObjectName("getPrompts")
         get_prompts_button.clicked.connect(self.get_prompts)
 
+        # adding content to the layout
         teams_layout.addWidget(self.auto_checkbox)
         teams_layout.addWidget(self.home_team_input_teams)
         teams_layout.addWidget(self.away_team_input_teams)
         teams_layout.addWidget(self.league_input)
         teams_layout.addWidget(self.sport_input)
-        teams_layout.addWidget(self.game_period_input)
+        # teams_layout.addWidget(self.game_period_input)
+        teams_layout.addWidget(self.comboBox)
         teams_layout.addWidget(get_prompts_button)
 
+        # adding layout to the groupbox
         teams_groupbox.setLayout(teams_layout)
+
+        # create settings groupbox to be added to top layout
+        team_settings_groupbox = QGroupBox("Settings")
+        team_settings_layout = QHBoxLayout()
+
+        # create settings items
+        self.include_srl = QCheckBox("Include SRL")
+        self.re_train_button = QPushButton("Re Train V4")
+        self.re_train_button.setObjectName("re train v4")
+        self.re_train_button.clicked.connect(self.re_train_v4)
+
+        # add settings items to layout
+        team_settings_layout.addWidget(self.include_srl)
+        team_settings_layout.addWidget(self.re_train_button)
+
+        # add settings layout to settings groupbox
+        team_settings_groupbox.setLayout(team_settings_layout)
+
+        # adding groupbox to the top layout
+        top_layout.addWidget(team_settings_groupbox)
         top_layout.addWidget(teams_groupbox)
 
+        # add ing top layout to the main window
         main_layout.addLayout(top_layout)
 
         # used to arrange the button horizontally
@@ -97,6 +140,8 @@ class JbaPredictWindow(QWidget):
 
         prompt_code_label = QLabel("Training Data / Predict Data:")
         self.prompt_code_input = QTextEdit()
+        # self.prompt_code_input.setFontPointSize(112)
+
 
         self.predict_button = QPushButton("Predict")
         # predict_button.clicked.connect(self.predict)
@@ -110,6 +155,7 @@ class JbaPredictWindow(QWidget):
         self.prediction_result_display.setReadOnly(True)
         text_edit_font = QFont()
         text_edit_font.setPointSize(10)  # Set the font size to 14
+        self.prompt_code_input.setFont(text_edit_font)
         self.prediction_result_display.setFont(text_edit_font)
 
         buttons_layout.addWidget(self.load_train_data_button)
@@ -136,9 +182,49 @@ class JbaPredictWindow(QWidget):
         # self.predict_button.setVisible(False)
         # self.load_train_data_button.setVisible(True)
 
+    def get_selected_content(self):
+        selected_content = self.comboBox.currentText()
+
+        # Map selected content to the desired output
+        if selected_content == '1h':
+            result = 1
+        elif selected_content == '3h':
+            result = 3
+        elif selected_content == '6h':
+            result = 6
+        elif selected_content == '24h':
+            result = 24
+        elif selected_content == 'All':
+            result = ''
+
+        return result
+
+    def update_input_objects(self):
+        # Get the content of home_team_input_teams
+        # sender = self.sender().objectName()
+        # if sender == self.home_team_input_teams.objectName():
+        #     content = self.home_team_input_teams.text()
+        # elif sender == self.away_team_input_teams.objectName():
+        #     content = self.away_team_input_teams.text()
+        # else:
+        #     content = self.league_input.text()
+
+        if self.home_team_input_teams.text() != "" or self.away_team_input_teams.text() != "" or self.league_input.text() != "":
+            content = "not empty"
+        else:
+            content = ""
+
+        # Enable or disable other objects based on whether the content is empty or not
+        self.sport_input.setEnabled(not content)
+        # self.game_period_input.setEnabled(not content)
+        self.comboBox.setEnabled(not content)
+
     def toggle_auto_mode(self, state):
         if state == Qt.Checked:
             # Auto mode is checked, disable other components
+            self.home_team_input_teams.clear()
+            self.away_team_input_teams.clear()
+            self.league_input.clear()
             self.home_team_input_teams.setEnabled(False)
             self.away_team_input_teams.setEnabled(False)
             self.league_input.setEnabled(False)
@@ -152,18 +238,33 @@ class JbaPredictWindow(QWidget):
 
     def get_prompts(self):
 
-        if self.auto_checkbox.isChecked():
-            self.sport = self.sport_input.text()
-            self.game_period = self.game_period_input.text()
-            self.prompt_generator = GeneratePrompt(sport=self.sport, period=self.game_period)
-            self.prompt_generator.start()
+        try:
+            if self.auto_checkbox.isChecked():
+                self.sport = self.sport_input.text()
+                # self.game_period = self.game_period_input.text()
+                self.game_period = self.get_selected_content()
+                self.prompt_generator = GeneratePrompt(sport=self.sport, period=self.game_period)
+                self.prompt_generator.start(include_srl=self.include_srl.isChecked())
+                pass
+            else:
+                home_team = self.home_team_input_teams.text()
+                away_team = self.away_team_input_teams.text()
+                league = self.league_input.text()
+
+                if home_team == "" or away_team == "" or league == "":
+                    QMessageBox.information(self, "Empty Data!", "Home team, Away team and league name is required!\n"
+                                                                 "otherwise, check the 'Auto' check box.")
+                    raise Exception
+                self.prompt_generator = GeneratePrompt(single=True, home=home_team, away=away_team, league=league)
+                self.prompt_generator.start(include_srl=self.include_srl.isChecked())
+            # Add your logic here to use home_team and away_team to generate prompts
+            # Update the UI or perform other actions as needed
+        except Exception as e:
+            if str(e).__contains__('browser version'):
+                required = str(e).split("Stacktrace")[0].split(" ")[-1]
+                QMessageBox.information(self, "Outdated Chrome Driver", f"Current chrome driver is outdated. Please download the current version to continue. \n\nRequired Version: {required}")
+            print(f"An Error occurred in get_prompt(): {e}")
             pass
-        else:
-            home_team = self.home_team_input_teams.text()
-            away_team = self.away_team_input_teams.text()
-            league = self.league_input.text()
-        # Add your logic here to use home_team and away_team to generate prompts
-        # Update the UI or perform other actions as needed
 
     def clear_prediction(self):
         self.prediction_result_display.clear()
@@ -637,6 +738,7 @@ class JbaPredictWindow(QWidget):
         return final_opinion
 
     def find_league(self, home_team, away_team):
+        # check if the file exists. and exit if not
         if os.path.exists("leagueTable.txt") is False:
             return "Unknown - League Table not Found! Run Prompt Generator Again!"
         with open("leagueTable.txt", 'r') as f:
@@ -644,9 +746,21 @@ class JbaPredictWindow(QWidget):
 
         league_table = eval(data)
 
+        # if both home and away team are found: no missed spelt or incompelte name
         for home, away, league, clock in league_table:
             if str(home).lower().strip() == str(home_team).lower().strip() and str(away).lower().strip() == str(away_team).lower().strip():
                 return league, clock
+
+        # if only home name is correct
+        for home, away, league, clock in league_table:
+            if str(away).lower().strip() == str(away_team).lower().strip():
+                return league, clock, home_team, away_team
+
+        # if only the away team name is correct
+        for home, away, league, clock in league_table:
+            if str(home).lower().strip() == str(home_team).lower().strip():
+                return league, clock, home_team, away_team
+
         return "Unknown League Name not found in the League Table", "-.--"  # Return None if the match is not found
 
     def find_odds(self, home_team, away_team):
@@ -654,6 +768,9 @@ class JbaPredictWindow(QWidget):
             return "Unknown - odds Table not Found! Run Prompt Generator Again!"
         with open("odds.txt", 'r') as f:
             data = f.read()
+
+        if data == "":
+            return "Unknown - odds Table not Found! Run Prompt Generator Again!"
 
         odd_table = eval(data)
 
@@ -721,13 +838,19 @@ class JbaPredictWindow(QWidget):
                     self.prompt_code_input.clear()
                     raise Exception
 
+            first_letter_found = False # to control spaces before table begins
             for d in dataList:
-                if d=="":
-                    continue
+                if first_letter_found is False:
+                    if d=="":
+                        print('Empty found')
+                        continue
+                    else:
+                        first_letter_found = True
 
                 counter += 1
                 line_data += d + ","
-                if d.strip() == "-" or d.strip() == "?" or d.strip() == "TBD":
+                if d.strip() == "-" or d.strip() == "?" or d.strip() == "TBD" or d.strip() == "" or \
+                        d.strip() == "N/A" or d.strip().__contains__(":") or d.strip() == "CANC":
                     impurity = True
 
                 if counter == 8:
@@ -770,29 +893,21 @@ class JbaPredictWindow(QWidget):
             pass
         pass
 
-    def start(self):
+    def re_train_v4(self):
         try:
-            # if self.training_df is None:
-            #     QMessageBox.information(self, "No Training Data!", "No Training Data detected! Load training "
-            #                                                        "data first!")
-            #     self.load_train_data_button.setVisible(True)
-            #     self.predict_button.setVisible(False)
-            #     raise Exception
+            predictor = predictOutcome4.PredictOutcome()
+            model = predictor.training()
+            QMessageBox.information(self, "Completed", f"Training completed successfully! \n\nBest algorithm selected: {model}")
+            print("Training completed successfully!")
+        except Exception as e:
+            QMessageBox.critical(self, "Failed!",f"Training Failed due to error below: \n{e}")
+            pass
 
-            print("Training model....")
-            predict_prompt = self.prompt_code_input.toPlainText()
-            if predict_prompt == "":
-                QMessageBox.information(self, "No Team Info", "Team info to predict is required! Please "
-                                                                 "provide team info in the required format")
-                raise Exception
-
-            a = predict_prompt.count(",")
-            if a != 5 :
-                QMessageBox.information(self, "Wrong info!", "Wrong Predict prompt detected!")
-                self.prompt_code_input.clear()
-                raise Exception
-
+    def re_train(self):
+        try:
             # print(self.training_data_filename)
+            if os.path.exists(self.training_data_filename) is False:
+                raise FileNotFoundError
             data = pd.read_excel(self.training_data_filename)
 
             # Preprocess the data and get label encoder
@@ -807,7 +922,87 @@ class JbaPredictWindow(QWidget):
             self.save_model(model_away, 'model_away.joblib')
             print("model saved...")
 
+            return label_encoder
+        except FileNotFoundError as e:
+            return "File Not Found!"
+        except Exception as e:
+            return f"Unknown Error! {e}"
+            pass
+
+    def winner_by_odd(self,h,d,a):
+        # this function check  which team with the lowest odd
+
+        winner = None
+        numbers = [h, d, a]
+
+        # Find the minimum among the three numbers
+        smallest = min(numbers)
+
+        # Find the position of the smallest number
+        position = numbers.index(smallest)
+
+        if position == 0:
+            winner = "Home"
+        if position == 1:
+            winner = "Draw"
+        if position == 2:
+            winner = "Away"
+
+        return winner
+
+        pass
+
+    def winner_by_prediction(self, h, a):
+        # this function check  which team with the lowest odd
+        print(f"winer by prediction input home: {h} - away {a}")
+        winner = None
+
+        numbers = [h, a]
+
+        # Find the minimum among the three numbers
+        smallest = max(numbers)
+
+        # Find the position of the smallest number
+        position = numbers.index(smallest)
+        if h == a:
+            winner = "Draw"
+        elif position == 0:
+            winner = "Home"
+        elif position == 1:
+            winner = "Away"
+
+        print(f"winner is {winner} at position {position}")
+        return winner
+
+
+    def start(self):
+        try:
+
+            print("Training model....")
+            label_encoder = self.re_train()
+
+            if type(label_encoder) is str:
+                raise FileNotFoundError
+
+            # Get prompt input from the text box
+            predict_prompt = self.prompt_code_input.toPlainText()
+
+            # check if input is not empty
+            if predict_prompt == "":
+                QMessageBox.information(self, "No Team Info", "Team info to predict are required! Please "
+                                                                 "provide team info in the required format")
+                raise Exception
+
+            # validating the input prompt by counting the number of ','
+            a = predict_prompt.count(",")
+            if a != 5 :
+                QMessageBox.information(self, "Wrong info!", "Wrong Predict prompt detected!")
+                self.prompt_code_input.clear()
+                raise Exception
+
+            # put the prompt in a new container for data cleaning
             new_game_data = predict_prompt
+            # scan through every character in the prompt to remove unlikely characters and replace them with right ones
             updated = ""
             for c in new_game_data:
                 if c == '%':
@@ -819,60 +1014,232 @@ class JbaPredictWindow(QWidget):
                     c = '"'
                 updated += c
 
-
+            # check if prompt input string looks like dictionary if not add curl bracket
             if updated.__contains__("{") is False:
-                new_game_data = "{" + updated + "}"
+                updated = "{" + updated + "}"
 
-            # print(updated)
-
+            # convert the string into dictionary
             new_game_data = eval(updated)
-            # print(new_game_data)
-            # print(type(new_game_data))
 
+            # checking if possession (percentage) is already in decimal form if not change it to deciaml
             if new_game_data['possession_home'][0] > 1:
                 new_game_data['possession_home'] = [new_game_data['possession_home'][0] / 100]
                 new_game_data['possession_away'] = [new_game_data['possession_away'][0] / 100]
 
-            # Example: Predict scores for a new game
-            new_game = pd.DataFrame(new_game_data)
+
+           # convert the input dictionary into data frame
+            # new_game = pd.DataFrame(new_game_data)
+            new_game = pd.DataFrame.from_dict(new_game_data, orient='index').T
+
+            # ---------------------------
+            # V2
+            # ---------------------------
+            # predicting scores using another method/algorithm
+            # Version 2 ignores team name in predicting game outcome
+
+            home, home_score, away, away_score = predictOutcome2.start(new_game_data)
+
+            # ---------------------------------------
+            # end V2
+            # ---------------------------------------
+
+            # ---------------------------
+            # V4
+            # ---------------------------
+            # predicting scores using another method/algorithm
+            # Version 2 ignores team name in predicting game outcome
+            predictor = predictOutcome4.PredictOutcome()
+            if os.path.exists(predictor.model_file) is False:
+                predictor.training()
+                print("Training completed successfully!")
+
+            formatted_dict = {key: [value] for key, value in new_game_data.items()}
+
+            features_input = pd.DataFrame(formatted_dict)
+            # features_input = features_input.drop(['team_home', 'team_away'], axis=1)
+            def convert_possession(value):
+                if isinstance(value, str) and '%' in value:
+                    return float(value.rstrip('%')) / 100.0
+                else:
+                    return float(value) / 100
+
+            features_input['possession_home'] = features_input['possession_home'].apply(convert_possession)
+            features_input['possession_away'] = features_input['possession_away'].apply(convert_possession)
+            predictor.load_saved_model()  # Load the saved model
+            result = predictor.predicting(features_input)
+            home_score_v4 = result.split(":")[0].strip().split(" ")[-1].strip()
+            away_score_v4 = result.split(":")[1].strip().split(" ")[-1].strip()
+
+            # ---------------------------------------
+            # end V4
+            # ---------------------------------------
+
+
             print("loading Model...")
 
+            # load model
             loaded_model_home = self.load_model('model_home.joblib')
             loaded_model_away = self.load_model('model_away.joblib')
 
             print("Model Loaded...")
             print("Predicting...")
-            predicted_goals_home, predicted_goals_away = self.predict_scores(loaded_model_home, loaded_model_away,
-                                                                        label_encoder, new_game)
-            print("Done predicting ")
+            # predict using the loaded model
+            predict_error = False
+            # print(new_game)
+            try:
+                predicted_goals_home, predicted_goals_away = self.predict_scores(loaded_model_home, loaded_model_away,
+                                                                            label_encoder, new_game)
+                print("Done predicting ")
+            except Exception as e:
+                predict_error = True
+                pass
             # Display the predictions
 
-            home_team_name = new_game['team_home'][0]
-            away_team_name = new_game['team_away'][0]
-            league, clock = self.find_league(home_team_name, away_team_name)
-            # league = league.split(' ')[1:]
-            odds = self.find_odds(home_team_name, away_team_name)
+            print(predict_error)
 
-            diff = round(abs(float(predicted_goals_home)), 1) - round(abs(float(predicted_goals_away)), 1)
+            if predict_error is False:
+                home_team_name = new_game['team_home'][0]
+                away_team_name = new_game['team_away'][0]
+                league, clock = self.find_league(home_team_name, away_team_name)
+                odds = self.find_odds(home_team_name, away_team_name)
+                diff = round(abs(float(predicted_goals_home)), 1) - round(abs(float(predicted_goals_away)), 1)
+                # decided = self.decide(predicted_goals_home, predicted_goals_away)
 
-            decided = self.decide(predicted_goals_home, predicted_goals_away)
+                data = [[f"{new_game['team_home'][0]}(Home)", f"{round(predicted_goals_home, 3) }", f"{round(predicted_goals_home, 1)}", f"{home_score}", f"{home_score_v4}"],
+                        [f"{new_game['team_away'][0]}(Away)", f"{round(predicted_goals_away, 3) }", f"{round(predicted_goals_away, 1)}", f"{away_score}", f"{away_score_v4}"]]
 
-            result = f"""
-            [{clock}] - League: {league} --> [{round(abs(diff),1)}]       
-            Predicted Goals for Home Team [{new_game['team_home'][0]}]:  {round(predicted_goals_home, 3) } - [{round(predicted_goals_home, 1)}]
-            Predicted Goals for Away Team [{new_game['team_away'][0]}]:  {round(predicted_goals_away, 3) } - [{round(predicted_goals_away, 1)}]
-            [PLAY]: {decided}
-            """
+                table = PrettyTable()
+                table.add_rows(data)
+                print(table)
+
+                odds = self.find_odds(home, away)
+
+                h = float(odds[0])
+                d = float(odds[1])
+                a = float(odds[2])
+
+                # detect expected winner base on the odd value (home, away or draw)
+                winnerByOdd = self.winner_by_odd(h, d, a)
+                winnerByV2 = self.winner_by_prediction(home_score, away_score)
+                winnerByV4 = self.winner_by_prediction(home_score_v4, away_score_v4)
+
+                final_result = self.decide_new(winnerByV2, winnerByV4, winnerByOdd)
+
+                # result = f"""
+                # [{clock}] - League: {league} --> [{round(abs(diff),1)}]
+                #
+                # {table}
+                #
+                # [PLAY]: {decided}
+                # """
+
+                #
+                result = f"""
+                [{clock}] - League: {league} --> [{round(abs(diff),1)}]
+                {new_game['team_home'][0]}(Home) : [{round(predicted_goals_home, 3) } ~ [{round(predicted_goals_home, 1)}]::[{home_score}]::[{home_score_v4}]
+                {new_game['team_away'][0]}(Away) : [{round(predicted_goals_away, 3) } ~ [{round(predicted_goals_away, 1)}]::[{away_score}]::[{away_score_v4}]
+                [PLAY]: {final_result}
+                """
+                #
+                #
+            else:
+                home_team_name = new_game['team_home'][0]
+                away_team_name = new_game['team_away'][0]
+                try:
+                    returned_data = self.find_league(home_team_name, away_team_name)
+
+                    if type(returned_data) != str:
+                        league, clock, actual_home, actual_away = returned_data
+                    else:
+                        league = "N/A"
+                        clock = "N/A"
+                        actual_home = home_team_name
+                        actual_away = away_team_name
+
+                    data = [[home, home_score, home_score_v4],
+                            [away, away_score, away_score_v4]]
+
+                    table = PrettyTable(["Team's Name", "Prediction (V1)", "Prediction (V2)"])
+                    table.add_rows(data)
+                    print(table)
+
+#                     result = f"""
+# [{clock}] - League: {league}
+# {table}
+#
+#                     """
+                    odds = self.find_odds(home, away)
+
+                    h = float(odds[0])
+                    d = float(odds[1])
+                    a = float(odds[2])
+
+                    # detect expected winner base on the odd value (home, away or draw)
+                    winnerByOdd = self.winner_by_odd(h,d,a)
+                    winnerByV2 = self.winner_by_prediction(home_score, away_score)
+                    winnerByV4 = self.winner_by_prediction(home_score_v4, away_score_v4)
+
+                    final_result = self.decide_new(winnerByV2, winnerByV4, winnerByOdd)
+
+                    result = f"""
+                    [{clock}] - League: {league}
+                    {home}(Home) -- [{home_score}]::[{home_score_v4}]
+                    {away}(Away) -- [{away_score}]::[{away_score_v4}]
+
+                    [PLAY]  {final_result}
+                    """
+                except Exception as e:
+                    league_result, clock = self.find_league(home_team_name, away_team_name)
+
+                    data = [[home, home_score, home_score_v4],
+                            [away, away_score, away_score_v4]]
+
+                    table = PrettyTable(["Team's Name", "Prediction (V1)", "Prediction (V2)"])
+                    table.add_rows(data)
+                    print(table)
+
+                    odds = self.find_odds(home, away)
+
+                    h = float(odds[0])
+                    d = float(odds[1])
+                    a = float(odds[2])
+
+                    # detect expected winner base on the odd value (home, away or draw)
+                    winnerByOdd = self.winner_by_odd(h, d, a)
+                    winnerByV2 = self.winner_by_prediction(home_score, away_score)
+                    winnerByV4 = self.winner_by_prediction(home_score_v4, away_score_v4)
+
+                    final_result = self.decide_new(winnerByV2, winnerByV4, winnerByOdd)
+
+                    result = f"""
+                            [{clock}] - League: {league_result}
+                            {home}(Home) -- [{home_score}]:v4:[{home_score_v4}]
+                            {away}(Away) -- [{away_score}]:v4:[{away_score_v4}]
+
+                            [PLAY]  {final_result}
+                            """
 
 
-            print(f"Predicted Goals for Home Team [{new_game['team_home'][0]}]:", round(predicted_goals_home, 3))
-            print(f"Predicted Goals for Away Team [{new_game['team_away'][0]}]:", round(predicted_goals_away, 3))
+#                     result = f"""
+# [{clock}] - League: {league_result}
+# {table}
+#
+#                             """
+
+
+            #
+            # print(f"Predicted Goals for Home Team [{new_game['team_home'][0]}]:", round(predicted_goals_home, 3))
+            # print(f"Predicted Goals for Away Team [{new_game['team_away'][0]}]:", round(predicted_goals_away, 3))
 
             self.prompt_code_input.clear()
             self.prediction_result_display.setText(result)
             self.write_prediction('predictions.txt', result)
 
             pass
+        except FileNotFoundError as e:
+            QMessageBox.information(self, "No Training Data", "Training Data required! Load Training data!")
+            self.prompt_code_input.clear()
+
         except Exception as e:
             self.prediction_result_display.setText(str(e))
             if str(e).__contains__('unseen labels'):
@@ -883,7 +1250,7 @@ class JbaPredictWindow(QWidget):
             print(f"An Error occurred in start: {e}")
 
     def decide(self, home_score, away_score):
-        diff = abs(home_score - away_score)
+        diff = abs(abs(home_score) - abs(away_score))
         highest = None
         if abs(home_score) > abs(away_score):
             highest = "Home"
@@ -903,6 +1270,36 @@ class JbaPredictWindow(QWidget):
             return highest
         else:
             return "Can't Decide"
+
+    def decide_new(self, v2, v4, odd):
+        """
+            * !if v2 and v4 and odds alligns >>[SINGLE] odd (either direct home/away)
+            * !if v2 and v4 alligns but not odds >> [DOUBLE] odds or v-value
+            * !if v2 and v4 not align, v4 aligns with odd >> [SINGLE] odd
+            * !if v2 and v4 not align, v2 aligns with odd >> [DOUBLE] v4 value or odd
+            * if v2 and v4 not align, none align with odd >> {DOUBLE} trying... odd or draw
+        """
+        final_value = None
+        print('---------------------------')
+        print(f"{v2} -- {v4} -- {odd}")
+        print('---------------------------')
+
+        if v2 == v4 == odd:
+            final_value = odd
+        elif v2 == v4 and v4 != odd:
+            final_value = f"{odd} or {v2}"
+        elif v2 != v4 and v4 == odd:
+            final_value = odd
+        elif v2 != v4 and v2 == odd:
+            final_value = f"{v4} or {odd}"
+        elif v2 != v4 and v2 != odd and v4 != odd:
+            final_value = f"{odd} or {v4}"
+        else:
+            final_value = "Can't decide"
+
+        print(f"Final value = {final_value}")
+        return final_value
+
 
     def write_prediction(self, filename, prediction):
         try:
@@ -976,17 +1373,17 @@ class JbaPredictWindow(QWidget):
 
     def train_model(self, data):
         # Split the data into features (X) and target variables (y)
-
+        print(1)
         X = data[
             ['team_home_encoded', 'team_away_encoded', 'possession_home', 'possession_away', 'shots_on_target_home',
              'shots_on_target_away']]
         y_home = data['goals_home']
         y_away = data['goals_away']
-
+        print(2)
         # Train a linear regression model for home goals
         model_home = LinearRegression()
         model_home.fit(X, y_home)
-
+        print(3)
         # Train a linear regression model for away goals
         model_away = LinearRegression()
         model_away.fit(X, y_away)

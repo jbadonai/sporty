@@ -1,68 +1,32 @@
-team = [
-    "USM Alger",
-    "MC Alger",
-    "MC Oran",
-    "CS Constantine",
-    "Ghali Club Mascara",
-    "Rawd Solb Kouba",
-    "USM El Harrach",
-    "Nasr Air Algérie Hussein Dey",
-    "USM Annaba",
-    "MO Constantine",
-    "US Chaouia",
-    "ASO Chlef",
-    "JS Saoura",
-    "HB Chelghoum Laïd",
-    "NC Magra",
-    "Olympique de Médéa",
-    "Paradou AC",
-    "RC Arbaâ",
-    "RC Relizane",
-    "US Biskra",
-    "WA Tlemcen",
-    "ASO Chlef",
-    "CR Belouizdad",
-    "CS Constantine",
-    "ES Sétif",
-    "HB Chelghoum Laïd",
-    "JS Kabylie",
-    "JS Saoura",
-    "MC Alger",
-    "MC Oran",
-    "NA Hussein Dey",
-    "NC Magra",
-    "Olympique de Médéa",
-    "Paradou AC",
-    "RC Arbaâ",
-    "RC Relizane",
-    "US Biskra",
-    "USM Alger",
-    "WA Tlemcen",
-    "Aïn Témouchent Wilaya – Honor",
-    "Aïn Témouchent Wilaya – Pre-Honor",
-    "Mostaganem Wilaya – Honor",
-    "Mostaganem Wilaya – Pre-Honor",
-    "Oran Wilaya – Honor",
-    "Oran Wilaya – Pre-Honor",
-    "Relizane Wilaya – Honor",
-    "Relizane Wilaya – Pre-Honor"
-]
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager  # For managing driver
+from bs4 import BeautifulSoup
+import time
 
-for t in team:
-    text = f"in tabular form, list the last 10 games played by {t} with the following information:  " \
-        f"team_home, team_away, goals_home,goals_away, possession_home, possession_away, shots_on_target_home," \
-        f"shots_on_target_away\n\n"
+# Launch a Chrome browser
+driver = webdriver.Chrome(ChromeDriverManager().install())
 
-    with open('prompts.txt', 'a') as f:
-        f.write(text)
+# Navigate to Bing Chat
+driver.get("https://www.bing.com/chat/")
 
-    print(text)
+# Find the input field and enter your question
+question_field = driver.find_element(By.ID, "question-input")
+question_field.send_keys("Your question here")
+question_field.submit()
 
+# Wait for the response to appear (adjust wait time as needed)
+time.sleep(5)  # Example wait time
 
+# Get the HTML content of the response area
+response_html = driver.find_element(By.ID, "response-area").get_attribute("innerHTML")
 
+# Parse the HTML to extract the text response
+soup = BeautifulSoup(response_html, "html.parser")
+response_text = soup.get_text()
 
+# Print the extracted response
+print(response_text)
 
-
-
-
-
+# Close the browser
+driver.quit()

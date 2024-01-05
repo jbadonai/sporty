@@ -12,11 +12,18 @@ import time
 
 
 class GeneratePrompt():
-    def __init__(self, sport="football", period=6):
+    def __init__(self, sport="football", period=6, single=False, home=None, away=None, league=None):
         self.sport = sport
         self.start_time = period
+        self.single = single
+        self.single_home = home
+        self.single_away = away
+        self.single_league = league
         # self.prompt_style = 1
-        self.url = f"https://www.sportybet.com/ng/sport/{self.sport}?time={self.start_time}"
+        if self.start_time != "":
+            self.url = f"https://www.sportybet.com/ng/sport/{self.sport}?time={self.start_time}"
+        else:
+            self.url = f"https://www.sportybet.com/ng/sport/{self.sport}"
 
         self.first_level_target_class = "match-league-wrap"
         self.all_games = []
@@ -64,17 +71,41 @@ class GeneratePrompt():
 
         return prompt_body
 
-    def get_predict_prompt(self,home, away, league):
-        p = f"""in an upcoming match between {home}(home) and {away}(Away), in  {league} league:
+    def get_predict_prompt(self,home, away, league, sport="football"):
+        p = f"""in an upcoming {sport} match between {home}(home) and {away}(Away), in  {league} league:
 
-    * get the last 3 games statistics for possession and shots on target data by {home}  and 
-    * get the last 3 games statistics for possession and shots on target data by {away}, 
-    * provide average possession and shots on target data for both team using the json format below
+    * get the last 3 games statistics for {self.get_predict_stat(sport)} data by {home}  and 
+    * get the last 3 games statistics for {self.get_predict_stat(sport)} data by {away}, 
+    * provide average {self.get_predict_stat(sport)} for both team using the json format below
 
-            'team_home': ['{home}'],'team_away': ['{away}'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
-
+            {self.get_json(sport, home, away)}
         """
         return p
+
+    def get_predict_stat(self, sport):
+        stat = ""
+        if str(sport).lower() == 'football':
+            stat = "possession and shots on target"
+        if str(sport).lower() == 'basketball':
+            stat = "field goal percentage, free throw percentage and three-point percentage"
+
+        return stat
+
+    def get_json(self,sport, home, away):
+        json = None
+        if str(sport).lower() == 'football':
+            json = f"'team_home': ['{home}'],'team_away': ['{away}'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]"
+        elif str(sport).lower() == 'basketball':
+            json = f"'team_home': ['{home}'],'team_away': ['{away}']," \
+                f"'field_goal_percentage_home': [0]," \
+                f"'field_goal_percentage_away': [0]," \
+                f"'free_throw_percentage_home': [0],'free_throw_percentage_away': [0]," \
+                f"'three_point_percentage_home': [0],'three_point_percentage_away': [0]"
+
+        return json
+        pass
+
+
 
     def get_action_prompt_old(self, league="", home ="", away=""):
         prompt_action = f"""
@@ -119,13 +150,13 @@ Present the resulting 16 feature data of each team in a list of python turple. u
 
         return prompt_action
 
-    def get_action_prompt(self, league="", home ="", away="", focus=""):
+    def get_action_prompt(self, league="", home ="", away="",game="football", focus=""):
         if focus == "":
             prompt_action = f"""
 
 in a tabular form, provide the last 10 games statistics  played  the team above,
 using the following header:
-team name (Tainan City FC)
+team name 
 opponent name
 goal scored by team
 goal scored by opponent
@@ -135,36 +166,44 @@ shots on target by team
 shots on target by opponent
 """
 
-#             prompt_action = f"""
-# in a tabular form, list the last 10 games played by the team above (either home or away),  strictly under the following headings without omitting the underscore.
-#         team_home, team_away, goals_home,goals_away, possession_home, possession_away, shots_on_target_home,shots_on_target_away
-# where the team does not have up to 10 game played in the current season, use data from previous season.
-#
-# ensure the exact team name above is used exactly in the table.
-# """
         else:
-#             prompt_action = f"""
-# in a tabular form, list the last 10 games played by the team above (either home or away),  strictly under the following headings without omitting the underscore.
-#         team_home, team_away, goals_home,goals_away, possession_home, possession_away, shots_on_target_home,shots_on_target_away
-# where the team does not have up to 10 game played in the current season, use data from previous season.
-#
-# ensure the exact team name '{focus}'  above is used exactly in the table.
-# """
-
             prompt_action = f"""
-            in a tabular form, provide the last 10 games statistics  played  by {focus},
+            in a tabular form, provide the last 10 {game} games statistics  played  by {focus},
             using the following header
-            team name (Tainan City FC)
-            opponent name
-            goal scored by team
-            goal scored by opponent
-            possession percentage by team
-            possession percentage by opponent
-            shots on target by team
-            shots on target by opponent
+            {self.get_statistics_headers(game)}
             """
 
         return prompt_action
+
+    def get_statistics_headers(self, game):
+        stat = ""
+        if str(game).lower() == "football":
+            stat = """
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            """
+        elif str(game).lower() == "basketball":
+            stat = """
+                    team name 	   
+                    team field goal percentage
+                    team free throw percentage
+                    team three-point percentage
+                    team quarterly scores
+                    team total points	  
+                    opponent name   
+                    opponent field goal percentage
+                    opponent free throw percentage
+                    opponent three-point percentage
+                    opponent quarterly scores
+                    opponent total points
+                    """
+        return stat
 
     def open_file(self, filename):
         try:
@@ -311,17 +350,50 @@ shots on target by opponent
         # Print a message to indicate the task is done
         print("The excel file with the league names has been saved.")
 
-    def start_single(self, home, away, league):
+    def start_single(self, home, away, league, sport="football"):
+        self.clean_files()
+        # prompt_header = self.get_header_prompt(self.sport)
+        prompt_body = self.get_body_prompt(league, home, away)
+        prompt_action_h = self.get_action_prompt(focus=home, game=sport)
+        prompt_action_a = self.get_action_prompt(focus=away, game=sport)
+
+        bp = prompt_body.split("--")
+
+        # self.write_header('generated_prompt.txt', prompt_header)
+        self.write_body('generated_prompt.txt', bp[0])
+        self.write_action('generated_prompt.txt', prompt_action_h)
+        self.write_body('generated_prompt.txt', bp[1])
+        self.write_action('generated_prompt.txt', prompt_action_a)
+
+        pdp = self.get_predict_prompt(home, away, league, sport=sport)
+        self.write_predict_data_prompt('generated_prompt.txt', pdp)
+
+        data = (home, away, league, "N/A")
+
+        # load the existing data in leageu table if any
+        existing_table = ""
+        if os.path.exists("leagueTable.txt") is True:
+            with open("leagueTable.txt", 'r', encoding='utf-8', errors='replace') as f:
+                existing_table = f.read()
+        else:
+            existing_table = ""
+
+
+        # append this new one to the existing table if there is any
+        if existing_table != "":
+            existing_table = eval(existing_table)
+            existing_table.append(data)
+            with open("leagueTable.txt", 'w', encoding='utf-8', errors='replace') as f:
+                f.write(str(existing_table))
+        else:
+            # write a new file. overwrite the file with new single data
+            with open("leagueTable.txt", 'w', encoding='utf-8', errors='replace') as f:
+                f.write(f"[{data}]")
+
+        self.open_file('generated_prompt.txt')
         pass
 
-    def start(self):
-        sport = self.sport
-        start_time = self.start_time
-        url = f"https://www.sportybet.com/ng/sport/{sport}?time={start_time}"
-
-# gets all games
-        self.load_url(url)
-
+    def clean_files(self):
         with open('generated_prompt.txt', 'w', encoding='utf-8') as f:
             f.write("")
 
@@ -334,126 +406,176 @@ shots on target by opponent
         with open('predict_data_prompt.txt', 'w', encoding='utf-8') as f:
             f.write("")
 
-        data = []
-        print('Writing extracted content to file...')
+    def write_header(self, filename, prompt_header):
+        with open(filename, 'a', encoding='utf-8', errors='replace') as f:
+            f.write(prompt_header)
+            f.write("\n")
 
-        def write_header(filename, prompt_header):
+    def write_body(self, filename, prompt_body):
+        with open(filename, 'a', encoding='utf-8', errors='replace') as f:
+            try:
+                f.write(f"{prompt_body}\n\n")
+
+            except:
+                f.write(f"Skipped due to error\n")
+                pass
+
+    def write_action(self, filename, prompt_action):
+        try:
             with open(filename, 'a', encoding='utf-8', errors='replace') as f:
-                f.write(prompt_header)
+                f.write(prompt_action)
                 f.write("\n")
+                f.write('-' * 80)
+                f.write("\n")
+        except Exception as e:
+            print("error in write action..............")
 
-        def write_body(filename, prompt_body):
-            with open(filename, 'a', encoding='utf-8', errors='replace') as f:
-                try:
-                    f.write(f"{prompt_body}\n\n")
-
-                except:
-                    f.write(f"Skipped due to error\n")
-                    pass
-
-        def write_predict_data_prompt(filename, prompt_body):
-            with open(filename, 'a', encoding='utf-8', errors='replace') as f:
-                try:
-                    f.write(f"{prompt_body}\n")
-                    f.write(f"{'^' * 80}\n\n")
-                    f.write(f"{'^' * 80}\n\n")
-                except:
-                    f.write(f"* Skipped due to error\n")
-                    pass
-
-        def write_action(filename, prompt_action):
+    def write_predict_data_prompt(self, filename, prompt_body):
+        with open(filename, 'a', encoding='utf-8', errors='replace') as f:
             try:
+                f.write(f"{prompt_body}\n")
+                f.write(f"{'^' * 80}\n\n")
+                f.write(f"{'^' * 80}\n\n")
+            except:
+                f.write(f"* Skipped due to error\n")
+                pass
+
+    def start(self, include_srl=False):
+        if self.single is False:
+            sport = self.sport
+            start_time = self.start_time
+            if start_time != "":
+                url = f"https://www.sportybet.com/ng/sport/{sport}?time={start_time}"
+            else:
+                url = f"https://www.sportybet.com/ng/sport/{sport}"
+
+            # gets all games
+            self.load_url(url)
+
+            self.clean_files()
+
+            data = []
+            print('Writing extracted content to file...')
+
+            def write_header(filename, prompt_header):
                 with open(filename, 'a', encoding='utf-8', errors='replace') as f:
-                    f.write(prompt_action)
+                    f.write(prompt_header)
                     f.write("\n")
-                    f.write('-' * 80)
-                    f.write("\n")
-            except Exception as e:
-                print("error in write action..............")
 
-        def write_odds( home:str, away:str, odds:list):
-            try:
-                data = f"{home},{away},{odds[0]},{odds[1]},{odds[2]}\n"
-                with open('odds.txt', 'a', encoding='utf-8', errors='replace') as f:
-                    f.write(data)
-            except Exception as e:
-                print("error in write action..............")
+            def write_body(filename, prompt_body):
+                with open(filename, 'a', encoding='utf-8', errors='replace') as f:
+                    try:
+                        f.write(f"{prompt_body}\n\n")
 
-        header_written = False
-        all_odds =[]
-        for game in self.all_games:
-            for team in game['teams']:
-                league = game['league']
-                home = team['home']
-                away = team['away']
-                clock = team['clock']
-                odds = team['odds']
+                    except:
+                        f.write(f"Skipped due to error\n")
+                        pass
 
-                # write_odds(home, away, odds)
-                all_odds.append((home,away,odds))
+            def write_predict_data_prompt(filename, prompt_body):
+                with open(filename, 'a', encoding='utf-8', errors='replace') as f:
+                    try:
+                        f.write(f"{prompt_body}\n")
+                        f.write(f"{'^' * 80}\n\n")
+                        f.write(f"{'^' * 80}\n\n")
+                    except:
+                        f.write(f"* Skipped due to error\n")
+                        pass
 
-                self.league_table.append((home, away, league, clock))
-
-                prompt_header = self.get_header_prompt(sport)
-                prompt_body = self.get_body_prompt(league,home, away)
-
-                # write the header once
-                if header_written is False:
-                    write_header('generated_prompt.txt', prompt_header)
-                    header_written = True
-
-                # write the body
+            def write_action(filename, prompt_action):
                 try:
-                    write_body('generated_prompt.txt', prompt_body)
-                except:
-                    pass
+                    with open(filename, 'a', encoding='utf-8', errors='replace') as f:
+                        f.write(prompt_action)
+                        f.write("\n")
+                        f.write('-' * 80)
+                        f.write("\n")
+                except Exception as e:
+                    print("error in write action..............")
 
-                data.append((clock, prompt_header, prompt_body, league, home, away))
+            def write_odds( home:str, away:str, odds:list):
+                try:
+                    data = f"{home},{away},{odds[0]},{odds[1]},{odds[2]}\n"
+                    with open('odds.txt', 'a', encoding='utf-8', errors='replace') as f:
+                        f.write(data)
+                except Exception as e:
+                    print("error in write action..............")
 
-        # save the league table
-        print("saving league table.............")
-        with open("leagueTable.txt", 'w', encoding='utf-8', errors='replace') as f:
-            f.write(str(self.league_table))
+            header_written = False
+            all_odds =[]
+            for game in self.all_games:
+                for team in game['teams']:
+                    league = game['league']
+                    home = team['home']
+                    away = team['away']
+                    clock = team['clock']
+                    odds = team['odds']
 
-        print("saving odds table.............")
-        with open("odds.txt", 'w', encoding='utf-8', errors='replace') as f:
-            f.write(str(all_odds))
+                    # write_odds(home, away, odds)
+                    all_odds.append((home,away,odds))
 
-        prompt_action = self.get_action_prompt()
-        write_action('generated_prompt.txt', prompt_action)
+                    self.league_table.append((home, away, league, clock))
 
-        print('sorting data....')
-        # Sort the list based on the custom sorting key
-        sorted_data = sorted(data, key=self.custom_sort_key)
+                    prompt_header = self.get_header_prompt(sport)
+                    prompt_body = self.get_body_prompt(league,home, away)
 
-        write_sorted_header = False
-        for d in sorted_data:
+                    # write the header once
+                    if header_written is False:
+                        write_header('generated_prompt.txt', prompt_header)
+                        header_written = True
 
-            if str(d[3]).lower().__contains__("Simulated Reality".lower()):
-                continue
+                    # write the body
+                    try:
+                        write_body('generated_prompt.txt', prompt_body)
+                    except:
+                        pass
 
-            # write header once
-            if write_sorted_header is False:
-                write_header('sorted_generated_prompt.txt', d[1])
-                write_sorted_header = True
+                    data.append((clock, prompt_header, prompt_body, league, home, away))
 
-            # write body
-            prompt_action_h = self.get_action_prompt(focus=d[4])
-            prompt_action_a = self.get_action_prompt(focus=d[5])
-            write_body('sorted_generated_prompt.txt', d[2].split("--")[0])
-            write_action('sorted_generated_prompt.txt', prompt_action_h)
-            write_body('sorted_generated_prompt.txt', d[2].split("--")[1])
-            write_action('sorted_generated_prompt.txt', prompt_action_a)
+            # save the league table
+            print("saving league table.............")
+            with open("leagueTable.txt", 'w', encoding='utf-8', errors='replace') as f:
+                f.write(str(self.league_table))
 
-            # write predict data prompt
-            pdp = self.get_predict_prompt(d[4], d[5], d[3])
-            # write_predict_data_prompt('predict_data_prompt.txt', pdp)
-            write_predict_data_prompt('sorted_generated_prompt.txt', pdp)
+            print("saving odds table.............")
+            with open("odds.txt", 'w', encoding='utf-8', errors='replace') as f:
+                f.write(str(all_odds))
 
+            prompt_action = self.get_action_prompt(game=sport)
+            write_action('generated_prompt.txt', prompt_action)
 
+            print('sorting data....')
+            # Sort the list based on the custom sorting key
+            sorted_data = sorted(data, key=self.custom_sort_key)
 
-        # open_file('generated_prompt.txt')
-        self.open_file('sorted_generated_prompt.txt')
-        # self.open_file('predict_data_prompt.txt')
+            write_sorted_header = False
+            for d in sorted_data:
 
-        print("Completed!")
+                if str(d[3]).lower().__contains__("Simulated Reality".lower()):
+                    if include_srl is False:
+                        continue
+
+                # write header once
+                if write_sorted_header is False:
+                    write_header('sorted_generated_prompt.txt', d[1])
+                    write_sorted_header = True
+
+                # write body
+                prompt_action_h = self.get_action_prompt(focus=d[4], game=sport)
+                prompt_action_a = self.get_action_prompt(focus=d[5], game=sport)
+                write_body('sorted_generated_prompt.txt', d[2].split("--")[0])
+                write_action('sorted_generated_prompt.txt', prompt_action_h)
+                write_body('sorted_generated_prompt.txt', d[2].split("--")[1])
+                write_action('sorted_generated_prompt.txt', prompt_action_a)
+
+                # write predict data prompt
+                pdp = self.get_predict_prompt(d[4], d[5], d[3], sport=sport)
+                # write_predict_data_prompt('predict_data_prompt.txt', pdp)
+                write_predict_data_prompt('sorted_generated_prompt.txt', pdp)
+
+            # open_file('generated_prompt.txt')
+            self.open_file('sorted_generated_prompt.txt')
+            # self.open_file('predict_data_prompt.txt')
+
+            print("Completed!")
+        else:
+            self.start_single(self.single_home, self.single_away, self.single_league, sport=sport)
+            pass
