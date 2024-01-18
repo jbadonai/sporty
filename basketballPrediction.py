@@ -5,9 +5,11 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import joblib
 
+
 class PredictOutcome:
-    def __init__(self):
+    def __init__(self, algorithm="Liner Regression"):
         self.model = None
+        self.algorithm = algorithm
 
     def load_data(self, file_path):
         # Load data from the Excel file
@@ -29,15 +31,6 @@ class PredictOutcome:
         for col in percentage_columns:
             data[col] = data[col].apply(convert_possession)
 
-        # # Split the 'Team quarterly scores' and 'Opponent quarterly scores' into separate columns
-        # quarterly_columns = ['Q1', 'Q2', 'Q3', 'Q4', 'Opponent Q1', 'Opponent Q2', 'Opponent Q3', 'Opponent Q4']
-        #
-        # for col in quarterly_columns:
-        #     data[col] = data['Team quarterly scores' if col.startswith('Q') else 'Opponent quarterly scores'].apply(
-        #         lambda x: sum(map(int, x.split('-'))) if isinstance(x, str) else x
-        #     )
-        #     print(data[col])
-        #     input(":>>>>>")
 
         # Split 'Team quaterly column' into 'Q1', 'Q2', 'Q3', 'Q4'
         data[['Q1', 'Q2', 'Q3', 'Q4']] = data['Team quarterly scores'].str.split('-', expand=True)
@@ -52,9 +45,6 @@ class PredictOutcome:
 
         # Drop the original quarterly scores columns
         data = data.drop(['Team quarterly scores', 'Opponent quarterly scores'], axis=1)
-
-        # print(data['Q1'])
-        # input(":>>>>>")
 
         return data
 
@@ -137,11 +127,12 @@ class PredictOutcome:
 
         models = {}
 
+        best_model = None
+        best_mse = float('inf')
+
         for target_name, target_columns in targets.items():
 
             y = data[target_columns] if isinstance(target_columns, list) else data[target_columns]
-            # print(y)
-            # input("::")
 
             # Split the data into training and testing sets
             X_train, X_test, y_train, y_test = train_test_split(
@@ -149,21 +140,104 @@ class PredictOutcome:
             )
 
             # Train models using different algorithms
-            model = RandomForestRegressor()
-            # model = RandomForestRegressor() if 'team' in target_name.lower() else LinearRegression()
+            # -----------------------------------------------
+            # if self.algorithm.lower() == "liner regression":
+            #     model = LinearRegression()
+            # elif self.algorithm.lower() == "random forest":
+            #     model = RandomForestRegressor()
+            # else:
+            #     model = LinearRegression()
+            #
+            # print(f"Using '{self.algorithm} 'algorithm")
+            # -----------------------------------------------------
+            # Train models using different algorithms
+            algorithms = [LinearRegression(), RandomForestRegressor()]
 
+            for model in algorithms:
+                # Train the model
+                model.fit(X_train, y_train)
+
+                # Make predictions
+                y_pred = model.predict(X_test)
+
+                # Calculate mean squared error
+                mse = mean_squared_error(y_test, y_pred)
+                print(f"mse:({model}): {mse}")
+
+                # Update the best model if the current one is better
+                if mse < best_mse:
+                    best_mse = mse
+                    best_model = model
+
+            # ============================================================
+
+            print(f"Best model ({target_name}): {best_model}")
             # Train the model
-            model.fit(X_train, y_train)
+            best_model.fit(X_train, y_train)
 
             # Save the trained model to disk
             model_filename = f"{target_name}_model.joblib"
-            joblib.dump(model, model_filename)
+            joblib.dump(best_model, model_filename)
 
             # Store the model in the dictionary
             models[target_name] = model_filename
 
+            with open("bb_model_list.txt", 'w') as f:
+                f.write(str(models))
+
         self.models = models
         return models
+
+    def train_model_new(self, data):
+        # Separate features and targets
+        X = data.drop(
+            ['Team total points', 'Opponent total points', 'Q1', 'Q2', 'Q3', 'Q4', 'Opponent Q1', 'Opponent Q2',
+             'Opponent Q3', 'Opponent Q4'], axis=1)
+
+        # Targets
+        targets = {
+            'team_points': 'Team total points',
+            'opponent_points': 'Opponent total points',
+            'team_quarters': ['Q1', 'Q2', 'Q3', 'Q4'],
+            'opponent_quarters': ['Opponent Q1', 'Opponent Q2', 'Opponent Q3', 'Opponent Q4']
+        }
+
+        best_model = None
+        best_mse = float('inf')
+
+        for target_name, target_columns in targets.items():
+            y = data[target_columns] if isinstance(target_columns, list) else data[target_columns]
+
+            # Split the data into training and testing sets
+            X_train, X_test, y_train, y_test = train_test_split(
+                X, y, test_size=0.2, random_state=42
+            )
+
+            # Train models using different algorithms
+            algorithms = [LinearRegression(), RandomForestRegressor()]
+
+            for model in algorithms:
+                # Train the model
+                model.fit(X_train, y_train)
+
+                # Make predictions
+                y_pred = model.predict(X_test)
+
+                # Calculate mean squared error
+                mse = mean_squared_error(y_test, y_pred)
+
+                # Update the best model if the current one is better
+                if mse < best_mse:
+                    best_mse = mse
+                    best_model = model
+
+            print(f"Using '{best_model.__class__.__name__}' algorithm for {target_name}")
+
+            # Save the trained model to disk
+            model_filename = f"{target_name}_model.joblib"
+            joblib.dump(best_model, model_filename)
+
+        return best_model
 
     def save_model(self, model, file_path):
         # Save the trained model to disk
@@ -173,9 +247,38 @@ class PredictOutcome:
         # Load the trained model from disk
         self.model = joblib.load(file_path)
 
+    def load_model_lists(self):
+        with open("bb_model_list.txt", 'r') as f:
+            data = f.read()
+
+        self.models = eval(data)
+        print(self.models)
+
     def predict(self, input_data):
         # Drop 'Team' and 'Opponent' columns
         input_data = input_data.drop(['Team', 'Opponent'], axis=1)
+
+        def convert_possession(value):
+            if isinstance(value, str) and '%' in value:
+                v = float(value.rstrip('%'))
+                if v < 1:
+                    return v
+                else:
+                    return v / 100.0
+            else:
+                v = float(value)
+                # print(f"checking v: {v}")
+                if v < 1:
+                    return v
+                else:
+                    return v / 100
+
+            # Convert percentage columns to numeric
+
+        percentage_columns = ['Team FG%', 'Team FT%', 'Team 3P%', 'Opponent FG%', 'Opponent FT%', 'Opponent 3P%']
+        for col in percentage_columns:
+            input_data[col] = input_data[col].apply(convert_possession)
+
 
         input_all_features = input_data[
             ['Team FG%', 'Team FT%', 'Team 3P%', 'Opponent FG%', 'Opponent FT%', 'Opponent 3P%']]
@@ -183,6 +286,7 @@ class PredictOutcome:
         predictions = {}
 
         result_dict = {}
+        print(self.models)
 
         for target_name, model_filename in self.models.items():
             # Load the trained model from disk
@@ -274,8 +378,8 @@ class PredictOutcome:
 #
 # # Make predictions
 # predictions = predictor.predict(input_df)
-
+#
 # Display the predictions
 # print(predictions.columns)
 # print(predictions)
-
+#

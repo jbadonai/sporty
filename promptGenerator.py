@@ -10,15 +10,31 @@ import requests
 import pandas as pd
 import time
 
+def get_team_strength_prompt(home, away):
+    teamStrengthPrompt = f'''
+    
+    provide the team strength of the 2 football teams '{home}' and '{away}' using the team statistics below based on the latest data:
+    
+    
+        'win_loss_ratio':       # Win-loss ratio (float between 0 and 1)
+        'goals_for'               # Average goals scored per game
+        'goals_against'            # Average goals conceded per game
+        'possession_percentage'     # Possession percentage (integer)
+        'pass_completion_rate'      # Pass completion rate (percentage)
+        'clean_sheets_ratio':       # Clean sheets ratio (float between 0 and 1)
+    '''
+    return teamStrengthPrompt
+
 
 class GeneratePrompt():
-    def __init__(self, sport="football", period=6, single=False, home=None, away=None, league=None):
+    def __init__(self, sport="football", period=6, single=False, home=None, away=None, league=None, mainWindow=None):
         self.sport = sport
         self.start_time = period
         self.single = single
         self.single_home = home
         self.single_away = away
         self.single_league = league
+        self.mainWndow = mainWindow
         # self.prompt_style = 1
         if self.start_time != "":
             self.url = f"https://www.sportybet.com/ng/sport/{self.sport}?time={self.start_time}"
@@ -156,7 +172,7 @@ Present the resulting 16 feature data of each team in a list of python turple. u
         if focus == "":
             prompt_action = f"""
 
-in a tabular form, provide the last 10 games statistics  played  the team above,
+in a tabular form, provide the last 5 games statistics  played  the team above,
 using the following header:
 team name 
 opponent name
@@ -170,7 +186,7 @@ shots on target by opponent
 
         else:
             prompt_action = f"""
-            in a tabular form, provide the last 10 {game} games statistics  played  by {focus},
+            in a tabular form, provide the last 5 {game} games statistics  played  by {focus},
             using the following header
             {self.get_statistics_headers(game)}
             """
@@ -212,6 +228,7 @@ shots on target by opponent
             subprocess.Popen(["notepad.exe", filename])
         except Exception as e:
             print(f"An error occurred: {str(e)}")
+            self.mainWndow.display_info.setText(f"An error occurred: {str(e)}")
 
     def get_league_wrap(self, content):
         soup = BeautifulSoup(content, 'html.parser')
@@ -242,6 +259,7 @@ shots on target by opponent
         self.all_games.clear()
 
         print("loading Chrome...")
+        self.mainWndow.display_info.setText("Loading Chrome...")
         chrome_options = Options()
         chrome_options.add_argument("--headless")  # Run Chrome in headless mode (no GUI)
         chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -249,11 +267,13 @@ shots on target by opponent
         driver = webdriver.Chrome(options=chrome_options)  # Make sure chromedriver is in your PATH
 
         print(f"loading url [{url}]...")
+        self.mainWndow.display_info.setText(f"loading url [{url}]...")
         driver.get(url)  # Load the page once
         time.sleep(2)
         content = driver.page_source
 
         print('Extracting Content...')
+        self.mainWndow.display_info.setText('Extracting Content...')
         leagues = self.get_league_wrap(content)
 
         for league in leagues:
@@ -283,6 +303,7 @@ shots on target by opponent
 
     def scrape(self):
         print("loading Chrome...")
+        self.mainWndow.display_info.setText("loading Chrome...")
         chrome_options = Options()
         chrome_options.add_argument("--headless")  # Run Chrome in headless mode (no GUI)
         chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -351,6 +372,7 @@ shots on target by opponent
 
         # Print a message to indicate the task is done
         print("The excel file with the league names has been saved.")
+        self.mainWndow.display_info.setText("The excel file with the league names has been saved.")
 
     def start_single(self, home, away, league, sport="football"):
         self.clean_files()
@@ -431,6 +453,7 @@ shots on target by opponent
                 f.write("\n")
         except Exception as e:
             print("error in write action..............")
+            self.mainWndow.display_info.setText("error in write action..............")
 
     def write_predict_data_prompt(self, filename, prompt_body):
         with open(filename, 'a', encoding='utf-8', errors='replace') as f:
@@ -445,6 +468,7 @@ shots on target by opponent
     def start(self, include_srl=False):
         if self.single is False:
             sport = self.sport
+            print(f"Sport! sport!! = {sport}")
             start_time = self.start_time
             if start_time != "":
                 url = f"https://www.sportybet.com/ng/sport/{sport}?time={start_time}"
@@ -457,7 +481,8 @@ shots on target by opponent
             self.clean_files()
 
             data = []
-            print('Writing extracted content to file...')
+            print('[S] Writing extracted content to file...')
+            self.mainWndow.display_info.setText('[S] Writing extracted content to file...')
 
             def write_header(filename, prompt_header):
                 with open(filename, 'a', encoding='utf-8', errors='replace') as f:
@@ -492,6 +517,7 @@ shots on target by opponent
                         f.write("\n")
                 except Exception as e:
                     print("error in write action..............")
+                    self.mainWndow.display_info.setText("error in write action..............")
 
             def write_odds( home:str, away:str, odds:list):
                 try:
@@ -500,6 +526,7 @@ shots on target by opponent
                         f.write(data)
                 except Exception as e:
                     print("error in write action..............")
+                    self.mainWndow.display_info.setText("error in write action..............")
 
             header_written = False
             all_odds =[]
@@ -534,10 +561,12 @@ shots on target by opponent
 
             # save the league table
             print("saving league table.............")
+            self.mainWndow.display_info.setText("saving league table.............")
             with open("leagueTable.txt", 'w', encoding='utf-8', errors='replace') as f:
                 f.write(str(self.league_table))
 
             print("saving odds table.............")
+            self.mainWndow.display_info.setText("saving odds table.............")
             with open("odds.txt", 'w', encoding='utf-8', errors='replace') as f:
                 f.write(str(all_odds))
 
@@ -545,6 +574,7 @@ shots on target by opponent
             write_action('generated_prompt.txt', prompt_action)
 
             print('sorting data....')
+            self.mainWndow.display_info.setText('sorting data....')
             # Sort the list based on the custom sorting key
             sorted_data = sorted(data, key=self.custom_sort_key)
 
@@ -579,5 +609,5 @@ shots on target by opponent
 
             print("Completed!")
         else:
-            self.start_single(self.single_home, self.single_away, self.single_league, sport=sport)
+            self.start_single(self.single_home, self.single_away, self.single_league, sport=self.sport)
             pass

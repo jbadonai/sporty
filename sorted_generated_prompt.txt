@@ -1,113 +1,3331 @@
 
-Team Name: EC Uniao Corinthians 
-League:  Brazil NBB  
+Team Name: Frosinone 
+League:  Italy Serie A  
 
 
-            in a tabular form, provide the last 10 basketball games statistics  played  by EC Uniao Corinthians,
+            in a tabular form, provide the last 5 football games statistics  played  by Frosinone,
             using the following header
             
-                    team name 	   
-                    team field goal percentage
-                    team free throw percentage
-                    team three-point percentage
-                    team quarterly scores
-                    team total points	  
-                    opponent name   
-                    opponent field goal percentage
-                    opponent free throw percentage
-                    opponent three-point percentage
-                    opponent quarterly scores
-                    opponent total points
-                    
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
             
 --------------------------------------------------------------------------------
- Team name: Flamengo RJ 
-League: Brazil NBB 
+ Team name: Cagliari 
+League: Italy Serie A 
 
 
 
-            in a tabular form, provide the last 10 basketball games statistics  played  by Flamengo RJ,
+            in a tabular form, provide the last 5 football games statistics  played  by Cagliari,
             using the following header
             
-                    team name 	   
-                    team field goal percentage
-                    team free throw percentage
-                    team three-point percentage
-                    team quarterly scores
-                    team total points	  
-                    opponent name   
-                    opponent field goal percentage
-                    opponent free throw percentage
-                    opponent three-point percentage
-                    opponent quarterly scores
-                    opponent total points
-                    
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
             
 --------------------------------------------------------------------------------
-in an upcoming basketball match between EC Uniao Corinthians(home) and Flamengo RJ(Away), in   Brazil NBB  league:
+in an upcoming football match between Frosinone(home) and Cagliari(Away), in   Italy Serie A  league:
 
-    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by EC Uniao Corinthians  and 
-    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by Flamengo RJ, 
-    * provide average field goal percentage, free throw percentage and three-point percentage for both team using the json format below
+    * get the last 3 games statistics for possession and shots on target data by Frosinone  and 
+    * get the last 3 games statistics for possession and shots on target data by Cagliari, 
+    * provide average possession and shots on target for both team using the json format below
 
-            'team_home': ['EC Uniao Corinthians'],'team_away': ['Flamengo RJ'],'field_goal_percentage_home': [0],'free_throw_percentage_home': [0],'three_point_percentage_home': [0],'field_goal_percentage_away': [0],'free_throw_percentage_away': [0],'three_point_percentage_away': [0]
+            'team_home': ['Frosinone'],'team_away': ['Cagliari'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
         
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Team Name: Unifacisa 
-League:  Brazil NBB  
+Team Name: Arsenal 
+League:  England Premier League  
 
 
-            in a tabular form, provide the last 10 basketball games statistics  played  by Unifacisa,
+            in a tabular form, provide the last 5 football games statistics  played  by Arsenal,
             using the following header
             
-                    team name 	   
-                    team field goal percentage
-                    team free throw percentage
-                    team three-point percentage
-                    team quarterly scores
-                    team total points	  
-                    opponent name   
-                    opponent field goal percentage
-                    opponent free throw percentage
-                    opponent three-point percentage
-                    opponent quarterly scores
-                    opponent total points
-                    
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
             
 --------------------------------------------------------------------------------
- Team name: Sesi/Franca BC SP 
-League: Brazil NBB 
+ Team name: Crystal Palace 
+League: England Premier League 
 
 
 
-            in a tabular form, provide the last 10 basketball games statistics  played  by Sesi/Franca BC SP,
+            in a tabular form, provide the last 5 football games statistics  played  by Crystal Palace,
             using the following header
             
-                    team name 	   
-                    team field goal percentage
-                    team free throw percentage
-                    team three-point percentage
-                    team quarterly scores
-                    team total points	  
-                    opponent name   
-                    opponent field goal percentage
-                    opponent free throw percentage
-                    opponent three-point percentage
-                    opponent quarterly scores
-                    opponent total points
-                    
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
             
 --------------------------------------------------------------------------------
-in an upcoming basketball match between Unifacisa(home) and Sesi/Franca BC SP(Away), in   Brazil NBB  league:
+in an upcoming football match between Arsenal(home) and Crystal Palace(Away), in   England Premier League  league:
 
-    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by Unifacisa  and 
-    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by Sesi/Franca BC SP, 
-    * provide average field goal percentage, free throw percentage and three-point percentage for both team using the json format below
+    * get the last 3 games statistics for possession and shots on target data by Arsenal  and 
+    * get the last 3 games statistics for possession and shots on target data by Crystal Palace, 
+    * provide average possession and shots on target for both team using the json format below
 
-            'team_home': ['Unifacisa'],'team_away': ['Sesi/Franca BC SP'],'field_goal_percentage_home': [0],'free_throw_percentage_home': [0],'three_point_percentage_home': [0],'field_goal_percentage_away': [0],'free_throw_percentage_away': [0],'three_point_percentage_away': [0]
+            'team_home': ['Arsenal'],'team_away': ['Crystal Palace'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Hungary 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Hungary,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Switzerland 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Switzerland,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Hungary(home) and Switzerland(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Hungary  and 
+    * get the last 3 games statistics for possession and shots on target data by Switzerland, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Hungary'],'team_away': ['Switzerland'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Rayo Vallecano 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Rayo Vallecano,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: UD Las Palmas 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by UD Las Palmas,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Rayo Vallecano(home) and UD Las Palmas(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Rayo Vallecano  and 
+    * get the last 3 games statistics for possession and shots on target data by UD Las Palmas, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Rayo Vallecano'],'team_away': ['UD Las Palmas'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Osasuna 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Osasuna,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Getafe 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Getafe,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Osasuna(home) and Getafe(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Osasuna  and 
+    * get the last 3 games statistics for possession and shots on target data by Getafe, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Osasuna'],'team_away': ['Getafe'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Equatorial Guinea 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Equatorial Guinea,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Guinea-Bissau 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Guinea-Bissau,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Equatorial Guinea(home) and Guinea-Bissau(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Equatorial Guinea  and 
+    * get the last 3 games statistics for possession and shots on target data by Guinea-Bissau, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Equatorial Guinea'],'team_away': ['Guinea-Bissau'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Cape Verde 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Cape Verde,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Mozambique 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Mozambique,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Cape Verde(home) and Mozambique(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Cape Verde  and 
+    * get the last 3 games statistics for possession and shots on target data by Mozambique, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Cape Verde'],'team_away': ['Mozambique'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Algeria 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Algeria,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Burkina Faso 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Burkina Faso,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Algeria(home) and Burkina Faso(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Algeria  and 
+    * get the last 3 games statistics for possession and shots on target data by Burkina Faso, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Algeria'],'team_away': ['Burkina Faso'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Morocco 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Morocco,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: DR Congo 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by DR Congo,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Morocco(home) and DR Congo(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Morocco  and 
+    * get the last 3 games statistics for possession and shots on target data by DR Congo, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Morocco'],'team_away': ['DR Congo'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Sheffield Utd 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Sheffield Utd,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: West Ham 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by West Ham,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Sheffield Utd(home) and West Ham(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Sheffield Utd  and 
+    * get the last 3 games statistics for possession and shots on target data by West Ham, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Sheffield Utd'],'team_away': ['West Ham'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Empoli 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Empoli,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: AC Monza 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by AC Monza,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Empoli(home) and AC Monza(Away), in   Italy Serie A  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Empoli  and 
+    * get the last 3 games statistics for possession and shots on target data by AC Monza, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Empoli'],'team_away': ['AC Monza'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Atalanta 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Atalanta,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Udinese 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Udinese,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Atalanta(home) and Udinese(Away), in   Italy Serie A  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Atalanta  and 
+    * get the last 3 games statistics for possession and shots on target data by Udinese, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Atalanta'],'team_away': ['Udinese'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: 1. FC Heidenheim 1846 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by 1. FC Heidenheim 1846,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Wolfsburg 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Wolfsburg,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between 1. FC Heidenheim 1846(home) and Wolfsburg(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by 1. FC Heidenheim 1846  and 
+    * get the last 3 games statistics for possession and shots on target data by Wolfsburg, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['1. FC Heidenheim 1846'],'team_away': ['Wolfsburg'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Cologne 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Cologne,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Borussia D 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Borussia D,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Cologne(home) and Borussia D(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Cologne  and 
+    * get the last 3 games statistics for possession and shots on target data by Borussia D, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Cologne'],'team_away': ['Borussia D'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Freiburg 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Freiburg,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Hoffenheim 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Hoffenheim,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Freiburg(home) and Hoffenheim(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Freiburg  and 
+    * get the last 3 games statistics for possession and shots on target data by Hoffenheim, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Freiburg'],'team_away': ['Hoffenheim'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: SV Darmstadt 98 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by SV Darmstadt 98,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Eintracht 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Eintracht,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between SV Darmstadt 98(home) and Eintracht(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by SV Darmstadt 98  and 
+    * get the last 3 games statistics for possession and shots on target data by Eintracht, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['SV Darmstadt 98'],'team_away': ['Eintracht'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: VfL Bochum 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by VfL Bochum,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Stuttgart 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Stuttgart,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between VfL Bochum(home) and Stuttgart(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by VfL Bochum  and 
+    * get the last 3 games statistics for possession and shots on target data by Stuttgart, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['VfL Bochum'],'team_away': ['Stuttgart'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Bayern 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Bayern,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Werder 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Werder,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Bayern(home) and Werder(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Bayern  and 
+    * get the last 3 games statistics for possession and shots on target data by Werder, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Bayern'],'team_away': ['Werder'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Villarreal 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Villarreal,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Mallorca 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Mallorca,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Villarreal(home) and Mallorca(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Villarreal  and 
+    * get the last 3 games statistics for possession and shots on target data by Mallorca, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Villarreal'],'team_away': ['Mallorca'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Real Madrid 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Real Madrid,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: UD Almeria 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by UD Almeria,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Real Madrid(home) and UD Almeria(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Real Madrid  and 
+    * get the last 3 games statistics for possession and shots on target data by UD Almeria, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Real Madrid'],'team_away': ['UD Almeria'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Spain 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Spain,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Croatia 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Croatia,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Spain(home) and Croatia(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Spain  and 
+    * get the last 3 games statistics for possession and shots on target data by Croatia, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Spain'],'team_away': ['Croatia'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Slovenia 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Slovenia,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Denmark 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Denmark,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Slovenia(home) and Denmark(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Slovenia  and 
+    * get the last 3 games statistics for possession and shots on target data by Denmark, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Slovenia'],'team_away': ['Denmark'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Belgium 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Belgium,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Slovakia 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Slovakia,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Belgium(home) and Slovakia(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Belgium  and 
+    * get the last 3 games statistics for possession and shots on target data by Slovakia, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Belgium'],'team_away': ['Slovakia'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Bournemouth 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Bournemouth,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Liverpool 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Liverpool,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Bournemouth(home) and Liverpool(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Bournemouth  and 
+    * get the last 3 games statistics for possession and shots on target data by Liverpool, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Bournemouth'],'team_away': ['Liverpool'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Borussia M 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Borussia M,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Augsburg 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Augsburg,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Borussia M(home) and Augsburg(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Borussia M  and 
+    * get the last 3 games statistics for possession and shots on target data by Augsburg, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Borussia M'],'team_away': ['Augsburg'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Ivory Coast 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Ivory Coast,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Nigeria 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Nigeria,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Ivory Coast(home) and Nigeria(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Ivory Coast  and 
+    * get the last 3 games statistics for possession and shots on target data by Nigeria, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Ivory Coast'],'team_away': ['Nigeria'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Senegal 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Senegal,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Cameroon 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Cameroon,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Senegal(home) and Cameroon(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Senegal  and 
+    * get the last 3 games statistics for possession and shots on target data by Cameroon, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Senegal'],'team_away': ['Cameroon'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Mauritania 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Mauritania,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Angola 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Angola,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Mauritania(home) and Angola(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Mauritania  and 
+    * get the last 3 games statistics for possession and shots on target data by Angola, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Mauritania'],'team_away': ['Angola'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Roma 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Roma,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Verona 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Verona,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Roma(home) and Verona(Away), in   Italy Serie A  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Roma  and 
+    * get the last 3 games statistics for possession and shots on target data by Verona, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Roma'],'team_away': ['Verona'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: US Salernitana 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by US Salernitana,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Genoa 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Genoa,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between US Salernitana(home) and Genoa(Away), in   Italy Serie A  league:
+
+    * get the last 3 games statistics for possession and shots on target data by US Salernitana  and 
+    * get the last 3 games statistics for possession and shots on target data by Genoa, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['US Salernitana'],'team_away': ['Genoa'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Juventus 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Juventus,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Empoli 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Empoli,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Juventus(home) and Empoli(Away), in   Italy Serie A  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Juventus  and 
+    * get the last 3 games statistics for possession and shots on target data by Empoli, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Juventus'],'team_away': ['Empoli'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Brentford FC 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Brentford FC,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Nottingham Forest 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Nottingham Forest,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Brentford FC(home) and Nottingham Forest(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Brentford FC  and 
+    * get the last 3 games statistics for possession and shots on target data by Nottingham Forest, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Brentford FC'],'team_away': ['Nottingham Forest'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Valencia 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Valencia,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Athletic Bilbao 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Athletic Bilbao,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Valencia(home) and Athletic Bilbao(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Valencia  and 
+    * get the last 3 games statistics for possession and shots on target data by Athletic Bilbao, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Valencia'],'team_away': ['Athletic Bilbao'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Betis 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Betis,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Barcelona 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Barcelona,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Betis(home) and Barcelona(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Betis  and 
+    * get the last 3 games statistics for possession and shots on target data by Barcelona, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Betis'],'team_away': ['Barcelona'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Leipzig 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Leipzig,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Leverkusen 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Leverkusen,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Leipzig(home) and Leverkusen(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Leipzig  and 
+    * get the last 3 games statistics for possession and shots on target data by Leverkusen, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Leipzig'],'team_away': ['Leverkusen'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Germany 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Germany,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Scotland 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Scotland,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Germany(home) and Scotland(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Germany  and 
+    * get the last 3 games statistics for possession and shots on target data by Scotland, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Germany'],'team_away': ['Scotland'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Italy 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Italy,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Albania 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Albania,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Italy(home) and Albania(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Italy  and 
+    * get the last 3 games statistics for possession and shots on target data by Albania, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Italy'],'team_away': ['Albania'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Serbia 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Serbia,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: England 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by England,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Serbia(home) and England(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Serbia  and 
+    * get the last 3 games statistics for possession and shots on target data by England, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Serbia'],'team_away': ['England'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Austria 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Austria,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: France 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by France,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Austria(home) and France(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Austria  and 
+    * get the last 3 games statistics for possession and shots on target data by France, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Austria'],'team_away': ['France'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Portugal 
+League:  International Euro Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Portugal,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Czech Republic 
+League: International Euro Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Czech Republic,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Portugal(home) and Czech Republic(Away), in   International Euro Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Portugal  and 
+    * get the last 3 games statistics for possession and shots on target data by Czech Republic, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Portugal'],'team_away': ['Czech Republic'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Nottingham Forest 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Nottingham Forest,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Arsenal 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Arsenal,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Nottingham Forest(home) and Arsenal(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Nottingham Forest  and 
+    * get the last 3 games statistics for possession and shots on target data by Arsenal, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Nottingham Forest'],'team_away': ['Arsenal'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Mainz 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Mainz,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Union Berlin 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Union Berlin,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Mainz(home) and Union Berlin(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Mainz  and 
+    * get the last 3 games statistics for possession and shots on target data by Union Berlin, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Mainz'],'team_away': ['Union Berlin'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Bayern 
+League:  Germany Bundesliga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Bayern,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Union Berlin 
+League: Germany Bundesliga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Union Berlin,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Bayern(home) and Union Berlin(Away), in   Germany Bundesliga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Bayern  and 
+    * get the last 3 games statistics for possession and shots on target data by Union Berlin, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Bayern'],'team_away': ['Union Berlin'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Brighton 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Brighton,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Wolves 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Wolves,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Brighton(home) and Wolves(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Brighton  and 
+    * get the last 3 games statistics for possession and shots on target data by Wolves, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Brighton'],'team_away': ['Wolves'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Fulham 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Fulham,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Everton 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Everton,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Fulham(home) and Everton(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Fulham  and 
+    * get the last 3 games statistics for possession and shots on target data by Everton, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Fulham'],'team_away': ['Everton'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Luton Town 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Luton Town,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Brighton 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Brighton,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Luton Town(home) and Brighton(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Luton Town  and 
+    * get the last 3 games statistics for possession and shots on target data by Brighton, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Luton Town'],'team_away': ['Brighton'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Udinese 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Udinese,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Milan 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Milan,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Udinese(home) and Milan(Away), in   Italy Serie A  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Udinese  and 
+    * get the last 3 games statistics for possession and shots on target data by Milan, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Udinese'],'team_away': ['Milan'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: US Lecce 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by US Lecce,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Juventus 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Juventus,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between US Lecce(home) and Juventus(Away), in   Italy Serie A  league:
+
+    * get the last 3 games statistics for possession and shots on target data by US Lecce  and 
+    * get the last 3 games statistics for possession and shots on target data by Juventus, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['US Lecce'],'team_away': ['Juventus'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Cagliari 
+League:  Italy Serie A  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Cagliari,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: FC Torino 
+League: Italy Serie A 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by FC Torino,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Cagliari(home) and FC Torino(Away), in   Italy Serie A  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Cagliari  and 
+    * get the last 3 games statistics for possession and shots on target data by FC Torino, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Cagliari'],'team_away': ['FC Torino'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Egypt 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Egypt,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Ghana 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Ghana,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Egypt(home) and Ghana(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Egypt  and 
+    * get the last 3 games statistics for possession and shots on target data by Ghana, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Egypt'],'team_away': ['Ghana'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Guinea 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Guinea,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Gambia 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Gambia,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Guinea(home) and Gambia(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Guinea  and 
+    * get the last 3 games statistics for possession and shots on target data by Gambia, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Guinea'],'team_away': ['Gambia'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Tunisia 
+League:  International Africa Cup of Nations  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Tunisia,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Mali 
+League: International Africa Cup of Nations 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Mali,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Tunisia(home) and Mali(Away), in   International Africa Cup of Nations  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Tunisia  and 
+    * get the last 3 games statistics for possession and shots on target data by Mali, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Tunisia'],'team_away': ['Mali'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Crystal Palace 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Crystal Palace,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Sheffield Utd 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Sheffield Utd,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Crystal Palace(home) and Sheffield Utd(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Crystal Palace  and 
+    * get the last 3 games statistics for possession and shots on target data by Sheffield Utd, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Crystal Palace'],'team_away': ['Sheffield Utd'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Copenhagen 
+League:  International Clubs UEFA Champions League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Copenhagen,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Man City 
+League: International Clubs UEFA Champions League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Man City,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Copenhagen(home) and Man City(Away), in   International Clubs UEFA Champions League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Copenhagen  and 
+    * get the last 3 games statistics for possession and shots on target data by Man City, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Copenhagen'],'team_away': ['Man City'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Leipzig 
+League:  International Clubs UEFA Champions League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Leipzig,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Real Madrid 
+League: International Clubs UEFA Champions League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Real Madrid,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Leipzig(home) and Real Madrid(Away), in   International Clubs UEFA Champions League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Leipzig  and 
+    * get the last 3 games statistics for possession and shots on target data by Real Madrid, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Leipzig'],'team_away': ['Real Madrid'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Lazio 
+League:  International Clubs UEFA Champions League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Lazio,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Bayern 
+League: International Clubs UEFA Champions League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Bayern,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Lazio(home) and Bayern(Away), in   International Clubs UEFA Champions League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Lazio  and 
+    * get the last 3 games statistics for possession and shots on target data by Bayern, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Lazio'],'team_away': ['Bayern'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: PSG 
+League:  International Clubs UEFA Champions League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by PSG,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Real Sociedad 
+League: International Clubs UEFA Champions League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Real Sociedad,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between PSG(home) and Real Sociedad(Away), in   International Clubs UEFA Champions League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by PSG  and 
+    * get the last 3 games statistics for possession and shots on target data by Real Sociedad, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['PSG'],'team_away': ['Real Sociedad'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Inter 
+League:  International Clubs UEFA Champions League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Inter,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Atletico Madrid 
+League: International Clubs UEFA Champions League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Atletico Madrid,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Inter(home) and Atletico Madrid(Away), in   International Clubs UEFA Champions League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Inter  and 
+    * get the last 3 games statistics for possession and shots on target data by Atletico Madrid, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Inter'],'team_away': ['Atletico Madrid'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: PSV Eindhoven 
+League:  International Clubs UEFA Champions League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by PSV Eindhoven,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Borussia D 
+League: International Clubs UEFA Champions League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Borussia D,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between PSV Eindhoven(home) and Borussia D(Away), in   International Clubs UEFA Champions League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by PSV Eindhoven  and 
+    * get the last 3 games statistics for possession and shots on target data by Borussia D, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['PSV Eindhoven'],'team_away': ['Borussia D'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Napoli 
+League:  International Clubs UEFA Champions League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Napoli,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Barcelona 
+League: International Clubs UEFA Champions League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Barcelona,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Napoli(home) and Barcelona(Away), in   International Clubs UEFA Champions League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Napoli  and 
+    * get the last 3 games statistics for possession and shots on target data by Barcelona, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Napoli'],'team_away': ['Barcelona'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Porto 
+League:  International Clubs UEFA Champions League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Porto,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Arsenal 
+League: International Clubs UEFA Champions League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Arsenal,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Porto(home) and Arsenal(Away), in   International Clubs UEFA Champions League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Porto  and 
+    * get the last 3 games statistics for possession and shots on target data by Arsenal, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Porto'],'team_away': ['Arsenal'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Chelsea 
+League:  England EFL Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Chelsea,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Middlesbrough FC 
+League: England EFL Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Middlesbrough FC,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Chelsea(home) and Middlesbrough FC(Away), in   England EFL Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Chelsea  and 
+    * get the last 3 games statistics for possession and shots on target data by Middlesbrough FC, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Chelsea'],'team_away': ['Middlesbrough FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Fulham 
+League:  England EFL Cup  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Fulham,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Liverpool 
+League: England EFL Cup 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Liverpool,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Fulham(home) and Liverpool(Away), in   England EFL Cup  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Fulham  and 
+    * get the last 3 games statistics for possession and shots on target data by Liverpool, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Fulham'],'team_away': ['Liverpool'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Alaves 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Alaves,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Cadiz CF 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Cadiz CF,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Alaves(home) and Cadiz CF(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Alaves  and 
+    * get the last 3 games statistics for possession and shots on target data by Cadiz CF, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Alaves'],'team_away': ['Cadiz CF'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Celta 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Celta,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Real Sociedad 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Real Sociedad,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Celta(home) and Real Sociedad(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Celta  and 
+    * get the last 3 games statistics for possession and shots on target data by Real Sociedad, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Celta'],'team_away': ['Real Sociedad'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Girona FC 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Girona FC,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Sevilla 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Sevilla,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Girona FC(home) and Sevilla(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Girona FC  and 
+    * get the last 3 games statistics for possession and shots on target data by Sevilla, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Girona FC'],'team_away': ['Sevilla'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Granada 
+League:  Spain LaLiga  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Granada,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Atletico Madrid 
+League: Spain LaLiga 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Atletico Madrid,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Granada(home) and Atletico Madrid(Away), in   Spain LaLiga  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Granada  and 
+    * get the last 3 games statistics for possession and shots on target data by Atletico Madrid, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Granada'],'team_away': ['Atletico Madrid'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Aston Villa 
+League:  England Premier League  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Aston Villa,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Newcastle 
+League: England Premier League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Newcastle,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Aston Villa(home) and Newcastle(Away), in   England Premier League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Aston Villa  and 
+    * get the last 3 games statistics for possession and shots on target data by Newcastle, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Aston Villa'],'team_away': ['Newcastle'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
         
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
