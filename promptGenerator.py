@@ -25,9 +25,37 @@ def get_team_strength_prompt(home, away):
     '''
     return teamStrengthPrompt
 
+'''
+ Team name: Mannarino, Adrian
+League: ATP Australian Open Men Singles
+
+
+            in a tabular form, provide the last 5 tennis games statistics  played  by Mannarino, Adrian,
+            using the following header
+            
+                player name 
+                opponent name
+                player Aces
+                opponent Aces
+                player first serve percentage
+		opponent's first serve percentage
+		player's service game won
+		opponent's service game won
+		player's break points converted
+		opponent break points converted
+		player's first serve return points won
+		opponent first server return points won
+		player return games won
+		opponent return game won
+		player sets scores (set1-set2-set3-set4)
+		opponent sets scores (set1-set2-set3-set4)
+		player wins(True/False)
+		opponent wins(True/false)
+'''
+
 
 class GeneratePrompt():
-    def __init__(self, sport="football", period=6, single=False, home=None, away=None, league=None, mainWindow=None):
+    def __init__(self, sport="football", period=6, single=False, home=None, away=None, league=None, mainWindow=None, recentGameNo=5):
         self.sport = sport
         self.start_time = period
         self.single = single
@@ -35,6 +63,7 @@ class GeneratePrompt():
         self.single_away = away
         self.single_league = league
         self.mainWndow = mainWindow
+        self.recent_game_numbers = recentGameNo
         # self.prompt_style = 1
         if self.start_time != "":
             self.url = f"https://www.sportybet.com/ng/sport/{self.sport}?time={self.start_time}"
@@ -54,7 +83,7 @@ class GeneratePrompt():
 
         team_name (team name),
         team_is_home(True if home),
-        team_recent 5 performance (team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),
+        team_recent {self.recent_game_numbers} performance (team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),
         team_average_goals (team),
         team_player_injuries( team, use 0 if none),
         team_possession_percentage team),
@@ -62,7 +91,7 @@ class GeneratePrompt():
         head_to_head (team, in format w:l:d eg 2:0:1, Don't use '-' delimeter),
         opponent_team_name (opponent team),
         opponent_is_home(True if opponent),
-        opponent_recent 5 performance (opponent team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),
+        opponent_recent {self.recent_game_numbers} performance (opponent team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),
         opponent_average_goals (opponent team),
         opponent_player_injuries(opponent team, use 0 if none),
         opponent_possession_percentage (opponent team),
@@ -100,7 +129,7 @@ class GeneratePrompt():
 
     def get_predict_stat(self, sport):
         stat = ""
-        if str(sport).lower() == 'football':
+        if str(sport).lower() == 'football' or str(sport).lower() == 'vfootball':
             stat = "possession and shots on target"
         if str(sport).lower() == 'basketball':
             stat = "field goal percentage, free throw percentage and three-point percentage"
@@ -109,7 +138,7 @@ class GeneratePrompt():
 
     def get_json(self,sport, home, away):
         json = None
-        if str(sport).lower() == 'football':
+        if str(sport).lower() == 'football' or str(sport).lower() == 'vfootball':
             json = f"'team_home': ['{home}'],'team_away': ['{away}'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]"
         elif str(sport).lower() == 'basketball':
             json = f"'team_home': ['{home}'],'team_away': ['{away}']," \
@@ -131,7 +160,7 @@ get the following data (No explanation requried):
 
 home_team_name (home team),
 home_is_home(True if home), 
-home_recent 5 performance (home team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),  
+home_recent {self.recent_game_numbers} performance (home team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),  
 home_average_goals (home team), 
 home_player_injuries(home team, use 0 if none), 
 home_possession_percentage (home team), 
@@ -139,7 +168,7 @@ home_strenght (home, Elo rating actual not in percentage)
 head_to_head (home, in format w:l:d eg 2:0:1, Don't use '-' delimeter), 
 away_team_name (away team),
 away_is_home(True if away), 
-away_recent 5 performance (away team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),  
+away_recent {self.recent_game_numbers} performance (away team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),  
 away_average_goals (away team), 
 away_player_injuries(away team, use 0 if none), 
 away_possession_percentage (away team), 
@@ -150,7 +179,7 @@ Present the resulting 16 feature data of each team in a list of python turple. u
 
        [ (#home_team_name#, #APO Levadiakos FC#),
         (#home_is_home#, True),
-        (#home_recent_5_performance#,#2:1:2#),
+        (#home_recent_{self.recent_game_numbers}_performance#,#2:1:2#),
         (#home_average_goals#, 1.4),
         (#home_player_injuries#, 0),
         (#home_possession_percentage#, 48),
@@ -158,7 +187,7 @@ Present the resulting 16 feature data of each team in a list of python turple. u
         (#home_head_to_head#, #1:1:1#),
         (#away_team_name#, #PAS Lamia 1964#),
         (#away_is_home#, False),
-        (#away_recent_5_performance#, #1:2:2#),
+        (#away_recent_{self.recent_game_numbers}_performance#, #1:2:2#),
         (#away_average_goals#, 0.8),
         (#away_player_injuries#, 1),
         (#away_possession_percentage#, 46),
@@ -172,7 +201,7 @@ Present the resulting 16 feature data of each team in a list of python turple. u
         if focus == "":
             prompt_action = f"""
 
-in a tabular form, provide the last 5 games statistics  played  the team above,
+in a tabular form, provide the last {self.recent_game_numbers} games statistics  played  the team above,
 using the following header:
 team name 
 opponent name
@@ -186,7 +215,7 @@ shots on target by opponent
 
         else:
             prompt_action = f"""
-            in a tabular form, provide the last 5 {game} games statistics  played  by {focus},
+            in a tabular form, provide the last {self.recent_game_numbers} {game} games statistics  played  by {focus},
             using the following header
             {self.get_statistics_headers(game)}
             """
@@ -195,7 +224,7 @@ shots on target by opponent
 
     def get_statistics_headers(self, game):
         stat = ""
-        if str(game).lower() == "football":
+        if str(game).lower() == "football" or str(game).lower() == "vfootball":
             stat = """
                 team name 
                 opponent name

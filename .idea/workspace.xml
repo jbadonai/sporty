@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/gamePrediction.py" line="282" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/jbThreads.py" line="31" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/promptGenerator.py" line="261" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/jbThreads.py" line="32" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/gamePrediction.py" line="105" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/promptGenerator.py" line="123" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8dc107d-5acb-41a3-84fb-c6b72357da2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/footbalPrediction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamePrediction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teamStrenghtCalculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sportPrompts.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basketballPrediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/basketballPrediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basketball_training_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/basketball_training_data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/football_score_predictor_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/football_score_predictor_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/football_team_training_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/football_team_training_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamePrediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/gamePrediction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generated_prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/generated_prompt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jbThreads.py" beforeDir="false" afterPath="$PROJECT_DIR$/jbThreads.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leagueTable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/leagueTable.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_away.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/model_away.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_home.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/model_home.joblib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/odds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/odds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opponent_points_model.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/opponent_points_model.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opponent_quarters_model.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/opponent_quarters_model.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictOutcome.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictOutcome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions_bb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/predictions_bb.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promptGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/promptGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorted_generated_prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sorted_generated_prompt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_points_model.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/team_points_model.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_quarters_model.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/team_quarters_model.joblib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,13 +29,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/promptGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="609" column="31" selection-start-line="609" selection-start-column="31" selection-end-line="609" selection-end-column="31" />
+            <state relative-caret-position="180">
+              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
               <folding>
                 <element signature="e#7#24#0" expanded="true" />
+                <element signature="e#354#997#0" />
               </folding>
             </state>
           </provider>
@@ -52,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basketballPrediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3339">
+            <state relative-caret-position="3444">
               <caret line="164" column="43" selection-start-line="164" selection-start-column="43" selection-end-line="164" selection-end-column="43" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -76,45 +69,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gamePrediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="191" column="28" selection-start-line="191" selection-start-column="28" selection-end-line="191" selection-end-column="28" />
+            <state relative-caret-position="-546">
+              <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
               <folding>
                 <element signature="e#76#86#0" expanded="true" />
-                <element signature="e#8127#8207#0" />
-                <element signature="e#8253#8688#0" />
-                <element signature="e#8734#9170#0" />
-                <element signature="e#9219#9920#0" />
-                <element signature="e#35253#35476#0" />
-                <element signature="e#38237#38847#0" />
-                <element signature="e#38882#39373#0" />
-                <element signature="e#41843#42866#0" />
-                <element signature="e#42914#43397#0" />
-                <element signature="e#43449#44036#0" />
-                <element signature="e#44067#50250#0" />
-                <element signature="e#50310#51001#0" />
-                <element signature="e#51043#51623#0" />
-                <element signature="e#51686#53642#0" />
-                <element signature="e#53698#54213#0" />
-                <element signature="e#54262#55358#0" />
-                <element signature="e#55422#55723#0" />
-                <element signature="e#55770#56057#0" />
-                <element signature="e#56113#56585#0" />
-                <element signature="e#56656#57463#0" />
-                <element signature="e#57530#58974#0" />
-                <element signature="e#59017#59711#0" />
-                <element signature="e#59764#59792#0" />
-                <element signature="e#59838#59866#0" />
-                <element signature="e#59955#60625#0" />
+                <element signature="e#5088#5134#0" />
+                <element signature="e#5723#5785#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jbThreads.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="51" column="55" lean-forward="true" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+            <state relative-caret-position="42">
+              <caret line="49" column="170" selection-start-line="49" selection-start-column="170" selection-end-line="49" selection-end-column="170" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -137,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/predictOutcome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19677">
+            <state relative-caret-position="20223">
               <caret line="963" column="16" selection-start-line="963" selection-start-column="16" selection-end-line="963" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -157,11 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>?time</find>
-      <find>elf.models</find>
-      <find>toggle</find>
-      <find>self.training_data_filename</find>
-      <find>save_dataframe</find>
       <find>randomforest</find>
       <find>skip_bb_training</find>
       <find>self.sport_input</find>
@@ -178,7 +143,6 @@
       <find>windowtitle</find>
       <find>- read</find>
       <find>get_prompts(</find>
-      <find>get_prompts</find>
       <find>get_prompts_button</find>
       <find>a=</find>
       <find>elf.prediction_result_display</find>
@@ -187,6 +151,12 @@
       <find>(data</find>
       <find>possibl</find>
       <find>complet</find>
+      <find>include</find>
+      <find>QComboBox</find>
+      <find>5</find>
+      <find>in a tabu</find>
+      <find>get_prompts</find>
+      <find>using the fo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,9 +181,9 @@
         <option value="$PROJECT_DIR$/footbalPrediction.py" />
         <option value="$PROJECT_DIR$/basketballPrediction.py" />
         <option value="$PROJECT_DIR$/teamStrenghtCalculator.py" />
-        <option value="$PROJECT_DIR$/promptGenerator.py" />
-        <option value="$PROJECT_DIR$/gamePrediction.py" />
         <option value="$PROJECT_DIR$/jbThreads.py" />
+        <option value="$PROJECT_DIR$/gamePrediction.py" />
+        <option value="$PROJECT_DIR$/promptGenerator.py" />
       </list>
     </option>
   </component>
@@ -229,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,7 +216,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,13 +385,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28063944" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46536413" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30373" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30373" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -590,7 +560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basketballPrediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3339">
+        <state relative-caret-position="3444">
           <caret line="164" column="43" selection-start-line="164" selection-start-column="43" selection-end-line="164" selection-end-column="43" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -620,7 +590,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/predictOutcome.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19677">
+        <state relative-caret-position="20223">
           <caret line="963" column="16" selection-start-line="963" selection-start-column="16" selection-end-line="963" selection-end-column="16" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -628,57 +598,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jbThreads.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="49" column="170" selection-start-line="49" selection-start-column="170" selection-end-line="49" selection-end-column="170" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gamePrediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="191" column="28" selection-start-line="191" selection-start-column="28" selection-end-line="191" selection-end-column="28" />
+        <state relative-caret-position="-546">
+          <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
           <folding>
             <element signature="e#76#86#0" expanded="true" />
-            <element signature="e#8127#8207#0" />
-            <element signature="e#8253#8688#0" />
-            <element signature="e#8734#9170#0" />
-            <element signature="e#9219#9920#0" />
-            <element signature="e#35253#35476#0" />
-            <element signature="e#38237#38847#0" />
-            <element signature="e#38882#39373#0" />
-            <element signature="e#41843#42866#0" />
-            <element signature="e#42914#43397#0" />
-            <element signature="e#43449#44036#0" />
-            <element signature="e#44067#50250#0" />
-            <element signature="e#50310#51001#0" />
-            <element signature="e#51043#51623#0" />
-            <element signature="e#51686#53642#0" />
-            <element signature="e#53698#54213#0" />
-            <element signature="e#54262#55358#0" />
-            <element signature="e#55422#55723#0" />
-            <element signature="e#55770#56057#0" />
-            <element signature="e#56113#56585#0" />
-            <element signature="e#56656#57463#0" />
-            <element signature="e#57530#58974#0" />
-            <element signature="e#59017#59711#0" />
-            <element signature="e#59764#59792#0" />
-            <element signature="e#59838#59866#0" />
-            <element signature="e#59955#60625#0" />
+            <element signature="e#5088#5134#0" />
+            <element signature="e#5723#5785#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promptGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="609" column="31" selection-start-line="609" selection-start-column="31" selection-end-line="609" selection-end-column="31" />
+        <state relative-caret-position="180">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
           <folding>
             <element signature="e#7#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jbThreads.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="51" column="55" lean-forward="true" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#354#997#0" />
           </folding>
         </state>
       </provider>

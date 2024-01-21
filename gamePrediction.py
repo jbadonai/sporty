@@ -104,7 +104,7 @@ class JbaPredictWindow(QWidget):
 
         # Replace the existing self.sport_input lines with the following code
         self.sport_combobox = QComboBox(self)
-        self.sport_combobox.addItems(['football', 'basketball'])
+        self.sport_combobox.addItems(['football', 'basketball','vfootball'])
         self.sport_combobox.setCurrentText('football')  # Set the default value
 
         self.get_prompts_button = QPushButton("Get Prompts")
@@ -129,6 +129,10 @@ class JbaPredictWindow(QWidget):
 
         # create settings items
         self.include_srl = QCheckBox("Include SRL")
+        self.recent_game_label = QLabel("Number of Recent Games:")
+        self.recent_game_number = QComboBox(self)
+        self.recent_game_number.addItems(["3", "4", "5", "7", "10"])
+        self.recent_game_number.setCurrentText("5")
 
         # Create radio buttons for algorithm selection
         # self.linear_regression_radio = QRadioButton("Linear Regression")
@@ -140,6 +144,8 @@ class JbaPredictWindow(QWidget):
 
         # add settings items to layout
         team_settings_layout.addWidget(self.include_srl)
+        team_settings_layout.addWidget(self.recent_game_label)
+        team_settings_layout.addWidget(self.recent_game_number)
         # team_settings_layout.addWidget(self.linear_regression_radio)
         # team_settings_layout.addWidget(self.random_forest_radio)
 
@@ -290,9 +296,10 @@ class JbaPredictWindow(QWidget):
                 self.display_info.setText(data['status'])
             print(f"DATA:::{data}")
             pass
-
+        recent_games = self.recent_game_number.currentText()
+        print(f'recent game: {recent_games}')
         self.get_prompts_button.setEnabled(False)
-        self.threadController[f"get_prompt"] = GetPromptThread(self)
+        self.threadController[f"get_prompt"] = GetPromptThread(self, recent_games=recent_games)
         self.threadController[f"get_prompt"].start()
         self.threadController[f"get_prompt"].any_signal.connect(get_prompt_controller)
 

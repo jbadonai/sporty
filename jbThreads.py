@@ -11,13 +11,14 @@ Usage:
 class GetPromptThread(QtCore.QThread):
     any_signal = QtCore.pyqtSignal(dict)
 
-    def __init__(self, parent):
+    def __init__(self, parent=None, recent_games=5):
         super(GetPromptThread, self).__init__()
         self.mainWindow = parent
         self.data_to_emit = {}
         self.data_to_emit['error'] = ""
         self.data_to_emit['status'] = ''
         self.message = ""
+        self.recent_game_numbers = recent_games
 
     def stop(self):
         self.requestInterruption()
@@ -29,7 +30,7 @@ class GetPromptThread(QtCore.QThread):
                 self.sport = self.mainWindow.get_selected_sport()
                 # self.game_period = self.game_period_input.text()
                 self.game_period = self.mainWindow.get_selected_content()
-                self.prompt_generator = GeneratePrompt(sport=self.sport, period=self.game_period, mainWindow=self.mainWindow)
+                self.prompt_generator = GeneratePrompt(sport=self.sport, period=self.game_period, mainWindow=self.mainWindow, recentGameNo=self.recent_game_numbers)
                 self.prompt_generator.start(include_srl=self.mainWindow.include_srl.isChecked())
                 self.data_to_emit['status'] = 'completed'
                 self.any_signal.emit(self.data_to_emit)
@@ -46,7 +47,7 @@ class GetPromptThread(QtCore.QThread):
                     self.any_signal.emit(self.data_to_emit)
                     raise Exception
 
-                self.prompt_generator = GeneratePrompt(single=True, home=home_team, away=away_team, league=league, sport=self.sport)
+                self.prompt_generator = GeneratePrompt(single=True, home=home_team, away=away_team, league=league, sport=self.sport, recentGameNo=self.recent_game_numbers)
                 self.prompt_generator.start(include_srl=self.mainWindow.include_srl.isChecked())
                 self.data_to_emit['status'] = 'Completed!'
                 self.any_signal.emit(self.data_to_emit)
