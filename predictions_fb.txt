@@ -124,3 +124,45 @@
                     RC Arbaa   1.246 : 0.301   WA Boufarik
                     
 --------------------------------------------------
+
+                    [-.--]- League Name not found in the League Table
+                    Standard Liege(Home)   1 : 2   Club Brugge(Away)
+                    
+                    Standard Liege   1.271 : 2.052   Club Brugge
+                    
+--------------------------------------------------
+
+                    [-.--]- League Name not found in the League Table
+                    Standard Liege(Home)   1 : 2   Club Brugge(Away)
+                    
+                    Standard Liege   1.271 : 2.052   Club Brugge
+                    
+--------------------------------------------------
+
+                    [-.--]- League Name not found in the League Table
+                    Standard Liege(Home)   1 : 2   Club Brugge(Away)
+                    
+                    Standard Liege   1.271 : 2.052   Club Brugge
+                    
+--------------------------------------------------
+
+                    [-.--]- League Name not found in the League Table
+                    Standard Liege(Home)   1 : 2   Club Brugge(Away)
+                    
+                    Standard Liege   1.271 : 2.052   Club Brugge
+                    
+--------------------------------------------------
+
+                    [09:00]- International Clubs Club Friendly Games 
+                    SCR Altach(Home)   3 : 2   Vasas(Away)
+                    
+                    SCR Altach   2.667 : 1.865   Vasas
+                    
+--------------------------------------------------
+
+                    [09:00]- International Clubs Club Friendly Games 
+                    SCR Altach(Home)   3 : 2   Vasas(Away)
+                    
+                    SCR Altach   2.667 : 1.865   Vasas
+                    
+--------------------------------------------------

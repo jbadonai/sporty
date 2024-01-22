@@ -54,6 +54,7 @@ class JbaPredictWindow(QWidget):
         self.appTitle = "JBA Game Predict"
         self.setWindowTitle(self.appTitle)
         self.threadController = {}
+        # self.auto_calculate_predict_data = True
 
         # i want to use data for both team only as data to predict
         # this counter helps to count just 2 data and reset the training data file once 2 training data is received
@@ -128,7 +129,8 @@ class JbaPredictWindow(QWidget):
         team_settings_layout = QHBoxLayout()
 
         # create settings items
-        self.include_srl = QCheckBox("Include SRL")
+        self.include_srl = QCheckBox("Include SRL   |")
+        self.auto_predict_data = QCheckBox("Auto Data for Predict   |")
         self.recent_game_label = QLabel("Number of Recent Games:")
         self.recent_game_number = QComboBox(self)
         self.recent_game_number.addItems(["3", "4", "5", "7", "10"])
@@ -144,6 +146,7 @@ class JbaPredictWindow(QWidget):
 
         # add settings items to layout
         team_settings_layout.addWidget(self.include_srl)
+        team_settings_layout.addWidget(self.auto_predict_data)
         team_settings_layout.addWidget(self.recent_game_label)
         team_settings_layout.addWidget(self.recent_game_number)
         # team_settings_layout.addWidget(self.linear_regression_radio)
@@ -812,6 +815,8 @@ class JbaPredictWindow(QWidget):
 
     def find_league(self, home_team, away_team):
         # check if the file exists. and exit if not
+        print(home_team)
+        print(away_team)
         if os.path.exists("leagueTable.txt") is False:
             return "Unknown - League Table not Found! Run Prompt Generator Again!"
         with open("leagueTable.txt", 'r') as f:
@@ -1090,53 +1095,99 @@ class JbaPredictWindow(QWidget):
         print(f"winner is {winner} at position {position}")
         return winner
 
+    import pandas as pd
+
+    def calculate_average(self, target_number):
+        # Load the Excel file into a pandas DataFrame
+        df = pd.read_excel('football_team_training_data.xlsx')
+
+        # Get the unique teams in the data
+        teams = df['team_home'].unique()
+        print(teams)
+
+        # Initialize dictionaries to store the last 'target_number' records for each team
+        last_records = {col: [] for col in df.columns}
+
+        # Iterate over each team and extract the last 'target_number' records
+        for team in teams:
+            team_data = df[(df['team_home'] == team) | (df['team_away'] == team)].tail(target_number)
+            for col in df.columns:
+                last_records[col].extend(team_data[col].tolist())
+
+        print(last_records)
+
+        # Calculate the average for the required columns
+        average_data = {
+            'team_home': [last_records['team_home'][0]],
+            'team_away': [last_records['team_away'][0]],
+            'possession_home': [sum(float(val.strip('%')) for val in last_records['possession_home']) / (target_number*2)],
+            'possession_away': [sum(float(val.strip('%')) for val in last_records['possession_away']) / (target_number*2)],
+            'shots_on_target_home': [sum(last_records['shots_on_target_home']) / (target_number*2)],
+            'shots_on_target_away': [sum(last_records['shots_on_target_away']) / (target_number*2)]
+        }
+
+        return average_data
+
     def start(self):
         try:
             # Get prompt input from the text box
             predict_prompt = self.prompt_code_input.toPlainText()
 
-            # check if input is not empty
-            if predict_prompt == "":
-                QMessageBox.information(self, "No Team Info", "Team info to predict are required! Please "
-                                                              "provide team info in the required format")
-                raise Exception
+            if self.auto_predict_data.isChecked() is False:
+                # check if input is not empty
+                if predict_prompt == "":
+                    QMessageBox.information(self, "No Team Info", "Team info to predict are required! Please "
+                                                                  "provide team info in the required format")
+                    raise Exception
 
-            # validating the input prompt by counting the number of ','
-            a = predict_prompt.count(",")
-            if a != 5 and a != 7:
-                QMessageBox.information(self, "Wrong info!", "Wrong Predict prompt detected!")
-                self.prompt_code_input.clear()
-                raise Exception
+                # validating the input prompt by counting the number of ','
+                a = predict_prompt.count(",")
+                if a != 5 and a != 7:
+                    QMessageBox.information(self, "Wrong info!", "Wrong Predict prompt detected!")
+                    self.prompt_code_input.clear()
+                    raise Exception
 
-            print(f"a={a}")
+                print(f"a={a}")
 
-            sport = None
-            if a == 5:
-                sport = "football"
-            elif a == 7:
-                sport = "basketball"
+                sport = None
+                if a == 5:
+                    sport = "football"
+                elif a == 7:
+                    sport = "basketball"
 
-            # put the prompt in a new container for data cleaning
-            new_game_data = predict_prompt
+                # put the prompt in a new container for data cleaning
+                new_game_data = predict_prompt
 
-            # scan through every character in the prompt to remove unlikely characters and replace them with right ones
-            updated = ""
-            for c in new_game_data:
-                if c == '%':
-                    # QMessageBox.information(self, 'found', 'found')
-                    continue
-                if ord(c) == 8220 or ord(c) == 8221:
-                    c = '"'
-                if ord(c) == 8216 or ord(c) == 8217:
-                    c = '"'
-                updated += c
+                # scan through every character in the prompt to remove unlikely characters and replace them with right ones
+                updated = ""
+                for c in new_game_data:
+                    if c == '%':
+                        # QMessageBox.information(self, 'found', 'found')
+                        continue
+                    if ord(c) == 8220 or ord(c) == 8221:
+                        c = '"'
+                    if ord(c) == 8216 or ord(c) == 8217:
+                        c = '"'
+                    updated += c
 
-            # check if prompt input string looks like dictionary if not add curl bracket
-            if updated.__contains__("{") is False:
-                updated = "{" + updated + "}"
+                # check if prompt input string looks like dictionary if not add curl bracket
+                if updated.__contains__("{") is False:
+                    updated = "{" + updated + "}"
 
-            # convert the string into dictionary
-            new_game_data = eval(updated)
+                # convert the string into dictionary
+                new_game_data = eval(updated)
+            else:
+                # Example usage with target_number = 2
+                auto_data = self.calculate_average(3)
+                a = str(auto_data).count(",")
+
+                print(f"autodata: a={a}")
+
+                sport = None
+                if a == 5:
+                    sport = "football"
+                elif a == 7:
+                    sport = "basketball"
 
             if sport == "basketball":
                 basketball_prediction_output, bb_home_team_name, bb_away_team_name = self.start_basketball_prediction(
@@ -1176,7 +1227,10 @@ class JbaPredictWindow(QWidget):
                 self.write_prediction('predictions_bb.txt', bb_result)
 
             elif sport == "football":
-                football_prediction_outcome = self.start_football_prediction(new_game_data)
+                if self.auto_predict_data.isChecked() is False:
+                    football_prediction_outcome = self.start_football_prediction(new_game_data)
+                else:
+                    football_prediction_outcome = self.start_football_prediction(auto_data)
 
                 football_home_team = football_prediction_outcome['home_team_name']
                 football_away_team = football_prediction_outcome['away_team_name']
@@ -1184,10 +1238,14 @@ class JbaPredictWindow(QWidget):
                 football_away_goal = football_prediction_outcome['predicted_goals_away']
                 football_algorithm_used = football_prediction_outcome['algorithm_used']
 
-                league, clock = self.find_league(football_home_team, football_away_team)
+                ans = self.find_league(football_home_team, football_away_team)
+                if len(ans)==2:
+                    league, clock = ans
+                elif len(ans) == 4:
+                    league, clock, ht, at = ans
+
                 league = league.split(' ')[1:]
                 league = " ".join(league)
-
                 football_result = f"""
                     [{clock}]- {league}
                     {football_home_team}(Home)   {round(football_home_goal)} : {round(football_away_goal)}   {football_away_team}(Away)
@@ -1197,7 +1255,6 @@ class JbaPredictWindow(QWidget):
                 self.prompt_code_input.clear()
                 self.prediction_result_display.setText(football_result)
                 self.write_prediction('predictions_fb.txt', football_result)
-
                 pass
 
             self.setWindowTitle(f"{self.appTitle} - Ready!")
