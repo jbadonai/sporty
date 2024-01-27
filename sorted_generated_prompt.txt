@@ -1,9 +1,9 @@
 
-Team Name: SCR Altach 
-League:  International Clubs Club Friendly Games  
+Team Name: Newcastle United Jets FC 
+League:  Australia A-League  
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by SCR Altach,
+            in a tabular form, provide the last 5 football games statistics  played  by Newcastle United Jets FC,
             using the following header
             
                 team name 
@@ -17,12 +17,61 @@ League:  International Clubs Club Friendly Games
                             
             
 --------------------------------------------------------------------------------
- Team name: Nyiregyhaza Spartacus FC 
+ Team name: Brisbane Roar FC 
+League: Australia A-League 
+
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Brisbane Roar FC,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+in an upcoming football match between Newcastle United Jets FC(home) and Brisbane Roar FC(Away), in   Australia A-League  league:
+
+    * get the last 3 games statistics for possession and shots on target data by Newcastle United Jets FC  and 
+    * get the last 3 games statistics for possession and shots on target data by Brisbane Roar FC, 
+    * provide average possession and shots on target for both team using the json format below
+
+            'team_home': ['Newcastle United Jets FC'],'team_away': ['Brisbane Roar FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Team Name: Hanoi FC 
+League:  International Clubs Club Friendly Games  
+
+
+            in a tabular form, provide the last 5 football games statistics  played  by Hanoi FC,
+            using the following header
+            
+                team name 
+                opponent name
+                goal scored by team
+                goal scored by opponent
+                possession percentage by team
+                possession percentage by opponent
+                shots on target by team
+                shots on target by opponent
+                            
+            
+--------------------------------------------------------------------------------
+ Team name: Viettel FC 
 League: International Clubs Club Friendly Games 
 
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Nyiregyhaza Spartacus FC,
+            in a tabular form, provide the last 5 football games statistics  played  by Viettel FC,
             using the following header
             
                 team name 
@@ -36,23 +85,23 @@ League: International Clubs Club Friendly Games
                             
             
 --------------------------------------------------------------------------------
-in an upcoming football match between SCR Altach(home) and Nyiregyhaza Spartacus FC(Away), in   International Clubs Club Friendly Games  league:
+in an upcoming football match between Hanoi FC(home) and Viettel FC(Away), in   International Clubs Club Friendly Games  league:
 
-    * get the last 3 games statistics for possession and shots on target data by SCR Altach  and 
-    * get the last 3 games statistics for possession and shots on target data by Nyiregyhaza Spartacus FC, 
+    * get the last 3 games statistics for possession and shots on target data by Hanoi FC  and 
+    * get the last 3 games statistics for possession and shots on target data by Viettel FC, 
     * provide average possession and shots on target for both team using the json format below
 
-            'team_home': ['SCR Altach'],'team_away': ['Nyiregyhaza Spartacus FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+            'team_home': ['Hanoi FC'],'team_away': ['Viettel FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
         
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Team Name: Kalteng Putra 
+Team Name: Persela Lamongan 
 League:  Indonesia Liga 2  
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Kalteng Putra,
+            in a tabular form, provide the last 5 football games statistics  played  by Persela Lamongan,
             using the following header
             
                 team name 
@@ -66,12 +115,12 @@ League:  Indonesia Liga 2
                             
             
 --------------------------------------------------------------------------------
- Team name: Persipura Jayapura 
+ Team name: Deltras FC 
 League: Indonesia Liga 2 
 
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Persipura Jayapura,
+            in a tabular form, provide the last 5 football games statistics  played  by Deltras FC,
             using the following header
             
                 team name 
@@ -85,258 +134,13 @@ League: Indonesia Liga 2
                             
             
 --------------------------------------------------------------------------------
-in an upcoming football match between Kalteng Putra(home) and Persipura Jayapura(Away), in   Indonesia Liga 2  league:
+in an upcoming football match between Persela Lamongan(home) and Deltras FC(Away), in   Indonesia Liga 2  league:
 
-    * get the last 3 games statistics for possession and shots on target data by Kalteng Putra  and 
-    * get the last 3 games statistics for possession and shots on target data by Persipura Jayapura, 
+    * get the last 3 games statistics for possession and shots on target data by Persela Lamongan  and 
+    * get the last 3 games statistics for possession and shots on target data by Deltras FC, 
     * provide average possession and shots on target for both team using the json format below
 
-            'team_home': ['Kalteng Putra'],'team_away': ['Persipura Jayapura'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
-        
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Team Name: Persipa Pati 
-League:  Indonesia Liga 2  
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by Persipa Pati,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
- Team name: Persijap Jepara 
-League: Indonesia Liga 2 
-
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by Persijap Jepara,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
-in an upcoming football match between Persipa Pati(home) and Persijap Jepara(Away), in   Indonesia Liga 2  league:
-
-    * get the last 3 games statistics for possession and shots on target data by Persipa Pati  and 
-    * get the last 3 games statistics for possession and shots on target data by Persijap Jepara, 
-    * provide average possession and shots on target for both team using the json format below
-
-            'team_home': ['Persipa Pati'],'team_away': ['Persijap Jepara'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
-        
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Team Name: PSCS Cilacap 
-League:  Indonesia Liga 2  
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by PSCS Cilacap,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
- Team name: Persekat Kabupaten Tegal 
-League: Indonesia Liga 2 
-
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by Persekat Kabupaten Tegal,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
-in an upcoming football match between PSCS Cilacap(home) and Persekat Kabupaten Tegal(Away), in   Indonesia Liga 2  league:
-
-    * get the last 3 games statistics for possession and shots on target data by PSCS Cilacap  and 
-    * get the last 3 games statistics for possession and shots on target data by Persekat Kabupaten Tegal, 
-    * provide average possession and shots on target for both team using the json format below
-
-            'team_home': ['PSCS Cilacap'],'team_away': ['Persekat Kabupaten Tegal'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
-        
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Team Name: PSMS Medan 
-League:  Indonesia Liga 2  
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by PSMS Medan,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
- Team name: Semen Padang 
-League: Indonesia Liga 2 
-
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by Semen Padang,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
-in an upcoming football match between PSMS Medan(home) and Semen Padang(Away), in   Indonesia Liga 2  league:
-
-    * get the last 3 games statistics for possession and shots on target data by PSMS Medan  and 
-    * get the last 3 games statistics for possession and shots on target data by Semen Padang, 
-    * provide average possession and shots on target for both team using the json format below
-
-            'team_home': ['PSMS Medan'],'team_away': ['Semen Padang'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
-        
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Team Name: Bengaluru FC 
-League:  India Indian Super Cup  
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by Bengaluru FC,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
- Team name: Inter Kashi FC 
-League: India Indian Super Cup 
-
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by Inter Kashi FC,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
-in an upcoming football match between Bengaluru FC(home) and Inter Kashi FC(Away), in   India Indian Super Cup  league:
-
-    * get the last 3 games statistics for possession and shots on target data by Bengaluru FC  and 
-    * get the last 3 games statistics for possession and shots on target data by Inter Kashi FC, 
-    * provide average possession and shots on target for both team using the json format below
-
-            'team_home': ['Bengaluru FC'],'team_away': ['Inter Kashi FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
-        
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Team Name: Persiraja Banda Aceh 
-League:  Indonesia Liga 2  
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by Persiraja Banda Aceh,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
- Team name: PSIM Yogyakarta 
-League: Indonesia Liga 2 
-
-
-
-            in a tabular form, provide the last 5 football games statistics  played  by PSIM Yogyakarta,
-            using the following header
-            
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
-            
---------------------------------------------------------------------------------
-in an upcoming football match between Persiraja Banda Aceh(home) and PSIM Yogyakarta(Away), in   Indonesia Liga 2  league:
-
-    * get the last 3 games statistics for possession and shots on target data by Persiraja Banda Aceh  and 
-    * get the last 3 games statistics for possession and shots on target data by PSIM Yogyakarta, 
-    * provide average possession and shots on target for both team using the json format below
-
-            'team_home': ['Persiraja Banda Aceh'],'team_away': ['PSIM Yogyakarta'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+            'team_home': ['Persela Lamongan'],'team_away': ['Deltras FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
         
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

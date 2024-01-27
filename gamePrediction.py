@@ -54,6 +54,7 @@ class JbaPredictWindow(QWidget):
         self.appTitle = "JBA Game Predict"
         self.setWindowTitle(self.appTitle)
         self.threadController = {}
+        self.predict_data_count = 3     # number of past game average to be used in predicting
         # self.auto_calculate_predict_data = True
 
         # i want to use data for both team only as data to predict
@@ -1103,6 +1104,7 @@ class JbaPredictWindow(QWidget):
 
         # Get the unique teams in the data
         teams = df['team_home'].unique()
+        print("team")
         print(teams)
 
         # Initialize dictionaries to store the last 'target_number' records for each team
@@ -1113,18 +1115,23 @@ class JbaPredictWindow(QWidget):
             team_data = df[(df['team_home'] == team) | (df['team_away'] == team)].tail(target_number)
             for col in df.columns:
                 last_records[col].extend(team_data[col].tolist())
-
+        print("last record")
         print(last_records)
+        print()
 
         # Calculate the average for the required columns
         average_data = {
             'team_home': [last_records['team_home'][0]],
-            'team_away': [last_records['team_away'][0]],
+            'team_away': [last_records['team_home'][-1]],
             'possession_home': [sum(float(val.strip('%')) for val in last_records['possession_home']) / (target_number*2)],
             'possession_away': [sum(float(val.strip('%')) for val in last_records['possession_away']) / (target_number*2)],
             'shots_on_target_home': [sum(last_records['shots_on_target_home']) / (target_number*2)],
             'shots_on_target_away': [sum(last_records['shots_on_target_away']) / (target_number*2)]
         }
+
+        print("Average data")
+        print(average_data)
+        print()
 
         return average_data
 
@@ -1178,7 +1185,9 @@ class JbaPredictWindow(QWidget):
                 new_game_data = eval(updated)
             else:
                 # Example usage with target_number = 2
-                auto_data = self.calculate_average(3)
+                auto_data = self.calculate_average(self.predict_data_count)
+                print("AVERAGE")
+                print(auto_data)
                 a = str(auto_data).count(",")
 
                 print(f"autodata: a={a}")
@@ -1230,7 +1239,13 @@ class JbaPredictWindow(QWidget):
                 if self.auto_predict_data.isChecked() is False:
                     football_prediction_outcome = self.start_football_prediction(new_game_data)
                 else:
+                    print("autodata:")
+                    print(auto_data)
                     football_prediction_outcome = self.start_football_prediction(auto_data)
+
+                print("outcome:")
+                print(football_prediction_outcome)
+                # input("::")
 
                 football_home_team = football_prediction_outcome['home_team_name']
                 football_away_team = football_prediction_outcome['away_team_name']
@@ -1239,7 +1254,7 @@ class JbaPredictWindow(QWidget):
                 football_algorithm_used = football_prediction_outcome['algorithm_used']
 
                 ans = self.find_league(football_home_team, football_away_team)
-                if len(ans)==2:
+                if len(ans) == 2:
                     league, clock = ans
                 elif len(ans) == 4:
                     league, clock, ht, at = ans

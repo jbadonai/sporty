@@ -1,41 +1,31 @@
 
-Team Name: SCR Altach 
-League:  International Clubs Club Friendly Games  -- Team name: Nyiregyhaza Spartacus FC 
+Team Name: Newcastle United Jets FC 
+League:  Australia A-League  -- Team name: Brisbane Roar FC 
+League: Australia A-League 
+
+
+Team Name: Hanoi FC 
+League:  International Clubs Club Friendly Games  -- Team name: Viettel FC 
 League: International Clubs Club Friendly Games 
 
 
-Team Name: Bengaluru FC 
-League:  India Indian Super Cup  -- Team name: Inter Kashi FC 
-League: India Indian Super Cup 
-
-
-Team Name: Kayserispor SRL 
-League:  Simulated Reality League Turkey Super Lig SRL  -- Team name: Istanbulspor AS Srl 
+Team Name: Besiktas JK SRL 
+League:  Simulated Reality League Turkey Super Lig SRL  -- Team name: Adana Demirspor Srl 
 League: Simulated Reality League Turkey Super Lig SRL 
 
 
-Team Name: Kalteng Putra 
-League:  Indonesia Liga 2  -- Team name: Persipura Jayapura 
-League: Indonesia Liga 2 
+Team Name: Hatayspor Srl 
+League:  Simulated Reality League Turkey Super Lig SRL  -- Team name: Alanyaspor SRL 
+League: Simulated Reality League Turkey Super Lig SRL 
 
 
-Team Name: Persipa Pati 
-League:  Indonesia Liga 2  -- Team name: Persijap Jepara 
-League: Indonesia Liga 2 
+Team Name: Pendikspor Srl 
+League:  Simulated Reality League Turkey Super Lig SRL  -- Team name: Kasimpasa SRL 
+League: Simulated Reality League Turkey Super Lig SRL 
 
 
-Team Name: PSCS Cilacap 
-League:  Indonesia Liga 2  -- Team name: Persekat Kabupaten Tegal 
-League: Indonesia Liga 2 
-
-
-Team Name: PSMS Medan 
-League:  Indonesia Liga 2  -- Team name: Semen Padang 
-League: Indonesia Liga 2 
-
-
-Team Name: Persiraja Banda Aceh 
-League:  Indonesia Liga 2  -- Team name: PSIM Yogyakarta 
+Team Name: Persela Lamongan 
+League:  Indonesia Liga 2  -- Team name: Deltras FC 
 League: Indonesia Liga 2 
 
 
