@@ -1,1 +1,1 @@
-[('Newcastle United Jets FC', 'Brisbane Roar FC', ['2.00', '3.90', '3.30']), ('Hanoi FC', 'Viettel FC', ['1.78', '3.60', '3.90']), ('Besiktas JK SRL', 'Adana Demirspor Srl', ['1.78', '4.09', '4.11']), ('Hatayspor Srl', 'Alanyaspor SRL', ['2.34', '3.38', '3.06']), ('Pendikspor Srl', 'Kasimpasa SRL', ['2.59', '3.57', '2.61']), ('Persela Lamongan', 'Deltras FC', ['1.57', '3.40', '5.90'])]
+[('KCC Egis', 'Anyang KGC', ['1.32', '3.40']), ('Incheon Shinhan Bank S-Birds', 'Busan BNK Sum', ['1.63', '2.20']), ('Aykanat SK', 'Uskudar Belediyesi', ['1.55', '2.25'])]

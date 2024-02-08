@@ -1,146 +1,170 @@
 
-Team Name: Newcastle United Jets FC 
-League:  Australia A-League  
+Team Name: KCC Egis 
+League:  Republic of Korea KBL  
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Newcastle United Jets FC,
+            in a tabular form, using data from www.sofascore.com, provide the last 4 basketball games statistics  played  by KCC Egis,
             using the following header
             
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
+                    team name 	   
+                    team field goal percentage
+                    team free throw percentage
+                    team three-point percentage
+                    team quarterly scores
+                    team total points	  
+                    opponent name   
+                    opponent field goal percentage
+                    opponent free throw percentage
+                    opponent three-point percentage
+                    opponent quarterly scores
+                    opponent total points
+                    
             
 --------------------------------------------------------------------------------
- Team name: Brisbane Roar FC 
-League: Australia A-League 
+ Team name: Anyang KGC 
+League: Republic of Korea KBL 
 
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Brisbane Roar FC,
+            in a tabular form, using data from www.sofascore.com, provide the last 4 basketball games statistics  played  by Anyang KGC,
             using the following header
             
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
+                    team name 	   
+                    team field goal percentage
+                    team free throw percentage
+                    team three-point percentage
+                    team quarterly scores
+                    team total points	  
+                    opponent name   
+                    opponent field goal percentage
+                    opponent free throw percentage
+                    opponent three-point percentage
+                    opponent quarterly scores
+                    opponent total points
+                    
             
 --------------------------------------------------------------------------------
-in an upcoming football match between Newcastle United Jets FC(home) and Brisbane Roar FC(Away), in   Australia A-League  league:
+in an upcoming basketball match between KCC Egis(home) and Anyang KGC(Away), in   Republic of Korea KBL  league:
+    using data from www.sofascore.com only,
+    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by KCC Egis  and 
+    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by Anyang KGC, 
+    * provide average field goal percentage, free throw percentage and three-point percentage for both team using the json format below
 
-    * get the last 3 games statistics for possession and shots on target data by Newcastle United Jets FC  and 
-    * get the last 3 games statistics for possession and shots on target data by Brisbane Roar FC, 
-    * provide average possession and shots on target for both team using the json format below
-
-            'team_home': ['Newcastle United Jets FC'],'team_away': ['Brisbane Roar FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+            'team_home': ['KCC Egis'],'team_away': ['Anyang KGC'],'field_goal_percentage_home': [0],'free_throw_percentage_home': [0],'three_point_percentage_home': [0],'field_goal_percentage_away': [0],'free_throw_percentage_away': [0],'three_point_percentage_away': [0]
         
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Team Name: Hanoi FC 
-League:  International Clubs Club Friendly Games  
+Team Name: Incheon Shinhan Bank S-Birds 
+League:  Republic of Korea WKBL  
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Hanoi FC,
+            in a tabular form, using data from www.sofascore.com, provide the last 4 basketball games statistics  played  by Incheon Shinhan Bank S-Birds,
             using the following header
             
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
+                    team name 	   
+                    team field goal percentage
+                    team free throw percentage
+                    team three-point percentage
+                    team quarterly scores
+                    team total points	  
+                    opponent name   
+                    opponent field goal percentage
+                    opponent free throw percentage
+                    opponent three-point percentage
+                    opponent quarterly scores
+                    opponent total points
+                    
             
 --------------------------------------------------------------------------------
- Team name: Viettel FC 
-League: International Clubs Club Friendly Games 
+ Team name: Busan BNK Sum 
+League: Republic of Korea WKBL 
 
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Viettel FC,
+            in a tabular form, using data from www.sofascore.com, provide the last 4 basketball games statistics  played  by Busan BNK Sum,
             using the following header
             
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
+                    team name 	   
+                    team field goal percentage
+                    team free throw percentage
+                    team three-point percentage
+                    team quarterly scores
+                    team total points	  
+                    opponent name   
+                    opponent field goal percentage
+                    opponent free throw percentage
+                    opponent three-point percentage
+                    opponent quarterly scores
+                    opponent total points
+                    
             
 --------------------------------------------------------------------------------
-in an upcoming football match between Hanoi FC(home) and Viettel FC(Away), in   International Clubs Club Friendly Games  league:
+in an upcoming basketball match between Incheon Shinhan Bank S-Birds(home) and Busan BNK Sum(Away), in   Republic of Korea WKBL  league:
+    using data from www.sofascore.com only,
+    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by Incheon Shinhan Bank S-Birds  and 
+    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by Busan BNK Sum, 
+    * provide average field goal percentage, free throw percentage and three-point percentage for both team using the json format below
 
-    * get the last 3 games statistics for possession and shots on target data by Hanoi FC  and 
-    * get the last 3 games statistics for possession and shots on target data by Viettel FC, 
-    * provide average possession and shots on target for both team using the json format below
-
-            'team_home': ['Hanoi FC'],'team_away': ['Viettel FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+            'team_home': ['Incheon Shinhan Bank S-Birds'],'team_away': ['Busan BNK Sum'],'field_goal_percentage_home': [0],'free_throw_percentage_home': [0],'three_point_percentage_home': [0],'field_goal_percentage_away': [0],'free_throw_percentage_away': [0],'three_point_percentage_away': [0]
         
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Team Name: Persela Lamongan 
-League:  Indonesia Liga 2  
+Team Name: Aykanat SK 
+League:  Turkiye TB2L  
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Persela Lamongan,
+            in a tabular form, using data from www.sofascore.com, provide the last 4 basketball games statistics  played  by Aykanat SK,
             using the following header
             
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
+                    team name 	   
+                    team field goal percentage
+                    team free throw percentage
+                    team three-point percentage
+                    team quarterly scores
+                    team total points	  
+                    opponent name   
+                    opponent field goal percentage
+                    opponent free throw percentage
+                    opponent three-point percentage
+                    opponent quarterly scores
+                    opponent total points
+                    
             
 --------------------------------------------------------------------------------
- Team name: Deltras FC 
-League: Indonesia Liga 2 
+ Team name: Uskudar Belediyesi 
+League: Turkiye TB2L 
 
 
 
-            in a tabular form, provide the last 5 football games statistics  played  by Deltras FC,
+            in a tabular form, using data from www.sofascore.com, provide the last 4 basketball games statistics  played  by Uskudar Belediyesi,
             using the following header
             
-                team name 
-                opponent name
-                goal scored by team
-                goal scored by opponent
-                possession percentage by team
-                possession percentage by opponent
-                shots on target by team
-                shots on target by opponent
-                            
+                    team name 	   
+                    team field goal percentage
+                    team free throw percentage
+                    team three-point percentage
+                    team quarterly scores
+                    team total points	  
+                    opponent name   
+                    opponent field goal percentage
+                    opponent free throw percentage
+                    opponent three-point percentage
+                    opponent quarterly scores
+                    opponent total points
+                    
             
 --------------------------------------------------------------------------------
-in an upcoming football match between Persela Lamongan(home) and Deltras FC(Away), in   Indonesia Liga 2  league:
+in an upcoming basketball match between Aykanat SK(home) and Uskudar Belediyesi(Away), in   Turkiye TB2L  league:
+    using data from www.sofascore.com only,
+    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by Aykanat SK  and 
+    * get the last 3 games statistics for field goal percentage, free throw percentage and three-point percentage data by Uskudar Belediyesi, 
+    * provide average field goal percentage, free throw percentage and three-point percentage for both team using the json format below
 
-    * get the last 3 games statistics for possession and shots on target data by Persela Lamongan  and 
-    * get the last 3 games statistics for possession and shots on target data by Deltras FC, 
-    * provide average possession and shots on target for both team using the json format below
-
-            'team_home': ['Persela Lamongan'],'team_away': ['Deltras FC'],'possession_home': [0],'possession_away': [0],'shots_on_target_home': [0],'shots_on_target_away': [0]
+            'team_home': ['Aykanat SK'],'team_away': ['Uskudar Belediyesi'],'field_goal_percentage_home': [0],'free_throw_percentage_home': [0],'three_point_percentage_home': [0],'field_goal_percentage_away': [0],'free_throw_percentage_away': [0],'three_point_percentage_away': [0]
         
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

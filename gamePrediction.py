@@ -47,7 +47,7 @@ class JbaPredictWindow(QWidget):
         self.prompt_generator = None
 
         self.sport = "football"
-        self.game_period = 6
+        self.game_period = 4
         self.selected_algorithm = "Linear Regression"  # Default value
 
         self.dfDisplay = ""
@@ -135,7 +135,7 @@ class JbaPredictWindow(QWidget):
         self.recent_game_label = QLabel("Number of Recent Games:")
         self.recent_game_number = QComboBox(self)
         self.recent_game_number.addItems(["3", "4", "5", "7", "10"])
-        self.recent_game_number.setCurrentText("5")
+        self.recent_game_number.setCurrentText("4")
 
         # Create radio buttons for algorithm selection
         # self.linear_regression_radio = QRadioButton("Linear Regression")
@@ -1234,6 +1234,7 @@ class JbaPredictWindow(QWidget):
                 self.prompt_code_input.clear()
                 self.prediction_result_display.setText(bb_result)
                 self.write_prediction('predictions_bb.txt', bb_result)
+                self.setWindowTitle(f"{self.appTitle} - Ready!")
 
             elif sport == "football":
                 if self.auto_predict_data.isChecked() is False:
@@ -1272,7 +1273,7 @@ class JbaPredictWindow(QWidget):
                 self.write_prediction('predictions_fb.txt', football_result)
                 pass
 
-            self.setWindowTitle(f"{self.appTitle} - Ready!")
+                self.setWindowTitle(f"{self.appTitle} - Ready![ Algorithm Used: {football_algorithm_used}]")
             pass
         except FileNotFoundError as e:
             QMessageBox.information(self, "No Training Data", "Training Data required! Load Training data!")

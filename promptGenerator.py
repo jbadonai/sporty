@@ -118,7 +118,7 @@ class GeneratePrompt():
 
     def get_predict_prompt(self,home, away, league, sport="football"):
         p = f"""in an upcoming {sport} match between {home}(home) and {away}(Away), in  {league} league:
-
+    using data from www.sofascore.com only,
     * get the last 3 games statistics for {self.get_predict_stat(sport)} data by {home}  and 
     * get the last 3 games statistics for {self.get_predict_stat(sport)} data by {away}, 
     * provide average {self.get_predict_stat(sport)} for both team using the json format below
@@ -153,55 +153,55 @@ class GeneratePrompt():
         pass
 
 
-
-    def get_action_prompt_old(self, league="", home ="", away=""):
-        prompt_action = f"""
-get the following data (No explanation requried):
-
-home_team_name (home team),
-home_is_home(True if home), 
-home_recent {self.recent_game_numbers} performance (home team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),  
-home_average_goals (home team), 
-home_player_injuries(home team, use 0 if none), 
-home_possession_percentage (home team), 
-home_strenght (home, Elo rating actual not in percentage)
-head_to_head (home, in format w:l:d eg 2:0:1, Don't use '-' delimeter), 
-away_team_name (away team),
-away_is_home(True if away), 
-away_recent {self.recent_game_numbers} performance (away team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),  
-away_average_goals (away team), 
-away_player_injuries(away team, use 0 if none), 
-away_possession_percentage (away team), 
-away_strenght (away, Elo rating actual not in percentage)
-head_to_head (away, in format w:l:d eg 2:0:1, Don't use '-' delimeter), 
-        
-Present the resulting 16 feature data of each team in a list of python turple. using strictly, the format below:
-
-       [ (#home_team_name#, #APO Levadiakos FC#),
-        (#home_is_home#, True),
-        (#home_recent_{self.recent_game_numbers}_performance#,#2:1:2#),
-        (#home_average_goals#, 1.4),
-        (#home_player_injuries#, 0),
-        (#home_possession_percentage#, 48),
-        (#home_strength#, 1310),
-        (#home_head_to_head#, #1:1:1#),
-        (#away_team_name#, #PAS Lamia 1964#),
-        (#away_is_home#, False),
-        (#away_recent_{self.recent_game_numbers}_performance#, #1:2:2#),
-        (#away_average_goals#, 0.8),
-        (#away_player_injuries#, 1),
-        (#away_possession_percentage#, 46),
-        (#away_strength#, 1291),
-        (#away_head_to_head#,#1:1:1#) ]
-"""
-
-        return prompt_action
+#
+#     def get_action_prompt_old(self, league="", home ="", away=""):
+#         prompt_action = f"""
+# get the following data (No explanation requried):
+#
+# home_team_name (home team),
+# home_is_home(True if home),
+# home_recent {self.recent_game_numbers} performance (home team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),
+# home_average_goals (home team),
+# home_player_injuries(home team, use 0 if none),
+# home_possession_percentage (home team),
+# home_strenght (home, Elo rating actual not in percentage)
+# head_to_head (home, in format w:l:d eg 2:0:1, Don't use '-' delimeter),
+# away_team_name (away team),
+# away_is_home(True if away),
+# away_recent {self.recent_game_numbers} performance (away team, in format w:l:d eg 2:0:1,  Don't use '-' delimeter),
+# away_average_goals (away team),
+# away_player_injuries(away team, use 0 if none),
+# away_possession_percentage (away team),
+# away_strenght (away, Elo rating actual not in percentage)
+# head_to_head (away, in format w:l:d eg 2:0:1, Don't use '-' delimeter),
+#
+# Present the resulting 16 feature data of each team in a list of python turple. using strictly, the format below:
+#
+#        [ (#home_team_name#, #APO Levadiakos FC#),
+#         (#home_is_home#, True),
+#         (#home_recent_{self.recent_game_numbers}_performance#,#2:1:2#),
+#         (#home_average_goals#, 1.4),
+#         (#home_player_injuries#, 0),
+#         (#home_possession_percentage#, 48),
+#         (#home_strength#, 1310),
+#         (#home_head_to_head#, #1:1:1#),
+#         (#away_team_name#, #PAS Lamia 1964#),
+#         (#away_is_home#, False),
+#         (#away_recent_{self.recent_game_numbers}_performance#, #1:2:2#),
+#         (#away_average_goals#, 0.8),
+#         (#away_player_injuries#, 1),
+#         (#away_possession_percentage#, 46),
+#         (#away_strength#, 1291),
+#         (#away_head_to_head#,#1:1:1#) ]
+# """
+#
+#         return prompt_action
 
     def get_action_prompt(self, league="", home ="", away="",game="football", focus=""):
         if focus == "":
             prompt_action = f"""
 
-in a tabular form, provide the last {self.recent_game_numbers} games statistics  played  the team above,
+in a tabular form, using data from www.sofascore.com only, provide the last {self.recent_game_numbers} games statistics  played  the team above,
 using the following header:
 team name 
 opponent name
@@ -215,7 +215,7 @@ shots on target by opponent
 
         else:
             prompt_action = f"""
-            in a tabular form, provide the last {self.recent_game_numbers} {game} games statistics  played  by {focus},
+            in a tabular form, using data from www.sofascore.com, provide the last {self.recent_game_numbers} {game} games statistics  played  by {focus},
             using the following header
             {self.get_statistics_headers(game)}
             """

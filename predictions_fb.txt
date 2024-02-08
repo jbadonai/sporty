@@ -229,3 +229,10 @@
                     Newcastle Jets FC   0.524 : 3.085   Brisbane Roar
                     
 --------------------------------------------------
+
+                    [-.--]- League Name not found in the League Table
+                    Newcastle Jets FC(Home)   1 : 3   Brisbane Roar(Away)
+                    
+                    Newcastle Jets FC   0.524 : 3.085   Brisbane Roar
+                    
+--------------------------------------------------

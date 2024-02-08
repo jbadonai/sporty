@@ -1,37 +1,22 @@
 
-Team Name: Newcastle United Jets FC 
-League:  Australia A-League  -- Team name: Brisbane Roar FC 
-League: Australia A-League 
+Team Name: KCC Egis 
+League:  Republic of Korea KBL  -- Team name: Anyang KGC 
+League: Republic of Korea KBL 
 
 
-Team Name: Hanoi FC 
-League:  International Clubs Club Friendly Games  -- Team name: Viettel FC 
-League: International Clubs Club Friendly Games 
+Team Name: Incheon Shinhan Bank S-Birds 
+League:  Republic of Korea WKBL  -- Team name: Busan BNK Sum 
+League: Republic of Korea WKBL 
 
 
-Team Name: Besiktas JK SRL 
-League:  Simulated Reality League Turkey Super Lig SRL  -- Team name: Adana Demirspor Srl 
-League: Simulated Reality League Turkey Super Lig SRL 
-
-
-Team Name: Hatayspor Srl 
-League:  Simulated Reality League Turkey Super Lig SRL  -- Team name: Alanyaspor SRL 
-League: Simulated Reality League Turkey Super Lig SRL 
-
-
-Team Name: Pendikspor Srl 
-League:  Simulated Reality League Turkey Super Lig SRL  -- Team name: Kasimpasa SRL 
-League: Simulated Reality League Turkey Super Lig SRL 
-
-
-Team Name: Persela Lamongan 
-League:  Indonesia Liga 2  -- Team name: Deltras FC 
-League: Indonesia Liga 2 
+Team Name: Aykanat SK 
+League:  Turkiye TB2L  -- Team name: Uskudar Belediyesi 
+League: Turkiye TB2L 
 
 
 
 
-in a tabular form, provide the last 5 games statistics  played  the team above,
+in a tabular form, using data from www.sofascore.com only, provide the last 4 games statistics  played  the team above,
 using the following header:
 team name 
 opponent name
